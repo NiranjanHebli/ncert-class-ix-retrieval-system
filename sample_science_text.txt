@@ -1,0 +1,65 @@
+Sample Science Text from NCERT Class 10
+
+Chapter 1: Chemical Reactions and Equations
+
+A chemical reaction is a process that leads to the transformation of one set of chemical substances to another. Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, requiring input of energy to proceed.
+
+In a chemical reaction, the atoms of the reactants are rearranged to form new products. This rearrangement involves the breaking of chemical bonds in the reactants and the formation of new chemical bonds in the products.
+
+A balanced chemical equation represents a chemical reaction with the same number of atoms of each element on both sides of the equation. The law of conservation of mass states that mass cannot be created or destroyed in a chemical reaction.
+
+Types of Chemical Reactions:
+
+1. Combination Reactions: Two or more reactants combine to form a single product.
+   Example: 2H₂ + O₂ → 2H₂O
+
+2. Decomposition Reactions: A single reactant breaks down into two or more products.
+   Example: 2H₂O → 2H₂ + O₂
+
+3. Displacement Reactions: An element displaces another element from a compound.
+   Example: Zn + CuSO₄ → ZnSO₄ + Cu
+
+4. Double Displacement Reactions: Two compounds exchange ions to form two new compounds.
+   Example: AgNO₃ + NaCl → AgCl + NaNO₃
+
+Chapter 2: Acids, Bases and Salts
+
+Acids are substances that taste sour, turn blue litmus red, and have a pH less than 7. Bases are substances that taste bitter, turn red litmus blue, and have a pH greater than 7.
+
+The pH scale ranges from 0 to 14, where 7 is neutral. Substances with pH less than 7 are acidic, and those with pH greater than 7 are basic.
+
+Strong acids completely dissociate in water, while weak acids only partially dissociate. Similarly, strong bases completely dissociate in water, while weak bases only partially dissociate.
+
+Salts are ionic compounds formed from the neutralization reaction between an acid and a base. They consist of positive ions (cations) and negative ions (anions).
+
+Common examples:
+- Hydrochloric acid (HCl)
+- Sulfuric acid (H₂SO₄)
+- Sodium hydroxide (NaOH)
+- Calcium hydroxide (Ca(OH)₂)
+
+Chapter 3: Metals and Non-metals
+
+Metals are typically shiny, good conductors of heat and electricity, malleable, and ductile. Non-metals are generally poor conductors, brittle, and not malleable.
+
+The reactivity series of metals arranges metals in order of their reactivity, from most reactive to least reactive:
+Potassium > Sodium > Calcium > Magnesium > Aluminium > Zinc > Iron > Copper > Silver > Gold
+
+Metals react with oxygen to form metal oxides, with water to form metal hydroxides and hydrogen gas, and with acids to form salts and hydrogen gas.
+
+Non-metals react with oxygen to form non-metal oxides, which are usually acidic in nature. They also react with hydrogen to form hydrides and with chlorine to form chlorides.
+
+Chapter 4: Carbon and its Compounds
+
+Carbon is a versatile element that forms the basis of all organic compounds. It has the unique ability to form stable covalent bonds with other carbon atoms, leading to the formation of long chains and rings.
+
+Hydrocarbons are organic compounds containing only carbon and hydrogen. They can be saturated (alkanes) or unsaturated (alkenes and alkynes).
+
+Functional groups are specific groups of atoms that determine the chemical properties of organic compounds:
+- Alcohol (-OH)
+- Aldehyde (-CHO)
+- Ketone (C=O)
+- Carboxylic acid (-COOH)
+- Ester (-COO-)
+
+Isomers are compounds with the same molecular formula but different structural arrangements.
