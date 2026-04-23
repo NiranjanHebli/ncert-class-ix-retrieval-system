@@ -1,7 +1,12 @@
 import PyPDF2
-reader = PyPDF2.PdfReader("iesc1dd/iesc104.pdf")
+
+file_name = "iesc111"
+reader = PyPDF2.PdfReader(f"../iesc1dd/{file_name}.pdf")
 text = ""
 for page in reader.pages:
     text += page.extract_text()
 print(f"Extracted {len(text)} characters.")
-print(text[:200])
+
+
+with open(f"pypdf_{file_name}.txt", "w") as f:
+    f.write(text)
