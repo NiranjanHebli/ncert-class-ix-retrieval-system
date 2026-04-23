@@ -1,0 +1,1 @@
+20. Find the energy in joules consumed in 10 hours by four devices of power 500 W each. 

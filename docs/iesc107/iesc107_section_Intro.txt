@@ -1,0 +1,13 @@
+## C hapter **7** 
+**==> picture [85 x 86] intentionally omitted <==**
+## **MOTION** 
+In everyday life, we see some objects at rest and others in motion. Birds fly, fish swim, blood flows through veins and arteries, and cars move. Atoms, molecules, planets, stars and galaxies are all in motion. We often perceive an object to be in motion when its position changes with time. However, there are situations where the motion is inferred through indirect evidences. For example, we infer the motion of air by observing the movement of dust and the movement of leaves and branches of trees. What causes the phenomena of sunrise, sunset and changing of seasons? Is it due to the motion of the earth? If it is true, why don’t we directly perceive the motion of the earth? 
+An object may appear to be moving for one person and stationary for some other. For the passengers in a moving bus, the roadside trees appear to be moving backwards. A person standing on the road–side perceives the bus alongwith the passengers as moving. However, a passenger inside the bus sees his fellow passengers to be at rest. What do these observations indicate? 
+Most motions are complex. Some objects may move in a straight line, others may take a circular path. Some may rotate and a few others may vibrate. There may be situations involving a combination of these. In this chapter, we shall first learn to describe the motion of objects along a straight line. We shall also learn to express such  motions through simple equations and graphs. Later, we shall discuss ways of describing circular motion. 
+## _**Activity ______________ 7.1**_ 
+- Discuss whether the walls of your classroom are at rest or in motion. 
+## _**Activity ______________ 7.2**_ 
+- Have you ever experienced that the train in which you are sitting appears to move while it is at rest? 
+- Discuss and share your experience. 
+## Think and Act 
+_We sometimes are endangered by the motion of objects around us, especially if that motion is erratic and uncontrolled as observed in a flooded river, a hurricane or a tsunami. On the other hand, controlled motion can be a service to human beings such as in the generation of hydro-electric power. Do you feel the necessity to study the erratic motion of some objects and learn to control them?_ 

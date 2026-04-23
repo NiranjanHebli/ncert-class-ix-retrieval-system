@@ -1,0 +1,14 @@
+## **3.3.2 MOLECULES OF COMPOUNDS** 
+Atoms of different elements join together in definite proportions to form molecules of compounds. Few examples are given in Table 3.4. 
+|**Compound**|**Combining**<br>**Elements**|**Ratio**<br>**by**|
+|---|---|---|
+|||<br>**Mass**|
+|Water (H2O)<br>Ammonia (NH3) <br>Cb|Hydrogen, Oxygen<br> Nitrogen, Hydrogen|1:8<br> 14:3<br>3:8|
+|aron<br>dioxide (CO2)|Carbon, Oxygen||
+_**Activity ______________ 3.2**_ 
+- Refer to Table 3.4 for ratio by mass of atoms present in molecules and Table 3.2 for atomic masses of elements. Find the ratio by number of the atoms of elements in the molecules of compounds given in Table 3.4. 
+- • The ratio by number of atoms for a water molecule can be found as follows: 
+|**Element **|**Ratio **<br>**by**<br>**mass**|**Atomic**<br>**mass**<br>**(u)**|**Mass**<br>**ratio/**<br>**atomic**<br>**mass**|**Simplest**<br>**ratio**|
+|---|---|---|---|---|
+|H<br>O|_1_<br>_8_|_1_<br>_16_|1<br>1 _=1_<br>8<br>16 _=_<br>1<br>2|_2_<br>_1_|
+• Thus, the ratio by number of atoms for water is H:O = 2:1. 

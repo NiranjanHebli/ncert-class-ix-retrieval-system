@@ -1,0 +1,67 @@
+## **11.2.2 CHARACTERISTICS OF A SOUND WAVE** 
+We can describe a sound wave by its 
+- frequency 
+- amplitude and 
+- speed. 
+A sound wave in graphic form is shown in Fig. 11.6(c), which represents how density and pressure change when the sound wave moves in the medium. The density as well as the pressure of the medium at a given time varies with distance, above and below the average value of density and pressure. Fig. 11.6(a) and 
+_SOUND_ 
+**129** 
+Reprint 2025-26 
+Fig. 11.6(b) represent the density and pressure variations, respectively, as a sound wave propagates in the medium. 
+Compressions are the regions where particles are crowded together and represented by the upper portion of the curve in Fig. 11.6(c). The peak represents the region of maximum compression. Thus, compressions are regions where density as well as pressure is high. Rarefactions are the regions of low pressure where particles are spread apart and are represented by the valley, that is, the lower portion of the curve in Fig. 11.6(c). A peak is called the crest and a valley is called the trough of a wave. 
+The distance between two consecutive compressions (C) or two consecutive rarefactions (R) is called the wavelength, as shown in Fig. 11.6(c), The wavelength is usually represented by λ (Greek letter lambda). Its SI unit is metre (m). 
+Heinrich Rudolph Hertz was born on 22 February 1857 in Hamburg, Germany and educated at the University of Berlin. He confirmed J.C. Maxwell’s electromagnetic theory by his experiments. He laid the _H. R. Hertz_ foundation for future development of radio, telephone, telegraph and even television. He also discovered the photoelectric effect which was later explained by Albert Einstein. The SI unit of frequency was named as hertz in his honour. 
+Frequency tells us how frequently an event occurs. Suppose you are beating a drum. How many times you are beating the drum in unit time is called the frequency of your beating the drum. We know that when sound is propagated through a medium, the 
+_**Fig. 11.6:** Sound propagates as density or pressure variations as shown in (a) and (b), (c) represents graphically the density and pressure variations._ 
+**130** 
+_SCIENCE_ 
+Reprint 2025-26 
+density of the medium oscillates between a maximum value and a minimum value. The change in density from the maximum value to the minimum value, then again to the maximum value, makes one complete oscillation. The number of such oscillations per unit time is the frequency of the sound wave. If we can count the number of the compressions or rarefactions that cross us per unit time, we will get the frequency of the sound wave. It is usually represented by n (Greek letter, nu). Its SI unit is hertz (symbol, Hz). 
+The time taken by two consecutive compressions or rarefactions to cross a fixed point is called the time period of the wave. In other words, we can say that the time taken for one complete oscillation is called the time period of the sound wave. It is represented by the symbol T. Its SI unit is second (s). Frequency and time period are related as follows: 
+**==> picture [35 x 26] intentionally omitted <==**
+A violin and a flute may both be played at the same time in an orchestra. Both sounds travel through the same medium, that is, air and arrive at our ear at the same time. Both sounds travel at the same speed irrespective of the source. But the sounds we receive are different. This is due to the different characteristics associated with the sound. Pitch is one of the characteristics. 
+**==> picture [225 x 152] intentionally omitted <==**
+## **Fig. 11.7:** Low pitch sound has low frequency and high pitch of sound has high frequency. 
+as shown in Fig. 11.6(c). For sound its unit will be that of density or pressure. 
+The loudness or softness of a sound is determined basically by its amplitude. The amplitude of the sound wave depends upon the force with which an object is made to vibrate. If we strike a table lightly, we hear a soft sound because we produce a sound wave 
+How the brain interprets the frequency of an emitted sound is called its pitch. The faster the vibration of the source, the higher is the frequency and the higher is the pitch, as shown in Fig. 11.7. Thus, a high pitch sound corresponds to more number of compressions and rarefactions passing a fixed point per unit time. 
+Objects of different sizes and conditions vibrate at different frequencies to produce sounds of different pitch. 
+The magnitude of the maximum disturbance in the medium on either side of the mean value is called the amplitude of the wave. It is usually represented by the letter A, 
+**Fig. 11.8:** Soft sound has small amplitude and louder sound has large amplitude. 
+SOUND 
+**131** 
+Reprint 2025-26 
+of less energy (amplitude). If we hit the table hard we hear a louder sound. Can you tell why? A sound wave spreads out from its source. As it moves away from the source its amplitude as well as its loudness decreases. Louder sound can travel a larger distance as it is associated with higher energy. Fig. 11.8 shows the wave shapes of a loud and a soft sound of the same frequency. 
+The quality or timber of sound is that characteristic which enables us to distinguish one sound from another having the same pitch and loudness. The sound which is more pleasant is said to be of a rich quality. A sound of single frequency is called a tone. The sound which is produced due to a mixture of several frequencies is called a note and is pleasant to listen to. Noise is unpleasant to the ear! Music is pleasant to hear and is of rich quality. 
+- uestions _1. Which wave property determines (a) loudness, (b) pitch?_ 
+- _2. Guess which sound has a higher pitch: guitar or car horn?_ 
+- Q 
+The speed of sound is defined as the distance which a point on a wave, such as a compression or a rarefaction, travels per unit time. 
+We know, 
+speed, _v_ = distance / time 
+**==> picture [21 x 23] intentionally omitted <==**
+Here λ is the wavelength of the sound wave. It is the distance travelled by the sound wave in one time period ( _T_ ) of the wave. Thus, 
+**==> picture [31 x 9] intentionally omitted <==**
+or _v_ = λ ν That is, speed = wavelength × frequency. 
+The speed of sound remains almost the same for all frequencies in a given medium under the same physical conditions. 
+- **Example 11.1** A sound wave has a frequency of 2 kHz and wave length 35 cm. How long will it take to travel 1.5 km? 
+## **Solution:** 
+Given, 
+Frequency, ν = 2 kHz = 2000 Hz Wavelength, λ = 35 cm = 0.35 m We know that speed, _v_ of the wave 
+> = wavelength × frequency 
+_v_ = λ ν 
+= 0.35 m 2000 Hz = 700 m/s 
+The time taken by the wave to travel a distance, _d_ of 1.5 km is 
+Thus sound will take 2.1 s to travel a distance of 1.5 km. 
+Q 
+## uestions 
+_1. What are wavelength, frequency, time period and amplitude of a sound wave?_ 
+_2. How are the wavelength and frequency of a sound wave related to its speed?_ 
+_3. Calculate the wavelength of a sound wave whose frequency is 220_ Hz _and speed is 440_ m/s _in a given medium._ 
+_4. A person is listening to a tone of 500_ Hz _sitting at a distance of 450_ m _from the source of the sound. What is the time interval between successive compressions from the source?_ 
+The amount of sound energy passing each second through unit area is called the intensity of sound. We sometimes use the terms “loudness” and “intensity” interchangeably, but they are not the same. Loudness is a measure of the response of the ear to the sound. Even when two sounds are of equal intensity, we may hear one as louder than the other simply because our ear detects it better. 
+**132** 
+_SCIENCE_ 
+Reprint 2025-26 
+- uestion _1. Distinguish between loudness and intensity of sound._ 
+- Q 

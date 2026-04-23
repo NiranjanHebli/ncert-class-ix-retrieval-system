@@ -1,0 +1,42 @@
+## **8.5 Third Law of Motion** 
+The first two laws of motion tell us how an applied force changes the motion and provide us with a method of determining the force. The third law of motion states that when one object exerts a force on another object, the second object instantaneously exerts a force back on the first. These two forces are always equal in magnitude but opposite in direction. These forces act on different objects and never on the same object. In the game of football sometimes we, while looking at the football and trying to kick it with a greater force, collide with a player of the opposite team. Both feel hurt because each applies a force to the other. In other words, there is a pair of forces and not just one force. The two opposing forces are also known as action and reaction forces. 
+Let us consider two spring balances connected together as shown in Fig. 8.10. The fixed end of balance B is attached with a rigid support, like a wall. When a force is applied through the free end of spring balance A, it is observed that both the spring balances show the same readings on their scales. It means that the force exerted by spring balance A on balance B is equal but opposite in direction to the force exerted by the balance B on balance A. Any of these two forces can be called as _action_ and the other as _reaction_ . This gives us an alternative statement of the third law of motion i.e., to every action there is an equal and opposite reaction. However, it must be remembered that the action and reaction always act on two different objects, simultaneously. 
+_**Fig. 8.10:** Action and reaction forces are equal and opposite._ 
+Suppose you are standing at rest and intend to start walking on a road. You must accelerate, and this requires a force in accordance with the second law of motion. Which is this force? Is it the muscular effort you exert on the road? Is it in the direction we intend to move? No, you push the road below backwards. The road exerts an equal and opposite force on your feet to make you move forward. 
+It is important to note that even though the action and reaction forces are always equal in magnitude, these forces may not produce accelerations of equal magnitudes. This is because each force acts on a different object that may have a different mass. 
+When a gun is fired, it exerts a forward force on the bullet. The bullet exerts an equal and opposite force on the gun. This results in the recoil of the gun (Fig. 8.11). Since the gun has a much greater mass than the bullet, the acceleration of the gun is much less than the acceleration of the bullet. The third law of motion can also be illustrated when a sailor jumps out of a rowing boat. As the sailor jumps forward, the force on the boat moves it backwards (Fig. 8.12). 
+_**Fig. 8.11:** A forward force on the bullet and recoil of the gun._ 
+**95** 
+_FORCE AND LAWS OF MOTION_ 
+Reprint 2025-26 
+**==> picture [22 x 4] intentionally omitted <==**
+**==> picture [24 x 7] intentionally omitted <==**
+**==> picture [52 x 6] intentionally omitted <==**
+**==> picture [5 x 11] intentionally omitted <==**
+**==> picture [6 x 5] intentionally omitted <==**
+**==> picture [28 x 5] intentionally omitted <==**
+_**Fig. 8.12:** As the sailor jumps in forward direction, the boat moves backwards._ 
+## _**Activity ______________ 8.4**_ 
+- Request two children to stand on two separate carts as shown in Fig. 8.13. 
+- • Give them a bag full of sand or some other heavy object. Ask them to play a game of catch with the bag. 
+- Does each of them experience an instantaneous force as a result of throwing the sand bag? 
+- You can paint a white line on cartwheels to observe the motion of the two carts when the children throw the bag towards each other. 
+_**Fig. 8.13**_ 
+Now, place two children on one cart and one on another cart. The second law of motion can be seen, as this arrangement would show different accelerations for the same force. 
+The cart shown in this activity can be constructed by using a 12 mm or 18 mm thick plywood board of about 50 cm × 100 cm with two pairs of hard ball-bearing wheels (skate wheels are good to use). Skateboards are not as effective because it is difficult to maintain straight-line motion. 
+## **What you have learnt** 
+- First law of motion: An object continues to be in a state of rest or of uniform motion along a straight line unless acted upon by an unbalanced force. 
+- 
+- 
+- 
+- 
+- The natural tendency of objects to resist a change in their state of rest or of uniform motion is called inertia. 
+- The mass of an object is a measure of its inertia. Its SI unit is kilogram (kg). 
+- Force of friction always opposes motion of objects. 
+- Second law of motion: The rate of change of momentum of an object is proportional to the applied unbalanced force in the direction of the force. 
+**96** 
+_SCIENCE_ 
+Reprint 2025-26 
+- The SI unit of force is kg m s[–2] . This is also known as newton and represented by the symbol N. A force of one newton produces an acceleration of 1 m s[–2] on an object of mass 1 kg. 
+- The momentum of an object is the product of its mass and velocity and has the same direction as that of the velocity. Its SI unit is kg m s[–1] . 
+- Third law of motion: To every action, there is an equal and opposite reaction and they act on two different bodies. 

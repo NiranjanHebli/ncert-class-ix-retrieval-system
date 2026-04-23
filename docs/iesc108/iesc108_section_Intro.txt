@@ -1,0 +1,17 @@
+## C hapter **8 FORCE AND LAWS OF MOTION** 
+In the previous chapter, we described the motion of an object along a straight line in terms of its position, velocity and acceleration. We saw that such a motion can be uniform or non-uniform. We have not yet discovered what causes the motion. Why does the speed of an object change with time? Do all motions require a cause? If so, what is the nature of this cause? In this chapter we shall make an attempt to quench all such curiosities. 
+For many centuries, the problem of motion and its causes had puzzled scientists and philosophers. A ball on the ground, when given a small hit, does not move forever. Such observations suggest that rest is the “natural state” of an object. This remained the belief until Galileo Galilei and Isaac Newton developed an entirely different approach to understand motion. 
+**==> picture [225 x 107] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+(a) The trolley moves along the (b) The drawer is pulled.<br>direction we push it.<br>**----- End of picture text -----**<br>
+In our everyday life we observe that some effort is required to put a stationary object into motion or to stop a moving object. We ordinarily experience this as a muscular effort and say that we must push or hit or pull on an object to change its state of motion. The concept of force is based on this push, hit or pull. Let us now ponder about a ‘force’. What is it? In fact, no one has seen, tasted or felt a force. However, we always see or feel the effect of a force. It can only be explained by describing what happens when a force is applied to an object. Pushing, hitting and pulling of objects are all ways of bringing objects in motion (Fig. 8.1). They move because we make a force act on them. 
+From your studies in earlier classes, you are also familiar with the fact that a force can be used to change the magnitude of velocity of an object (that is, to make the object move faster or slower) or to change its direction of motion. We also know that a force can change the shape and size of objects (Fig. 8.2). 
+**==> picture [70 x 94] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+(a)<br>(b)<br>**----- End of picture text -----**<br>
+**==> picture [146 x 9] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+(c) The hockey stick hits the ball forward<br>**----- End of picture text -----**<br>
+_**Fig. 8.1:** Pushing, pulling, or hitting objects change their state of motion._ 
+_**Fig. 8.2:**_ (a) _A spring expands on application of force; (b) A spherical rubber ball becomes oblong as we apply force on it._ 
+Reprint 2025-26 

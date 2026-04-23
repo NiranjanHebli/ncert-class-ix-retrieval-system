@@ -1,0 +1,15 @@
+## **9.1 Gravitation** 
+We know that the moon goes around the earth. An object when thrown upwards, reaches a certain height and then falls downwards. It is said that when Newton was sitting under a tree, an apple fell on him. The fall of the apple made Newton start thinking. He thought that: if the earth can attract an apple, can it not attract the moon? Is the force the same in both cases? He conjectured  that the same type of force is responsible in both the cases. He argued that at each point of its orbit, the moon falls towards the earth, instead of going off in a straight line. So, it must be attracted by the earth. But we do not really see the moon falling towards the earth. 
+_**Fig. 9.1:** A stone describing a circular path with a velocity of constant magnitude._ 
+Before the thread is released, the stone moves in a circular path with a certain speed and changes direction at every point. The change in direction involves change in velocity or acceleration. The force that causes this acceleration and keeps the body moving along the circular path is acting towards the centre. This force is called the centripetal (meaning ‘centre-seeking’) force. 
+**100** 
+_SCIENCE_ 
+Reprint 2025-26 
+In the absence of this force, the stone flies off along a straight line. This straight line will be a tangent to the circular path. 
+## **Tangent to a circle** 
+**==> picture [105 x 85] intentionally omitted <==**
+A straight line that meets the circle at one and only one point is called a tangent to the circle. Straight line ABC is a tangent to the circle at point B. 
+The motion of the moon around the earth is due to the centripetal force. The centripetal force is provided by the force of attraction of the earth. If there were no such force, the moon would pursue a uniform straight line motion. 
+It is seen that a falling apple is attracted towards the earth. Does the apple attract the earth? If so, we do not see the earth moving towards an apple. Why? 
+According to the third law of motion, the apple does attract the earth. But according to the second law of motion, for a given force, acceleration is inversely proportional to the mass of an object [Eq. (8.4)]. The mass of an apple is negligibly small compared to that of the earth. So, we do not see the earth moving towards the apple. Extend the same argument for why the earth does not move towards the moon. 
+In our solar system, all the planets go around the Sun. By arguing the same way, we can say that there exists a force between the Sun and the planets. From the above facts Newton concluded that not only does the earth attract an apple and the moon, but all objects in the universe attract each other. This force of attraction between objects is called the gravitational force. 

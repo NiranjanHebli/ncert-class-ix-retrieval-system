@@ -1,0 +1,25 @@
+## **3.1.2 LAW OF CONSTANT PROPORTIONS** 
+Lavoisier, along with other scientists, noted that many compounds were composed of two or more elements and each such compound had the same elements in the same proportions, irrespective of where the compound came from or who prepared it. 
+In a compound such as water, the ratio of the mass of hydrogen to the mass of oxygen is always 1:8, whatever the source of water. Thus, if 9 g of water is decomposed, 1 g of hydrogen and 8 g of oxygen are always obtained. Similarly in ammonia, nitrogen and hydrogen are always present in the ratio 14:3 by mass, whatever the method or the source from which it is obtained. 
+This led to the law of constant proportions which is also known as the law of definite proportions. This law was stated by Proust as “ _In a chemical substance the elements are always present in definite proportions by mass_ ”. 
+The next problem faced by scientists was to give appropriate explanations of these laws. British chemist John Dalton provided the basic theory about the nature of matter. Dalton picked up the idea of divisibility of matter, which was till then just a philosophy. He took the name ‘atoms’ as given by the Greeks and said that the smallest particles of matter are atoms. His theory was based on the laws of chemical combination. Dalton’s atomic theory provided an explanation for the law of 
+conservation of mass and the law of definite proportions. 
+John Dalton was born in a poor weaver’s family in 1766 in England. He began his career as a teacher at the age of twelve. Seven years later he became a school principal. In 1793, Dalton left for Manchester to teach mathematics, _John Dalton_ physics and chemistry in a college. He spent most of his life there teaching and researching. In 1808, he presented his atomic theory which was a turning point in the study of matter. 
+According to Dalton’s atomic theory, all matter, whether an element, a compound or a mixture is composed of small particles called atoms. The postulates of this theory may be stated as follows: 
+- (i) All matter is made of very tiny particles called atoms, which participate in chemical reactions. 
+- (ii) Atoms are indivisible particles, which cannot be created or destroyed in a chemical reaction. 
+- (iii) Atoms of a given element are identical in mass and chemical properties. 
+- (iv) Atoms of different elements have different masses and chemical properties. 
+- (v) Atoms combine in the ratio of small whole numbers to form compounds. 
+- (vi) The relative number and kinds of atoms are constant in a given compound. 
+You will study in the next chapter that all atoms are made up of still smaller particles. 
+## uestions _1._ Q 
+_1. In a reaction, 5.3 g of sodium carbonate reacted with 6 g of acetic acid. The products were 2.2 g of carbon dioxide, 0.9 g water and 8.2 g of sodium acetate. Show that these_ 
+**27** 
+_ATOMS AND MOLECULES_ 
+Reprint 2025-26 
+   - _observations are in agreement with the law of conservation of mass._ 
+   - _sodium carbonate + acetic acid_ → _sodium acetate + carbon dioxide + water_ 
+_2. Hydrogen and oxygen combine in the ratio of 1:8 by mass to form water. What mass of oxygen gas would be required to react completely with 3 g of hydrogen gas?_ 
+_3. Which postulate of Dalton’s atomic theory is the result of the law of conservation of mass?_ 
+_4. Which postulate of Dalton’s atomic theory can explain the law of definite proportions?_ 

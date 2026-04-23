@@ -1,0 +1,23 @@
+## **10.2.4 POTENTIAL ENERGY OF AN OBJECT AT A HEIGHT** 
+An object increases its energy when raised through a height. This is because work is done on it against gravity while it is being raised. The energy present in such an object is the gravitational potential energy. 
+The gravitational potential energy of an object at a point above the ground is defined as the work done in raising it from the ground to that point against gravity. 
+It is easy to arrive at an expression for the gravitational potential energy of an object at a height. 
+The potential energy of an object at a height depends on the ground level or the zero level you choose.  An object in a given position can have a certain potential energy with respect to one level and a different value of potential energy with respect to another level. 
+It is useful to note that the work done by gravity depends on the difference in vertical heights of the initial and final positions of the object and not on the path along which the object is moved. Fig. 10.8 shows a case where a block is raised from position A to B by taking two different paths. Let the height AB = _h._ In both the situations the work done on the object is _mgh._ 
+_**Fig. 10.7**_ 
+_**Fig. 10.8**_ 
+Consider an object of mass, _m_ . Let it be raised through a height, _h_ from the ground. A force is required to do this. The minimum force required to raise the object is equal to the weight of the object, _mg._ The object gains energy equal to the work done on it.  Let the work done on the object against gravity be _W_ . That is, 
+**==> picture [180 x 36] intentionally omitted <==**
+Since work done on the object is equal to _mgh_ , an energy equal to _mgh_ units is gained by the object. This is the potential energy ( _EP_ ) of the object. 
+**==> picture [191 x 14] intentionally omitted <==**
+**Example 10.5** Find the energy possessed by an object of mass 10 kg when it is at a height of 6 m above the ground. Given, _g_ = 9.8 m s[–2] . 
+## **Solution:** 
+Mass of the object, _m_ = 10 kg, displacement (height), _h_ = 6 m, and acceleration due to gravity, _g_ = 9.8 m s[–2] . From Eq. (10.6), Potential energy = _mgh_ 
+**==> picture [239 x 48] intentionally omitted <==**
+**120** 
+_SCIENCE_ 
+Reprint 2025-26 
+**Example 10.6** An object of mass 12 kg is at a certain height above the ground. If the  potential energy of the object is 480 J, find the height at which the object is with respect to the ground. Given, _g_ = 10 m s[–2] . 
+## **Solution:** 
+Mass of the object, _m_ = 12 kg, potential energy, _Ep_ = 480 J. 
+**==> picture [239 x 84] intentionally omitted <==**

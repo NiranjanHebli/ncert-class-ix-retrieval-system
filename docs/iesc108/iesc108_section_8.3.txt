@@ -1,0 +1,10 @@
+## **8.3 Inertia and Mass** 
+All the examples and activities given so far illustrate that there is a resistance offered by an object to change its state of motion. If it is at rest it tends to remain at rest; if it is moving it tends to keep moving. This property of an object is called its inertia. Do all bodies have the same inertia? We know that it is easier to push an empty box than a box full of books. Similarly, if we kick a football it flies away. But if we kick a stone of the same size with equal force, it hardly moves. We may, in fact, get an injury in our foot while doing so! Similarly, in activity 8.2, instead of a 
+## Q 
+## uestions 
+_1. Which of the following has more inertia: (a) a rubber ball and a stone of the same size? (b) a bicycle and a train? (c) a fiverupees coin and a one-rupee coin?_ 
+_2. In the following example, try to identify the number of times the velocity of the ball changes:_ 
+_“A football player kicks a football to another player of his team who kicks the football towards the goal. The goalkeeper of the opposite team collects the football and kicks it towards a player of his own team”._ 
+_Also identify the agent supplying the force in each case._ 
+_3. Explain why some of the leaves may get detached from a tree if we vigorously shake its branch._ 
+_4. Why do you fall in the forward direction when a moving bus brakes to a stop and fall backwards when it accelerates from rest?_ 

@@ -1,0 +1,20 @@
+## **4.3 How are Electrons Distributed in Different Orbits (Shells)?** 
+The distribution of electrons into different orbits of an atom was suggested by Bohr and Bury. 
+_**Fig. 4.3:** A few energy levels in an atom_ 
+These orbits or shells are represented by the letters K,L,M,N,… or the numbers, n=1,2,3,4,…. 
+The following rules are followed for writing the number of electrons in different energy levels or shells: 
+- (i) The maximum number of electrons present in a shell is given by the 
+_STRUCTURE OF THE ATOM_ 
+**41** 
+Reprint 2025-26 
+formula 2n[2] , where ‘n’ is the orbit number or energy level index, 1,2,3,…. Hence the maximum number of electrons in different shells are as follows: 
+   - first orbit or K-shell will be = 2 × 1[2] = 2, second orbit or L-shell will be = 2 × 2[2 ] = 8, third orbit or M-shell will be = 2 × 3[2 ] = 18, fourth orbit or N-shell will be = 2 × 4[2] = 32, and so on. 
+- (ii) The maximum number of electrons that can be accommodated in the outermost orbit is 8. 
+- (iii) Electrons are not accommodated in a given shell, unless the inner shells are filled. That is, the shells are filled in a step-wise manner. 
+Atomic structure of the first eighteen elements is shown schematically in Fig. 4.4. 
+- The composition of atoms of the first eighteen elements is given in Table 4.1. 
+• 
+Q 
+## uestions 
+_1. Write the distribution of electrons in  carbon and sodium atoms._ 
+_2. If K and L shells of an atom are full, then what would be the total number of electrons in the atom?_ 

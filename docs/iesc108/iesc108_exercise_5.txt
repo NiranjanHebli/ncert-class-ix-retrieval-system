@@ -1,0 +1,1 @@
+5. A truck starts from rest and rolls down a hill with a constant acceleration. It travels a distance of 400 m in 20 s. Find its acceleration. Find the force acting on it if its mass is 7 tonnes ( _Hint_ : 1 tonne = 1000 kg.) 

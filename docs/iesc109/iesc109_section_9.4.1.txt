@@ -1,0 +1,42 @@
+## **9.4.1 WEIGHT OF AN OBJECT ON** 
+## **THE MOON** 
+We have learnt that the weight of an object on the earth is the force with which the earth 
+attracts the object. In the same way, the weight of an object on the moon is the force with which the moon attracts that object. The mass of the moon is less than that of the earth. Due to this the moon exerts lesser force of attraction on objects. 
+Let the mass of an object be _m_ . Let its weight on the moon be _Wm_ . Let the mass of the moon be _M_ and its radius be _R_ . _m m_ 
+By applying the universal law of gravitation, the weight of the object on the moon will be 
+**==> picture [208 x 26] intentionally omitted <==**
+Let the weight of the same object on the earth be _W_ . The mass of the earth is _M_ and its _e_ radius is _R._ 
+## **Table 9.1** 
+|**Table 9.1**|**Table 9.1**|**Table 9.1**|
+|---|---|---|
+||||
+|**Celestial**<br>**body**|**Mass (kg)**|**Radius (m)**|
+|Earth<br>Moon|5.98×1024<br>7.36×1022|6.37×106<br>1.74×106|
+||||
+From Eqs. (9.9) and (9.15) we have, 
+**==> picture [194 x 23] intentionally omitted <==**
+Substituting the values from Table 10.1 in Eqs. (9.16) and (9.17), we get 
+**==> picture [124 x 31] intentionally omitted <==**
+**==> picture [227 x 29] intentionally omitted <==**
+Dividing Eq. (9.18a) by Eq. (9.18b), we get 
+**==> picture [227 x 97] intentionally omitted <==**
+Weight of the object on the moon 
+= (1/6) × its weight on the earth. 
+**105** 
+_GRAVITATION_ 
+Reprint 2025-26 
+**Example 9.4** Mass of an object is 10 kg. What is its weight on the earth? 
+## **Solution:** 
+Mass, _m_ = 10 kg 
+Acceleration due to gravity, _g_ = 9.8 m s[–2] _W = m_ × _g W_ = 10 kg × 9.8 m s[-2] = 98 N Thus, the weight of the object is 98 N. 
+**Example 9.5** An object weighs 10 N when measured on the surface of the earth. What would be its weight when measured on the surface of the moon? 
+## **Solution:** 
+We know, Weight of object on the moon 
+= (1/6) × its weight on the earth. That is, 
+**==> picture [81 x 39] intentionally omitted <==**
+Thus, the weight of object on the surface of the moon would be 1.67 N. 
+- uestions _1. What are the differences between the mass of an object and its weight?_ 
+- _2. Why is the weight of an object on_ 1 
+- _the moon th its weight on the its weight on the_ 
+- Q 6 
+_2. Why is the weight of an object on_ 1 _the moon th its weight on the its weight on the_ 6 _earth?_ 

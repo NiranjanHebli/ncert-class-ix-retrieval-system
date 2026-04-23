@@ -1,0 +1,5 @@
+## **9.2.1 TO CALCULATE THE VALUE OF** _g_ 
+To calculate the value of _g_ , we should put   the values of G, _M_ and _R_ in Eq. (9.9), namely, universal gravitational constant, G = 6.7 × 10[–11] N m[2] kg[-2] , mass of the earth, _M_ = 6 × 10[24] kg, and radius of the earth, _R_ = 6.4 × 10[6] m. 
+**==> picture [177 x 63] intentionally omitted <==**
+**==> picture [76 x 9] intentionally omitted <==**
+Thus, the value of acceleration due to gravity of the earth, _g_ = 9.8 m s[–2] . 

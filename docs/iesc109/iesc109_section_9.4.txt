@@ -1,0 +1,9 @@
+## **9.4 Weight** 
+We know that the earth attracts every object with a certain force and this force depends on the mass ( _m_ ) of the object and the acceleration due to the gravity ( _g_ ). The weight of an object is the force with which it is attracted towards the earth. 
+We know that 
+**==> picture [227 x 22] intentionally omitted <==**
+> _F = m_ × _g._ (9.14) 
+The force of attraction of the earth on an object is known as the weight of the object. It is denoted by _W_ . Substituting the same in Eq. (9.14), we have 
+> _W = m_ × _g_ (9.15) 
+As the weight of an object is the force with which it is attracted towards the earth, the SI unit of weight is the same as that of force, that is, newton (N). The weight is a force acting vertically downwards; it has both magnitude and direction. 
+We have learnt that the value of _g_ is constant at a given place. Therefore at a given place, the weight of an object is directly proportional to the mass, say _m_ , of the object, that is, _W_ ∝ _m_ . It is due to this reason that at a given place, we can use the weight of an object as a measure of its mass. The mass of an object remains the same everywhere, that is, on the earth and on any planet whereas its weight depends on its location because _g_ depends on location. 

@@ -1,0 +1,2 @@
+## **4.5.1 ATOMIC NUMBER** 
+We know that protons are present in the nucleus of an atom. It is the number of protons of an atom, which determines its atomic number. It is denoted by ‘Z’. All atoms of an element have the same atomic number, Z. In fact, elements are defined by the number of protons they possess. For hydrogen, Z = 1, because in hydrogen atom, only one proton is present in the nucleus. Similarly, for carbon, Z = 6. Therefore, the atomic number is defined as the total number of protons present in the nucleus of an atom. 

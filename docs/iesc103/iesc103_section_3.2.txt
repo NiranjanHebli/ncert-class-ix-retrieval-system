@@ -1,0 +1,32 @@
+## **3.2 What is an Atom?** 
+Have you ever observed a mason building walls, from these walls a room and then a collection of rooms to form a building? What is the building block of the huge building? What about the building block of an ant-hill? It is a small grain of sand. Similarly, the building blocks of all matter are atoms. 
+We might think that if atoms are so insignificant in size, why should we care about them? This is because our entire world is made up of atoms. We may not be able to see them, but they are there, and constantly affecting whatever we do. Through modern techniques, we can now produce magnified images of surfaces of elements showing atoms. 
+**==> picture [228 x 143] intentionally omitted <==**
+_**Fig. 3.2:** An image of the surface of silicon_ 
+- **3.2.1 WHAT ARE THE MODERN DAY SYMBOLS OF ATOMS OF DIFFERENT ELEMENTS?** 
+## **How big are atoms?** 
+Atoms are very small, they are smaller than anything that we can imagine or compare with. More than millions of atoms when stacked would make a layer barely as thick as this sheet of paper. 
+Atomic radius is measured in nanometres. 1/10[ 9 ] m = 1 nm 1 m = 10[9] nm 
+|**Relative Sizes**|**Relative Sizes**|
+|---|---|
+|**Radii (in m)**|**Example**|
+|10–10|Atom of hydrogen|
+|10–9|Molecule of water|
+|10–8<br>|Molecule of haemoglobin<br>|
+|10–4|Grain of sand|
+|||
+|10–3|Ant|
+|10–1|Apple|
+Dalton was the first scientist to use the symbols for elements in a very specific sense. When he used a symbol for an element he also meant a definite quantity of that element, that is, one atom of that element. Berzilius suggested that the symbols of elements be made from one or two letters of the name of the element. 
+_**Fig. 3.3:** Symbols for some elements as proposed by Dalton_ 
+**28** 
+_SCIENCE_ 
+Reprint 2025-26 
+In the beginning, the names of elements were derived from the name of the place where they were found for the first time. For example, the name copper was taken from Cyprus. Some names were taken from specific colours. For example, gold was taken from the English word meaning yellow. Now-a-days, IUPAC (International Union of Pure and Applied Chemistry) is an international scientific organisation which approves names of elements, symbols and units. Many of the symbols are the first one or two letters of the element’s name in English. The first letter of a symbol is always written as a capital letter (uppercase) and the second letter as a small letter (lowercase). 
+## **For example** 
+- (i) hydrogen, H 
+- (ii) aluminium, Al and not AL 
+- (iii) cobalt, Co and not CO. 
+Symbols of some elements are formed from the first letter of the name and a letter, appearing later in the name. Examples are: (i) chlorine, Cl, (ii) zinc, Zn etc. 
+Other symbols have been taken from the names of elements in Latin, German or Greek. For example, the symbol of iron is Fe from its Latin name ferrum, sodium is Na from natrium, potassium is K from kalium. Therefore, each element has a name and a unique chemical symbol. 
+passage of time and repeated usage you will automatically be able to reproduce the symbols). 

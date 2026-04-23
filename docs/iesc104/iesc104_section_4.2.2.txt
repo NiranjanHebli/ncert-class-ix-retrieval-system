@@ -1,0 +1,33 @@
+## **4.2.2 RUTHERFORD’S MODEL OF AN ATOM** 
+Ernest Rutherford was interested in knowing how the electrons are arranged within an atom. Rutherford designed an experiment for this. In this experiment, fast moving alpha (α)-particles were made to fall on a thin gold foil. 
+- He selected a gold foil because he wanted as thin a layer as possible. This gold foil was about 1000 atoms thick. 
+- α-particles are doubly-charged helium ions. Since they have a mass of 4 u, the fast-moving α-particles have a considerable amount of energy. 
+_**Fig.4.1:** Thomson’s model of an atom_ 
+- It was expected that α-particles would be deflected by the sub-atomic particles in the gold atoms. Since the α-particles were much heavier than the protons, he did not expect to see large deflections. 
+**39** 
+_STRUCTURE OF THE ATOM_ 
+Reprint 2025-26 
+**==> picture [217 x 151] intentionally omitted <==**
+_**Fig. 4.2:** Scattering of_ α _-particles by a gold foil_ 
+But, the α-particle scattering experiment gave totally unexpected results (Fig. 4.2).  The following observations were made: 
+- (i) Most of the fast moving α-particles passed straight through the gold foil. 
+- (ii) Some of the α-particles were deflected by the foil by small angles. 
+- (iii) Surprisingly one out of every 12000 particles appeared to rebound. 
+In the words of Rutherford, “ _This result was almost as incredible as if you fire a 15-inch shell at a piece of tissue paper and it comes back and hits you_ ”. 
+E. Rutherford (1871–1937) was born at Spring Grove on 30 August 1871. He was known as the ‘Father’ of nuclear physics.  He is famous for his work on radioactivity and the discovery of the nucleus of an atom with the gold foil experiment. He got the Nobel prize in chemistry in 1908. 
+Let us think of an activity in an open field to understand the implications  of this experiment. Let a child stand in front of a wall with his eyes closed. Let him throw stones at the wall from a distance. 
+He will hear a sound when each stone strikes the wall. If he repeats this ten times, he will hear the sound ten times. But if a blind-folded child were to throw stones at a barbed-wire fence, most of the stones would not hit the fencing and no sound would be heard. This is because there are lots of gaps in the fence which allow the stone to pass through them. 
+Following a similar reasoning, Rutherford concluded from the α-particle scattering experiment that— 
+- (i) Most of the space inside the atom is empty because most of the α-particles passed through the gold foil without getting deflected. 
+- (ii) Very few particles were deflected from their path, indicating that the positive charge of the atom occupies very little space. 
+- (iii) A very small fraction of α-particles were deflected by 180[0] , indicating that all the positive charge and mass of the gold atom were concentrated in a very small volume within the atom. 
+From the data he also calculated that the radius of the nucleus is about 10[5 ] times less than the radius of the atom. 
+On the basis of his experiment, Rutherford put forward the nuclear model of an atom, which had the following features: 
+- (i) There is a positively charged centre in an atom called the nucleus. Nearly all the mass of an atom resides in the nucleus. 
+- (ii) The electrons revolve around the nucleus in circular paths. 
+- (iii) The size of the nucleus is very small as compared to the size of the atom. 
+## **Drawbacks of Rutherford’s model of the atom** 
+The revolution of the electron in a circular orbit is not expected to be stable. Any particle in a circular orbit would undergo acceleration. During acceleration, charged particles would radiate energy. Thus, the revolving electron would lose energy and finally fall into the nucleus. If this were so, the atom should be highly unstable and hence matter would not exist in the form that we know. We know that atoms are quite stable. 
+**40** 
+_SCIENCE_ 
+Reprint 2025-26 

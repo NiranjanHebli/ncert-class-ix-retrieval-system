@@ -1,0 +1,17 @@
+**7.10** 
+## **Activity** 
+- Feroz and his sister Sania go to school on their bicycles. Both of them start at the same time from their home but take different times to reach the school although they follow the same route. Table 7.5 shows the distance travelled by them in different times 
+Table 7.5: Distance covered by Feroz and Sania at different times on their bicycles 
+|Table 7.5: Distance covered by<br>Feroz and Sania at different<br>times on their bicycles|Table 7.5: Distance covered by<br>Feroz and Sania at different<br>times on their bicycles|Table 7.5: Distance covered by<br>Feroz and Sania at different<br>times on their bicycles|
+|---|---|---|
+||||
+||||
+|Time|Distance<br>travelled<br>by Feroz<br>(km)|Distance<br>travelled<br>by Sania<br>(km)|
+|8:00 am<br>8:05 am<br>8:10 am<br>8:15 am<br>8:20 am<br>8:25 am|0<br>1.0<br>1.9<br>2.8<br>3.6<br>–|0<br>0.8<br>1.6<br>2.3<br>3.0<br>3.6|
+||||
+   - Plot the distance-time graph for their motions on the same scale and interpret. 
+- uestions _1. What is the nature of the distance-time graphs for uniform and non-uniform motion of an object?_ 
+- _2. What can you say about the_ 
+- Q _motion of an object whose distance-time graph is a straight line parallel to the time axis?_ 
+      _3. What can you say about the motion of an object if its speedtime graph is a straight line parallel to the time axis?_ 
+_4. What is the quantity which is measured by the area occupied below the velocity-time graph?_ 

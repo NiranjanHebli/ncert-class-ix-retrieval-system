@@ -1,0 +1,29 @@
+## **4.4 Valency** 
+We have learnt how the electrons in an atom are arranged in different shells/orbits. The electrons present in the outermost shell of an atom are known as the valence electrons. 
+From the Bohr-Bury scheme, we also know that the outermost shell of an atom can 
+_**Fig.4.4:** Schematic atomic structure of the first eighteen elements_ 
+## _**Activity ______________ 4.2**_ 
+- Make a static atomic model displaying electronic configuration of the first eighteen elements. 
+accommodate a maximum of 8 electrons. It was observed that the atoms of elements, completely filled with 8 electrons in the outermost shell show little chemical activity. In other words, their combining capacity or valency is zero. Of these inert elements, the 
+**42** 
+_SCIENCE_ 
+Reprint 2025-26 
+|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|**Table 4.1: Composition of Atoms of the First Eighteen Elements**<br>**with Electron Distribution in Various Shells**|
+|---|---|---|---|---|---|---|---|---|---|---|
+||||||||||||
+|**f**||||||**Distribution of**|||||
+|**Name o**<br>**Element**|**Symbol**|**Atomic**<br>**Number**|**Number **<br>**of**<br>**Protons **|**Number**<br>**of**<br> **Neutrons**|**Number**<br>**of**<br>**Electrons**|**K**<br>**L**<br>**M**<br>**N**<br> <br>**Electrons**||||**Vale-**<br>**ncy**|
+|Hydrogen<br>Helium<br>Lithi|H<br>He<br>Li|1<br>2<br>3|1<br>2<br>3|-<br>2<br>4|1<br>2<br>3|1<br>2<br>2|-<br>-<br>1|-<br>-|-<br>-|1<br>0<br>1<br>2<br>3<br>4<br>3<br>2<br>1<br>0<br>1<br>2<br>3<br>4<br>3,5<br>2<br>1<br>0|
+|um<br>Beryllium<br>Boron<br>Carbon<br>Nitrogen<br>Oxygen<br>Fluorine<br>Neon<br>Sodium<br>Magnesium<br>Aluminium<br>Silicon<br>Phosphorus<br>Sulphur<br>Chlorine<br>Argon|Be<br>B<br>C<br>N<br>O<br>F<br>Ne<br>Na<br>Mg<br>Al<br>Si<br>P<br>S<br>Cl<br>Ar|4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18|4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18|5<br>6<br>6<br>7<br>8<br>10<br>10<br>12<br>12<br>14<br>14<br>16<br>16<br>18<br>22|4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18|2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2|2<br>3<br>4<br>5<br>6<br>7<br>8<br>8<br>8<br>8<br>8<br>8<br>8<br>8<br>8|-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8|-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-||
+||||||||||||
+helium atom has two electrons in its outermost shell and all other elements have atoms with eight electrons in the outermost shell. 
+The combining capacity of the atoms of elements, that is, their tendency to react and form molecules with atoms of the same or different elements, was thus explained as an attempt to attain a fully-filled outermost shell. An outermost-shell, which had eight electrons was said to possess an octet. Atoms would thus react, so as to achieve an octet in the outermost shell. This was done by sharing, gaining or losing electrons. The number of electrons gained, lost or shared so as to make the octet of electrons in the outermost shell, gives us directly the combining capacity of the 
+element, that is, the valency discussed in the previous chapter. For example, hydrogen/ lithium/sodium atoms contain one electron each in their outermost shell, therefore each one of them can lose one electron. So, they are said to have valency of one. Can you tell, what is valency of magnesium and aluminium? It is two and three, respectively, because magnesium has two electrons in its outermost shell and aluminium has three electrons in its outermost shell. 
+If the number of electrons in the outermost shell of an atom is close to its full capacity, then valency is determined in a different way. For example, the fluorine atom has 7 electrons in the outermost shell, and its valency could be 7. But it is easier for 
+**43** 
+_STRUCTURE OF THE ATOM_ 
+Reprint 2025-26 
+fluorine to gain one electron instead of losing seven electrons. Hence, its valency is determined by subtracting seven electrons from the octet and this gives you a valency of one for fluorine. Valency can be calculated in a similar manner for oxygen. What is the valency of oxygen that you get from this calculation? 
+Therefore, an atom of each element has a definite combining capacity, called its valency. Valency of the first eighteen elements is given in the last column of Table 4.1. 
+- uestion _1. How will you find the valency of chlorine, sulphur and magnesium?_ 
+- Q 

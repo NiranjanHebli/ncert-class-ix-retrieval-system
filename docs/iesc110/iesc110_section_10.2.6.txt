@@ -1,0 +1,19 @@
+## **10.2.6 LAW OF CONSERVATION OF ENERGY** 
+In activities 10.13 and 10.14, we learnt that the form of energy can be changed from one form to another. What happens to the total energy of a system during or after the process? Whenever energy gets transformed, the total energy remains unchanged. This is the law of conservation of energy. According to this law, energy can only be converted from one form to another; it can neither be created or destroyed. The total energy before and after the transformation remains the same. The law of conservation of energy is valid                  in all situations and for all kinds of transformations. 
+Consider a simple example. Let an object of mass, _m_ be made to fall freely from a     height, _h_ . At the start, the potential energy is _mgh_ and kinetic energy is zero. Why is the kinetic energy zero? It is zero because its velocity is zero. The total energy of the object is thus _mgh_ . As it falls, its potential energy will change into kinetic energy. If _v_ is the velocity of the object at a given instant, the kinetic energy would be ½ _mv[2]_ . As the fall of the object continues, the potential energy would decrease while the kinetic energy would increase. When the object is about to reach the ground, _h_ = 0 and _v_ will be the highest. Therefore, the kinetic energy would be the largest and potential energy the least.  However, the sum of the potential energy and kinetic energy of the object would be the same at all points. That is, 
+potential energy + kinetic energy = constant 
+or 
+**==> picture [208 x 22] intentionally omitted <==**
+The sum of kinetic energy and potential energy of an object is its total mechanical energy. 
+We find that during the free fall of the object, the decrease in potential energy, at any point in its path, appears as an equal amount of increase in kinetic energy. (Here the effect of air resistance on the motion of the object has been ignored.) There is thus a continual transformation of gravitational potential energy into kinetic energy. 
+**121** 
+_WORK AND ENERGY_ 
+Reprint 2025-26 
+## _**Activity ___________ 10.15**_ 
+- An object of mass 20 kg is dropped from a height of 4 m.  Fill in the blanks in the following table by computing the potential energy and kinetic energy in each case. 
+**==> picture [228 x 157] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Height at Potential Kinetic Ep + Ek<br>which object energy energy<br>is located ( Ep =  mgh ) ( Ek = mv [2] /2)<br>m J J J<br>4<br>3<br>2<br>1<br>Just above<br>the ground<br>**----- End of picture text -----**<br>
+- For simplifying the calculations, take the value of _g_ as 10 m s[–2] . 
+## **Think it over !** 
+What would have happened if nature had not allowed the transformation of energy? There is a view that life could not have been possible without transformation of energy. Do you agree with this? 
