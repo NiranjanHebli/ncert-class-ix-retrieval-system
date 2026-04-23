@@ -8,7 +8,7 @@ API_KEY = os.getenv("API_KEY")
 url = "https://api.ocr.space/parse/image"
 FOLDER_NAME  = "iesc1dd"
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 source_dir = os.path.join(BASE_DIR, FOLDER_NAME)
 output_dir = os.path.join(BASE_DIR, "docs")
 
@@ -97,4 +97,4 @@ for filename in os.listdir(source_dir):
     time.sleep(2)  # Avoid rate limiting
 
 print("\nStarting section and exercise extraction...")
-os.system(f"python3 {os.path.join(BASE_DIR, 'scripts', 'split_sections.py')}")
+os.system(f"python3 {os.path.join(BASE_DIR, 'src', 'scripts', 'split_sections.py')}")

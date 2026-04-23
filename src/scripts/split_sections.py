@@ -1,7 +1,7 @@
 import os
 import re
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 docs_dir = os.path.join(BASE_DIR, "docs")
 
 def split_text_file(filepath, pdf_name):

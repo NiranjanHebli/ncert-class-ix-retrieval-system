@@ -1,5 +1,0 @@
-SCORING_WEIGHTS = {
-    'compression_ratio': 0.4,      # 40% weight - dominant factor
-    'token_consistency': 0.3,       # 30% weight  
-    'encoding_speed': 0.3          # 30% weight
-}

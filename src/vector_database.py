@@ -215,7 +215,7 @@ class VectorDatabase:
                 print()
 
 if __name__ == "__main__":
-    with open('sample_science_text.txt', 'r') as f:
+    with open('../data/sample_science_text.txt', 'r') as f:
         txt = f.read()
     
     db = VectorDatabase()

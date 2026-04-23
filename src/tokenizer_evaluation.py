@@ -22,8 +22,8 @@ SCORING_WEIGHTS = {
 }
 
 OUTPUT_FILES = {
-    'results': 'tokenizer_results.json',
-    'comparison': 'tokenizer_comparison.csv'
+    'results': '../data/tokenizer_results.json',
+    'comparison': '../data/tokenizer_comparison.csv'
 }
 
 class TokenizerEvaluator:
@@ -392,7 +392,7 @@ class TokenizerEvaluator:
         except Exception as e:
             print(f"Error saving comparison table: {e}")
 
-def main(text_file: str = "sample_science_text.txt", 
+def main(text_file: str = "../data/sample_science_text.txt", 
          sizes: List[int] = None, 
          overlaps: List[int] = None) -> None:
     """Main function to run tokenizer evaluation.
@@ -466,5 +466,5 @@ def _print_evaluation_summary(analysis: Dict[str, Dict]) -> None:
 if __name__ == "__main__":
     import sys
     
-    text_file = sys.argv[1] if len(sys.argv) > 1 else "sample_science_text.txt"
+    text_file = sys.argv[1] if len(sys.argv) > 1 else "../data/sample_science_text.txt"
     main(text_file)

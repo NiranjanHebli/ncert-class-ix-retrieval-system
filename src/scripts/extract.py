@@ -2,7 +2,7 @@ import os
 import pymupdf4llm
 import shutil
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FOLDER_NAME  = "iesc1dd"
 source_dir = os.path.join(BASE_DIR, FOLDER_NAME)
 output_dir = os.path.join(BASE_DIR, "docs")
@@ -46,4 +46,4 @@ for filename in os.listdir(source_dir):
         print(f"Error extracting text from {filename}: {e}")
 
 print("\nStarting section and exercise extraction...")
-os.system(f"python3 {os.path.join(BASE_DIR, 'scripts', 'split_sections.py')}")
+os.system(f"python3 {os.path.join(BASE_DIR, 'src', 'scripts', 'split_sections.py')}")

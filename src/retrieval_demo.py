@@ -56,7 +56,7 @@ def main():
     print("VECTOR DATABASE RETRIEVAL DEMO")
     print("=" * 80)
     
-    with open('sample_science_text.txt', 'r') as f:
+    with open('../data/sample_science_text.txt', 'r') as f:
         txt = f.read()
     
     print(f"Loaded text with {len(txt)} characters")
