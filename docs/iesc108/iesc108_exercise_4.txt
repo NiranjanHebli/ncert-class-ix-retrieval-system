@@ -1,5 +1,0 @@
-4. A batsman hits a cricket ball which then rolls on a level ground. After covering a short distance, the ball comes to rest. The ball slows to a stop because 
-   - (a) the batsman did not hit the ball hard enough. 
-   - (b) velocity is proportional to the force exerted on the ball. 
-   - (c) there is a force on the ball opposing the motion. 
-   - (d) there is no unbalanced force on the ball, so the ball would want to come to rest. 

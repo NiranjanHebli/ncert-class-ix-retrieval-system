@@ -1,1 +1,0 @@
-14. An object of mass 1 kg travelling in a straight line with a velocity of 10 m s[–1] collides with, and sticks to, a stationary wooden block of mass 5 kg. Then they both move off together in the same straight line. Calculate the total momentum just before the impact and just after the impact. Also, calculate the velocity of the combined object. 

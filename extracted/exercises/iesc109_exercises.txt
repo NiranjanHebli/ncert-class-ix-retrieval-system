@@ -1,0 +1,36 @@
+1. How does the force of gravitation between two objects change when the distance between them is reduced to half ? 
+2. Gravitational force acts on all objects in proportion to their masses. Why then, a heavy object does not fall faster than a light object? 
+3. What is the magnitude of the gravitational force between the earth and a 1 kg object on its surface? (Mass of the earth is 6 × 10[24] kg and radius of the earth is 6.4 × 10[6] m.) 
+4. The earth and the moon are attracted to each other by gravitational force. Does the earth attract the moon with a force that is greater or smaller or the same as the force with which the moon attracts the earth?  Why? 
+5. If the moon attracts the earth, why does the earth not move towards the moon? 
+6. What happens to the force between two objects, if (i) the mass of one object is doubled? 
+   - (ii) the distance between the objects is doubled and tripled? 
+   - (iii) the masses of both objects are doubled? 
+7. What is the importance of universal law of gravitation? 
+8. What is the acceleration of free fall? 
+9. What do we call the gravitational force between the earth and an object? 
+10. Amit buys few grams of gold at the poles as per the instruction of one of his friends. He hands over the same when he meets him at the equator. Will the friend agree with the weight of gold bought? If not, why? [ _Hint_ : The value of _g_ is greater at the poles than at the equator.] 
+11. Why will a sheet of paper fall slower than one that is crumpled into a ball? 
+- 1 
+- 12. Gravitational force on the surface of the moon is only 6[ as] strong as gravitational force on the earth. What is the weight in newtons of a 10 kg object on the moon and on the earth? 
+_GRAVITATION_ 
+**111** 
+Reprint 2025-26 
+13. A ball is thrown vertically upwards with a velocity of 49 m/s. Calculate 
+   - (i) the maximum height to which it rises, 
+   - (ii) the total time it  takes to return to the surface of the earth. 
+14. A stone is released from the top of a tower of height 19.6 m. Calculate its final velocity just before touching the ground. 
+15. A stone is thrown vertically upward with an initial velocity of 40 m/s. Taking _g_ = 10 m/s[2] , find the maximum height reached by the stone. What is the net displacement and the total distance covered by the stone? 
+16. Calculate the force of gravitation between the earth and the Sun, given that the mass of the earth = 6 × 10[24] kg and of the Sun = 2 × 10[30] kg. The average distance between the two is 1.5 × 10[11] m. 
+17. A stone is allowed to fall from the top of a tower 100 m high and at the same time another stone is projected vertically upwards from the ground with a velocity of 25 m/s. Calculate when and where the two stones will meet. 
+18. A ball thrown up vertically returns to the thrower after 6 s. Find 
+   - (a) the velocity with which it was thrown up, 
+   - (b) the maximum height it reaches, and 
+   - (c) its position after 4 s. 
+19. In what direction does the buoyant force on an object immersed in a liquid act? 
+20. Why does a block of plastic released under water come up to the surface of water? 
+21. The volume of 50 g of a substance is 20 cm[3] . If the density of water is 1 g cm[–3] , will the substance float or sink? 
+22. The volume of a 500 g sealed packet is 350 cm[3] . Will the packet float or sink in water if the density of water is 1 g cm[–3] ? What will be the mass of the water displaced by this packet? 
+**112** 
+_SCIENCE_ 
+Reprint 2025-26 

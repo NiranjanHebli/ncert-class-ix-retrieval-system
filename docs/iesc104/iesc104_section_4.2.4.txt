@@ -1,6 +1,0 @@
-## **4.2.4 NEUTRONS** 
-In 1932, J. Chadwick discovered another subatomic particle which had no charge and a mass nearly equal to that of a proton. It was eventually named as neutron. Neutrons are present in the nucleus of all atoms, except hydrogen. In general, a neutron is represented as ‘n’. The mass of an atom is therefore given by the sum of the masses of protons and neutrons present in the nucleus. 
-## uestions 
-Q 
-_1. Name the three sub-atomic particles of an atom._ 
-_2. Helium atom has an atomic mass of 4 u and two protons in its nucleus. How many neutrons does it have?_ 

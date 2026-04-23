@@ -1,0 +1,47 @@
+1. An object experiences a net zero external unbalanced force. Is it possible for the object to be travelling with a non-zero velocity? If yes, state the conditions that must be placed on 
+2. When a carpet is beaten with a stick, dust comes out of it, Explain. 
+3. Why is it advised to tie any luggage kept on the roof of a bus with a rope? 
+4. A batsman hits a cricket ball which then rolls on a level ground. After covering a short distance, the ball comes to rest. The ball slows to a stop because 
+   - (a) the batsman did not hit the ball hard enough. 
+   - (b) velocity is proportional to the force exerted on the ball. 
+   - (c) there is a force on the ball opposing the motion. 
+   - (d) there is no unbalanced force on the ball, so the ball would want to come to rest. 
+5. A truck starts from rest and rolls down a hill with a constant acceleration. It travels a distance of 400 m in 20 s. Find its acceleration. Find the force acting on it if its mass is 7 tonnes ( _Hint_ : 1 tonne = 1000 kg.) 
+6. A stone of 1 kg is thrown with a velocity of 20 m s[–1] across the frozen surface of a lake and comes to rest after travelling a distance of 50 m. What is the force of friction between the stone and the ice? 
+7. A 8000 kg engine pulls a train of 5 wagons, each of 2000 kg, along a horizontal track. If the engine exerts a force of 40000 N and the track offers a friction force of 5000 N, then calculate: 
+   - (a) the net accelerating force and 
+   - (b) the acceleration of the train. 
+8. An automobile vehicle has a mass of 1500 kg. What must be the force between the vehicle and road if the vehicle is to be 
+**97** 
+_FORCE AND LAWS OF MOTION_ 
+Reprint 2025-26 
+stopped with a negative acceleration of 1.7 m s[–2] ? 
+9. What is the momentum of an object of mass _m,_ moving with a velocity _v_ ? 
+   - (a) ( _mv_ )[2] (b) _mv_[2] (c) ½ _mv_[2] (d) _mv_ 
+10. Using a horizontal force of 200 N, we intend to move a wooden cabinet across a floor at  a constant velocity. What is the friction force that will be exerted on the cabinet? 
+11. According to the third law of motion when we push on an object, the object pushes back on us with an equal and opposite force. If the object is a massive truck parked along the roadside, it will probably not move. A student justifies this by answering that the two opposite and equal forces cancel each other. Comment on this logic and explain why the truck does not move. 
+12. A hockey ball of mass 200 g travelling at 10 m s[–1] is struck by a hockey stick so as to return it along its original path with a velocity at 5 m s[–1] . Calculate the magnitude of change of momentum occurred in the motion of the hockey ball by the force applied by the hockey stick. 
+13. A bullet of mass 10 g travelling horizontally with a velocity of 150 m s[–1] strikes a stationary wooden block and comes to rest in 0.03 s. Calculate the distance of penetration of the bullet into the block. Also calculate the magnitude of the force exerted by the wooden block on the bullet. 
+14. An object of mass 1 kg travelling in a straight line with a velocity of 10 m s[–1] collides with, and sticks to, a stationary wooden block of mass 5 kg. Then they both move off together in the same straight line. Calculate the total momentum just before the impact and just after the impact. Also, calculate the velocity of the combined object. 
+15. An object of mass 100 kg is accelerated uniformly from a velocity of 5 m s[–1] to 8 m s[–1] in 6 s. Calculate the initial and final momentum of the object. Also, find the magnitude of the force exerted on the object. 
+16. Akhtar, Kiran and Rahul were riding in a motorcar that was moving with a high velocity on an expressway when an insect hit the windshield and got stuck on the windscreen. Akhtar and Kiran started pondering over the situation. Kiran suggested that the insect suffered a greater change in momentum as compared to the change in momentum of the motorcar (because the change in the velocity of the insect was much more than that of the motorcar). Akhtar said that since the motorcar was moving with a larger velocity, it exerted a larger force on the insect. And as a result the insect died. Rahul while putting an entirely new explanation 
+98 
+_SCIENCE_ 
+Reprint 2025-26 
+said that both the motorcar and the insect experienced the same force and a change in their momentum. Comment on these suggestions. 
+17. How much momentum will a dumb-bell of mass 10 kg transfer to the floor if it falls from a height of 80 cm? Take its downward acceleration to be 10 m s[–2] . 
+**==> picture [102 x 46] intentionally omitted <==**
+## **Additional** 
+## **Exercises** 
+- A1. The following is the distance-time table of an object in motion: 
+**==> picture [222 x 138] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Time in seconds Distance in metres<br>0 0<br>1 1<br>2 8<br>3 27<br>4 64<br>5 125<br>6 216<br>7 343<br>**----- End of picture text -----**<br>
+   - (a) What conclusion can you draw about the acceleration? Is it constant, increasing, decreasing, or zero? 
+   - (b) What do you infer about the forces acting on the object? 
+- A2. Two persons manage to push a motorcar of mass 1200 kg at a uniform velocity along a level road. The same motorcar can be pushed by three persons to produce an acceleration of 0.2 m s[-2] . With what force does each person push the motorcar? (Assume that all persons push the motorcar with the same muscular effort.) 
+- A3. A hammer of mass 500 g, moving at 50 m s[-1] , strikes a nail. The nail stops the hammer in a very short time of 0.01 s. What is the force of the nail on the hammer? 
+- A4. A motorcar of mass 1200 kg is moving along a straight line with a uniform velocity of 90 km/h. Its velocity is slowed down to 18 km/h in 4 s by an unbalanced external force. Calculate the acceleration and change in momentum. Also calculate the magnitude of the force required. 
+**99** 
+_FORCE AND LAWS OF MOTION_ 
+Reprint 2025-26 
