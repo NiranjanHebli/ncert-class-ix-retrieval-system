@@ -1,0 +1,3 @@
+## **7.1 Describing Motion** 
+We describe the location of an object by specifying a reference point. Let us understand this by an example. Let us assume that a school in a village is 2 km north of the railway station. We have specified the position of the school with respect to the railway station. In this example, the railway station is the reference point. We could have also chosen other reference points according to our convenience. Therefore, to describe the position of an object we need to specify a reference point called the origin. 
+Reprint 2025-26 

@@ -1,0 +1,54 @@
+## **12.1.2 CROP PRODUCTION MANAGEMENT** 
+In India, as in many other agriculture-based countries, farming ranges from small to very large farms. Different farmers thus have more or less land, money and access to information and technologies. In short, it is the money or financial conditions that allow farmers to take up different farming practices and agricultural technologies. There is a correlation between higher inputs and yields. Thus, the farmer’s purchasing capacity for inputs decides cropping system and production practices. Therefore, production practices can be at different levels. They include ‘no cost’ production, ‘low cost’ production and ‘high cost’ production practices. 
+## **12.1.2 (i) NUTRIENT MANAGEMENT** 
+Just as we need food for development, growth and well-being, plants also require nutrients for growth. Nutrients are supplied to plants by air, water and soil. There are several nutrients which are essential for plants. Air supplies carbon and oxygen, hydrogen comes from water, and soil supplies the other thirteen nutrients to plants. Amongst these, some are required in large quantities and are therefore called macro-nutrients. The other nutrients are used by plants in small quantities and are therefore called micro-nutrients (Table 12.1). 
+**142** 
+_SCIENCE_ 
+Reprint 2025-26 
+|**Source**||**Nutrients**|
+|---|---|---|
+|Air<br>Water<br>Soil||carbon, oxygen<br>hydrogen, oxygen<br>(i) _Macronutrients_:<br>nitrogen, phosphorus,<br>potassium, calcium,<br>magnesium, sulphur<br>(ii) _Micronutrients:_<br>iron, manganese, boron,<br>zinc,<br>copper,<br>molybdenum, chlorine|
+Deficiency of these nutrients affects physiological processes in plants including reproduction, growth and susceptibility to diseases. To increase the yield, the soil can be enriched by supplying these nutrients in the form of manure and fertilizers. 
+- uestions _1. What are macro-nutrients and why are they called macronutrients?_ 
+- _2. How do plants get nutrients?_ 
+- Q 
+## _**MANURE**_ 
+Manure contains large quantities of organic matter and also supplies small quantities of nutrients to the soil. Manure is prepared by the decomposition of animal excreta and plant waste. Manure helps in enriching soil with nutrients and organic matter and increasing soil fertility. The bulk of organic matter in manure helps in improving the soil structure. This involves increasing the water holding capacity in sandy soils. In clayey soils, the large quantities of organic matter help in drainage and in avoiding water logging. 
+In using manure we use biological waste material, which is advantageous in protecting 
+our environment from excessive use of fertilizers. Using biological waste material is also a way of recycling farm waste. Based on the kind of biological material used, manure can be classified as: 
+- (i) Compost and vermi-compost: The process in which farm waste material like livestock excreta (cow dung, etc.), vegetable waste, animal refuse, domestic waste, sewage waste, straw, eradicated weeds etc. is decomposed in pits is known as composting. The compost is rich in organic matter and nutrients. Compost is also prepared by using earthworms to hasten the process of decomposition of plant and animal refuse. This is called vermi-compost. 
+- (ii) Green manure: Prior to the sowing of the crop seeds, some plants like sun hemp or guar are grown and then mulched by ploughing them into the soil. These green plants thus turn into green manure which helps in enriching the soil in nitrogen and phosphorus. 
+## _**FERTILIZERS**_ 
+Fertilizers are commercially produced plant nutrients. Fertilizers supply nitrogen, phosphorus and potassium. They are used to ensure good vegetative growth (leaves, branches and flowers), giving rise to healthy plants. Fertilizers are a factor in the higher yields of high-cost farming. 
+Fertilizers should be applied carefully in terms of proper dose, time, and observing preand post-application precautions for their complete utilisation. For example, sometimes fertilizers get washed away due to excessive irrigation and are not fully absorbed by the plants. This excess fertilizer then leads to water pollution. 
+Also, as we have seen in the previous class, continuous use of fertilizers in an area can destroy soil fertility because the organic matter in the soil is not replenished and micro-organisms in the soil are harmed by the fertilizers used. Short-term benefits of using fertilizers and long-term benefits of using 
+_IMPROVEMENT IN FOOD RESOURCES_ 
+**143** 
+Reprint 2025-26 
+manure for maintaining soil fertility have to be considered while aiming for optimum yields in crop production. 
+## uestion 
+- uestion _1. Compare the use of manure and fertilizers in maintaining soil fertility._ 
+- Q 
+Organic farming is a farming system with minimal or no use of chemicals as fertilizers, herbicides, pesticides, etc., and with a maximum input of organic manures, recycled farm-wastes (straw and livestock excreta), use of bio-agents such as culture of blue green algae in preparation of biofertilizers, _neem_ leaves or turmeric specifically in grain storage as bio-pesticides, with healthy cropping systems [mixed cropping, inter-cropping and crop rotation as discussed below in 12.1.2.(iii)]. These cropping systems are beneficial in insect, pest and wheat control besides providing nutrients. 
+## **IRRIGATION 12.1.2 (ii)** 
+Most agriculture in India is rain-fed, that is, the success of crops in most areas is dependent on timely monsoons and sufficient rainfall spread through most of the growing season. Hence, poor monsoons cause crop failure. Ensuring that the crops get water at the right stages during their growing season can increase the expected yields of any crop. Therefore, many measures are used to bring more and more agricultural land under irrigation. 
+Droughts occur because of scarcity or irregular distribution of rains. Drought poses a threat to rain-fed farming areas, where farmers do not use irrigation for crop production and depend only on rain. Light soils have less water retention capacity. In areas with light soils, crops get adversely affected by drought conditions. Scientists have developed some crop varieties which can tolerate drought conditions. 
+India has a wide variety of water resources and a highly varied climate. Under such conditions, several different kinds of irrigation systems are adopted to supply water to agricultural lands depending on the kinds of water resources available. These include wells, canals, rivers and tanks. 
+- Wells: There are two types of wells, namely dug wells and tube wells. In a dug well, water is collected from water bearing strata. Tube wells can tap water from the deeper strata. From these wells, water is lifted by pumps for irrigation. 
+- Canals: This is usually an elaborate and extensive irrigation system. In this system canals receive water from one or more reservoirs or from rivers. The main canal is divided into branch canals having further distributaries to irrigate fields. 
+- River Lift Systems **:** In areas where canal flow is insufficient or irregular due to inadequate reservoir release, the lift system is more rational. Water is directly drawn from the rivers for supplementing irrigation in areas close to rivers. 
+- Tanks: These are small storage reservoirs, which intercept and store the run-off of smaller catchment areas. 
+Fresh initiatives for increasing the water available for agriculture include rainwater harvesting and watershed management. This involves building small check-dams which lead to an increase in ground water levels. The check-dams stop the rainwater from flowing away and also reduce soil erosion. 
+## **12.1.2 (iii) CROPPING PATTERNS** 
+Different ways of growing crops can be used to give maximum benefit. 
+Mixed cropping is growing two or more crops simultaneously on the same piece of land, for example, wheat + gram, or wheat + mustard, or groundnut + sunflower. This reduces risk and gives some insurance against failure of one of the crops. 
+_SCIENCE_ 
+**144** 
+Reprint 2025-26 
+Inter-cropping is growing two or more crops simultaneously on the same field in a definite pattern (Fig.12.2). A few rows of one crop alternate with a few rows of a second crop, for example, soyabean + maize, or finger millet (bajra) + cowpea (lobia). The crops are selected such that their nutrient requirements are different. This ensures maximum utilisation of the nutrients supplied, and also prevents pests and diseases from spreading to all the plants belonging to one crop in a field. This way, both crops can give better returns. 
+(gokhroo), Parthenium (gajar ghas), Cyperus rotundus (motha). They compete for food, space and light. Weeds take up nutrients and reduce the growth of the crop. Therefore, removal of weeds from cultivated fields during the early stages of crop growth is essential for a good harvest. 
+Generally insect pests attack the plants in three ways: (i) they cut the root, stem and leaf, (ii) they suck the cell sap from various parts of the plant, and (iii) they bore into stem and fruits. They thus affect the health of the crop and reduce yields. 
+Diseases in plants are caused by pathogens such as bacteria, fungi and viruses. These pathogens can be present in and transmitted through the soil, water and air. 
+Weeds, insects and diseases can be controlled by various methods. One of the most commonly used methods is the use of pesticides, which include herbicides, insecticides and fungicides. These chemicals are sprayed on crop plants or used for treating seeds and soil. However, excessive use of these chemicals creates problems, since they can be poisonous to many plant and animal species and cause environmental pollution. 
+**Fig. 12.2 :** Intercropping 
+The growing of different crops on a piece of land in a pre-planned succession is known as crop rotation. Depending upon the duration, crop rotation is done for different crop combinations. The availability of moisture and irrigation facilities decide the choice of the crop to be cultivated after one harvest. If crop rotation is done properly then two or three crops can be grown in a year with good harvests. 

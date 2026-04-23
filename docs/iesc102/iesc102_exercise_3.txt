@@ -1,0 +1,10 @@
+3. Pragya tested the solubility of three different substances at different temperatures and collected the data as given below (results are given in the following table, as grams of substance dissolved in 100 grams of water to form a saturated solution). 
+|**Substance Dissolved**|**Temperature in K**<br>**283**<br>**293**<br>**313**<br>**333**<br>**353**|**Temperature in K**<br>**283**<br>**293**<br>**313**<br>**333**<br>**353**|**Temperature in K**<br>**283**<br>**293**<br>**313**<br>**333**<br>**353**|**Temperature in K**<br>**283**<br>**293**<br>**313**<br>**333**<br>**353**|**Temperature in K**<br>**283**<br>**293**<br>**313**<br>**333**<br>**353**|
+|---|---|---|---|---|---|
+|||||||
+||**Solubility**|||||
+|Potassium nitrate<br>Sodium chloride<br>Potassium chloride<br>Ammonium chloride|21<br>36<br>35<br>24|32<br>36<br>35<br>37|62<br>36<br>40<br>41|106<br>37<br>46<br>55|167<br>37<br>54<br>66|
+   - (a) What mass of potassium nitrate would be needed to produce a saturated solution of potassium nitrate in 50 grams of water at 313 K? 
+   - (b) Pragya makes a saturated solution of potassium chloride in water at 353 K and leaves the solution to cool at room temperature. What would she observe as the solution cools? Explain. 
+   - (c) Find the solubility of each salt at 293 K. Which salt has the highest solubility at this temperature? 
+   - (d) What is the effect of change of temperature on the solubility of a salt? 

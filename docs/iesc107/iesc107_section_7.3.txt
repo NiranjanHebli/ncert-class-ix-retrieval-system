@@ -1,0 +1,14 @@
+## **7.3 Rate of Change of Velocity** 
+> [[–1]] and m s[[–1]] . During uniform motion of an object along a straight line,  the velocity remains constant with time. In this case, the change in velocity of the object for any time interval is zero. = 2400 km – 2000 km = 400 km However, in non-uniform motion, velocity _t =_ 8 h varies with time. It has different values at different instants and at different points of the path. Thus, the change in velocity of the _s_ 400 km _vav_ = _t_ = 8 h object during any time interval is not zero. Can we now express the change in velocity = 50 km h[–1] of an object? 
+## **Solution:** 
+Distance covered by the car, _s_ = 2400 km – 2000 km = 400 km Time elapsed, _t =_ 8 h Average speed of the car is, 
+**76** 
+_SCIENCE_ 
+Reprint 2025-26 
+To answer such a question, we have to introduce another physical quantity called acceleration, which is a measure of the change in the velocity of an object per unit time. That is, 
+**==> picture [160 x 26] intentionally omitted <==**
+If the velocity of an object changes from an initial value _u_ to the final value _v_ in time _t_ , the acceleration _a_ is, 
+**==> picture [202 x 24] intentionally omitted <==**
+This kind of motion is known as accelerated motion. The acceleration is taken to be positive if it is in the direction of velocity and negative when it is opposite to the direction of velocity. The SI unit of acceleration is m s[–2 ] . 
+If an object travels in a straight line and its velocity increases or decreases by equal amounts in equal intervals of time, then the acceleration of the object is said to be uniform. The motion of a freely falling body is an example of uniformly accelerated motion. On the other hand, an object can travel with non-uniform acceleration if its velocity changes at a non-uniform rate. For example, if a car travelling along a straight road increases its speed by unequal amounts in equal intervals of time, then the car is said to be moving with non-uniform acceleration. 
+## **Activity** 

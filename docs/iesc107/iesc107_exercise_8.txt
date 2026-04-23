@@ -1,0 +1,10 @@
+8. The speed-time graph for a car is shown is Fig. 7.11. 
+**==> picture [42 x 10] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Fig. 7.11<br>**----- End of picture text -----**<br>
+- (a) Find how far does the car travel in the first 4 seconds. Shade the area on the graph that represents the distance travelled by the car during the period. 
+- (b) Which part of the graph represents uniform motion of the car? 
+- 9. State which of the following situations are possible and give an example for each of these: 
+   - (a) an object with a constant acceleration but with zero velocity 
+   - (b) an object moving with an acceleration but with uniform speed. 
+   - (c) an object moving in a certain direction with an acceleration in the perpendicular direction. 

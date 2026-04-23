@@ -1,0 +1,25 @@
+## **7.1.2 UNIFORM MOTION AND NONUNIFORM MOTION** 
+Consider an object moving along a straight line. Let it travel 5 m in the first second, 5 m more in the next second, 5 m in the third second and 5 m in the fourth second. In this case, the object covers 5 m in each second. As the object covers equal distances in equal intervals of time, it is said to be in uniform motion. The time interval in this motion should be small. In our day-to-day life, we come across motions where objects cover unequal distances in equal intervals of time, for example, when a car is moving on a crowded street or a person is jogging in a park. These are some instances of non-uniform motion. 
+**==> picture [11 x 8] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+(a)<br>**----- End of picture text -----**<br>
+## _**Activity ______________ 7.5**_ 
+- The data regarding the motion of two different objects A and B are given in Table 7.1. 
+- Examine them carefully and state whether the motion of the objects is uniform or non-uniform. 
+**==> picture [36 x 23] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+(b)<br>Fig. 7.2<br>**----- End of picture text -----**<br>
+_SCIENCE_ 
+**74** 
+Reprint 2025-26 
+Look at the situations given in Fig. 7.2. If the bowling speed is 143 km h[–1 ] in Fig. 7.2(a) what does it mean? What do you understand from the signboard in Fig. 7.2(b)? 
+Different objects may take different amounts of time to cover a given distance. Some of them move fast and some move slowly. The rate at which objects move can be different. Also, different objects can move at the same rate. One of the ways of measuring the rate of motion of an object is to find out the distance travelled by the object in unit time. This quantity is referred to as speed. The SI unit of speed is metre per second. This is represented by the symbol m s[–1 ] or m/s. The other units of speed include centimetre per second (cm s[–1] ) and kilometre per hour (km h[–1] ). To specify the speed of an object, we require only its magnitude. The speed of an object need not be constant. In most cases, objects will be in non-uniform motion. Therefore, we describe the rate of motion of such objects in terms of their average speed. The average speed of an object is obtained by dividing the total distance travelled by the total time taken. That is, 
+**==> picture [201 x 24] intentionally omitted <==**
+If an object travels a distance _s_ in time _t_ then its speed _v_ is, 
+**==> picture [155 x 20] intentionally omitted <==**
+Let us understand this by an example. A car travels a distance of 100 km in 2 h. Its average speed is 50 km h[–1] . The car might not have travelled at 50 km h[–1] all the time. Sometimes it might have travelled faster and sometimes slower than this. 
+**Example 7.1** An object travels 16 m in 4 s and then another 16 m in 2 s. What is the average speed of the object? 
+## **Solution:** 
+Total distance travelled by the object = 16 m + 16 m = 32 m Total time taken = 4 s + 2 s = 6 s 
+**==> picture [199 x 59] intentionally omitted <==**
+Therefore, the average speed of the object is 5.33 m s[–1] . 

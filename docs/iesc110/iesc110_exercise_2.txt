@@ -1,0 +1,1 @@
+2. An object thrown at a certain angle to the ground moves in a curved path and falls back to the ground.  The initial and the final points of the path of the object lie on the same horizontal line. What is the work done by the force of gravity on the object? 

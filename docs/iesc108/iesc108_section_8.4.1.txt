@@ -1,0 +1,68 @@
+## **8.4.1 MATHEMATICAL FORMULATION OF SECOND LAW OF MOTION** 
+Suppose an object of mass, _m_ is moving along a straight line with an initial velocity, _u_ . It is uniformly accelerated to velocity, _v_ in time, _t_ by the application of a constant force _, F_ throughout the time, _t_ . The initial and final momentum of the object will be, _p1 = mu_ and _p2 = mv_ respectively. 
+**==> picture [227 x 34] intentionally omitted <==**
+_m_ × ( _v_ − _u_ ) The rate of change of momentum ∝ _t_ 
+Or, the applied force, 
+**==> picture [163 x 72] intentionally omitted <==**
+Here _a_ ∝ = [( _v – u_ )/ _t_ ] is the acceleration, which is the rate of change of velocity. The quantity, _k_ is a constant of proportionality. The SI units of mass and acceleration are kg and m s[-2] respectively. The unit of force is so chosen that the value of the constant, _k_ becomes one. For this, one unit of force is defined as the amount that produces an acceleration of 1 m s[-2] in an object of 1 kg mass. That is, 
+**==> picture [184 x 12] intentionally omitted <==**
+Thus, the value of _k_ becomes 1. From Eq. (8.3) 
+**==> picture [192 x 10] intentionally omitted <==**
+The unit of force is kg m s[-2] or newton, which has the symbol N. The second law of 
+_SCIENCE_ 
+**92** 
+Reprint 2025-26 
+motion gives us a method to measure the force acting on an object as a product of its mass and acceleration. 
+The second law of motion is often seen in action in our everyday life. Have you noticed that while catching a fast moving cricket ball, a fielder in the ground gradually pulls his hands backwards with the moving ball? In doing so, the fielder increases the time during which the high velocity of the moving ball decreases to zero. Thus, the acceleration of the ball is decreased and therefore the impact of catching the fast moving ball (Fig. 8.8) is also reduced. If the ball is stopped suddenly then its high velocity decreases to zero in a very short interval of time. Thus, the rate of change of momentum of the ball will be large. Therefore, a large force would have to be applied for holding the catch that may hurt the palm of the fielder. In a high jump athletic event, the athletes are made to fall either on a cushioned bed or on a sand bed. This is to increase the time of the athlete’s fall to stop after making the jump. This decreases the rate of change of momentum and hence the force. Try to ponder how a karate player breaks a slab of ice with a single blow. 
+The first law of motion can be mathematically stated from the mathematical expression for the second law of motion. Eq. (8.4) is 
+**==> picture [209 x 57] intentionally omitted <==**
+That is, when _F_ = 0, _v = u_ for whatever time, _t_ is taken. This means that the object will continue moving with uniform velocity, _u_ throughout the time, _t_ . If _u_ is zero then _v_ will also be zero. That is, the object will remain at rest. 
+**Example 8.1** A constant force acts on an object of mass 5 kg for a duration of 2 s. It increases the object’s velocity from 3 m s[–1] to  7 m s[-1] . Find the magnitude of the applied force. Now, if the force was applied for a duration of 5 s, what would be the final velocity of the object? 
+## **Solution:** 
+We have been given that _u_ = 3 m s[–1] and _v_ = 7 m s[-1] , _t_ = 2 s and _m_ = 5 kg. From Eq. (8.5) we have, 
+**==> picture [63 x 23] intentionally omitted <==**
+Substitution of values in this relation gives 
+_F_ = 5 kg (7 m s[-1] – 3 m s[-1] )/2 s = 10 N. 
+Now, if this force is applied for a duration  of 5 s ( _t_ = 5 s), then the final velocity can be calculated by rewriting Eq. (8.5) as 
+**==> picture [49 x 23] intentionally omitted <==**
+_**Fig. 8.8:** A fielder pulls his hands gradually with the moving ball while holding a catch._ 
+On substituting the values of _u, F, m_ and _t,_ we get the final velocity, _v =_ 13 m s[-1] . 
+**93** 
+_FORCE AND LAWS OF MOTION_ 
+Reprint 2025-26 
+Example 8.2 Which would require a greater force –– accelerating a 2 kg mass at 5 m s[–2] or a 4 kg mass at 2 m s[-2 ] ? 
+## Solution: 
+From Eq. (8.4), we have _F = ma._ Here we have _m1 =_ 2 kg; _a1_ = 5 m s[-2] and _m2 =_ 4 kg; _a2_ = 2 m s[-2] . 
+Thus, _F1_ = _m1a1 =_ 2 kg × 5 m s[-2] = 10 N; and _F2_ = _m2a2  =_ 4 kg × 2 m s[-2] = 8 N. ⇒ _F_ > _F . 1 2_ 
+Thus, accelerating a 2 kg mass at 5 m s[-2] would require a greater force. 
+Example 8.3 A motorcar is moving with a velocity of 108 km/h and it takes 4 s to stop after the brakes are applied. Calculate the force exerted by the brakes on the motorcar if its mass along with the passengers is 1000 kg. 
+## Solution: 
+From Eq. (8.4) we have _m1 = F/a1;_ and _m2 = F/a2._ Here, _a1 =_ 10 m s[-2] ; 
+_a_ = 20 m s[-2] and _F_ = 5 N. 2 
+Thus, _m1 =_ 5 N/10 m s[-2] = 0.50 kg; and _m2 =_ 5 N/20 m s[-2] = 0.25 kg. 
+If the two masses were tied together, the total mass, _m_ would be 
+- _m =_ 0.50 kg + 0.25 kg = 0.75 kg. 
+The acceleration, _a_ produced in the combined mass by the 5 N force would be, _a = F/m =_ 5 N/0.75 kg = 6.67 m s[-2] . 
+Example 8.5 The velocity-time graph of a ball of mass 20 g moving along a straight line on a long table is given in Fig. 8.9. 
+## Solution: 
+The initial velocity of the motorcar _u_ = 108 km/h 
+= 108 × 1000 m/(60 × 60 s) 
+= 30 m s[-1] 
+and the final velocity of the motorcar _v_ = 0 m s[-1] . 
+The total mass of the motorcar along with its passengers = 1000 kg and the time taken to stop the motorcar, _t_ = 4 s. From Eq. (8.5) we have the magnitude of the force _(F) a_ pplied by the brakes as _m(v – u)/t_ . 
+On substituting the values, we get _F_ = 1000 kg × (0 – 30) m s[-1] /4 s 
+= _–_ 7500 kg m s[-2] or _–_ 7500 N. The negative sign tells us that the force exerted by the brakes is opposite to the direction of motion of the motorcar. 
+Example 8.4 A force of 5 N gives a mass _m1,_ an acceleration of 10 m s[–2] and a mass _m_ 2 _,_ an acceleration of 20 m s[-2] . What acceleration would it give if both the masses were tied together? 
+**==> picture [36 x 9] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Fig. 8.9<br>**----- End of picture text -----**<br>
+How much force does the table exert on the ball to bring it to rest? 
+## Solution: 
+The initial velocity of the ball is 20 cm s[-1] . Due to the frictional force exerted by the table, the velocity of the ball decreases down to zero in 10 s. Thus, _u_ = 20 cm s[–1] ; _v_ = 0 cm s[-1] and _t =_ 10 s. Since the velocity-time graph is a straight line, it is clear that the ball moves with a constant acceleration. The acceleration _a_ is 
+**==> picture [146 x 36] intentionally omitted <==**
+**==> picture [123 x 9] intentionally omitted <==**
+94 
+_SCIENCE_ 
+Reprint 2025-26 
+The force exerted on the ball _F_ is, _F_ = _ma_ = (20/1000) kg × (– 0.02 m s[-2] ) = – 0.0004 N. 
+The negative sign implies that the frictional force exerted by the table is opposite to the direction of motion of the ball. 

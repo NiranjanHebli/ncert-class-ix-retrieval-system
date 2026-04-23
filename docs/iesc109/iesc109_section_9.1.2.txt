@@ -1,0 +1,13 @@
+## **9.1.2 IMPORTANCE OF THE UNIVERSAL** 
+## **LAW OF GRAVITATION** 
+The universal law of gravitation successfully explained several phenomena which were believed to be unconnected: 
+- (i) the force that binds us to the earth; 
+- (ii) the motion of the moon around the earth; 
+- (iii) the motion of planets around the Sun; and 
+**Example 9.1** The mass of the earth is 6 ´ 10[24] kg and that of the moon is 7.4 × 10[22] kg. If the distance between the earth and the moon is 3.84×10[5 ] km, calculate the force exerted by the earth on the moon. (Take G = 6.7 × 10[–11] N m[2] kg[-2] ) 
+## **Solution:** 
+The mass of the earth, M = 6 × 10[24] kg The mass of the moon, 
+m = 7.4 × 10[22] kg 
+The distance between the earth and the moon, 
+d = 3.84 × 10[5 ] km = 3.84 × 10[5 ] × 1000 m = 3.84 × 10[8] m G = 6.7 × 10[–11] N m[2] kg[–2] 
+- (iv) the tides due to the moon and the Sun. 

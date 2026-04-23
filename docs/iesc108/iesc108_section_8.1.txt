@@ -1,0 +1,19 @@
+## **8.1 Balanced and Unbalanced Forces** 
+Fig. 8.3 shows a wooden block on a horizontal table. Two strings X and Y are tied to the two opposite faces of the block as shown. If we apply a force by pulling the string X, the block begins to move to the right. Similarly, if we pull the string Y, the block moves to the left. But, if the block is pulled from both the sides with equal forces, the block will not move. Such forces are called balanced forces and do not change the state of rest or of motion of an object. Now, let us consider a situation in which two opposite forces of different magnitudes pull the block. In this case, the block would begin to move in the direction of the greater force. Thus, the two forces are not balanced and the unbalanced force acts in the direction the block moves. This suggests that an unbalanced force acting on an object brings it in motion. 
+_**Fig. 8.3:** Two forces acting on a wooden block_ 
+What happens when some children try to push a box on a rough floor? If they push the 
+**==> picture [12 x 9] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+( a )<br>**----- End of picture text -----**<br>
+box with a small force, the box does not move because of friction acting in a direction opposite to the push [Fig. 8.4(a)]. This friction force arises between two surfaces in contact; in this case _,_ between the bottom of the box and floor’s rough surface. It balances the pushing force and therefore the box does not move. In Fig. 8.4(b), the children push the box harder but the box still does not move. This is because the friction force still balances the pushing force. If the children push the box harder still, the pushing force becomes bigger than the friction force [Fig. 8.4(c)]. There is an unbalanced force. So the box starts moving. 
+What happens when we ride a bicycle? When we stop pedalling, the bicycle begins to slow down. This is again because of the friction forces acting opposite to the direction of motion. In order to keep the bicycle moving, we have to start pedalling again. It thus appears that an  object maintains its motion under the continuous application of an unbalanced force. However, it is quite incorrect. An object moves with a uniform velocity when the forces (pushing force and frictional force) acting on the object are balanced and there is no net external force on it. If an unbalanced force is applied on the object, there will be a change either in its speed or in the direction of its motion. Thus, to accelerate the motion of an object, an unbalanced force is required. And the change in its speed (or in the direction of motion) would continue as long as this unbalanced force is applied. However, if this force is 
+**==> picture [177 x 9] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+( b ) ( c )<br>**----- End of picture text -----**<br>
+_**Fig. 8.4**_ 
+**==> picture [13 x 7] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+88<br>**----- End of picture text -----**<br>
+_SCIENCE_ 
+Reprint 2025-26 
+removed completely, the object would continue to move with the velocity it has acquired till then. 

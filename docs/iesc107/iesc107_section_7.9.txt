@@ -1,0 +1,11 @@
+**7.9** 
+- The times of arrival and departure of a train at three stations A, B and C and the distance of stations B and C from station A are given in Table 7.4. 
+Table 7.4: Distances of stations B and C from A and times of arrival and departure of the train 
+|Station|Distance<br>|Time of<br>|Time of<br>|
+|---|---|---|---|
+||from A<br>(km)|arrival<br>(hours)|departure<br>(hours)|
+|A<br>B<br>C|0<br>120<br>180|08:00<br>11:15<br>13:00|08:15<br>11:30<br>13:15|
+- Plot and interpret the distance-time graph for the train assuming that its motion between any two stations is uniform. 
+80 
+_SCIENCE_ 
+Reprint 2025-26 

@@ -1,0 +1,11 @@
+## **4.5.2 MASS NUMBER** 
+After studying the properties of the subatomic particles of an atom, we can conclude that mass of an atom is practically due to protons and neutrons alone. These are present in the nucleus of an atom. Hence protons and neutrons are also called nucleons. Therefore, the mass of an atom resides in its nucleus. For example, mass of carbon is 12 u because it has 6 protons and 
+6 neutrons, 6 u + 6 u = 12 u. Similarly, the mass of aluminium is 27 u (13 protons+14 neutrons). The mass number is defined as the sum of the total number of protons and neutrons present in the nucleus of an atom. It is denoted by ‘A’. In the notation for an atom, the atomic number, mass number and symbol of the element are to be written as: 
+**==> picture [159 x 58] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Mass Number<br>A<br>Symbol of<br>X<br>element<br>Z<br>Atomic Number<br>**----- End of picture text -----**<br>
+For example, nitrogen is written as[14] 7[N][ .] 
+## uestions 
+## Q 
+_1. If number of electrons in an atom is 8 and number of protons is also 8, then (i) what is the atomic number of the atom? and (ii) what is the charge on the atom?_ 
+_2. With the help of Table 4.1, find out the mass number of oxygen and sulphur atom._ 

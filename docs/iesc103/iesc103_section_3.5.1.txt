@@ -1,0 +1,23 @@
+## **3.5.1 FORMULA UNIT MASS** 
+The formula unit mass of a substance is a sum of the atomic masses of all atoms in a formula unit of a compound. Formula unit mass is calculated in the same manner as we calculate the molecular mass. The only difference is that 
+SCIENCE 
+**34** 
+Reprint 2025-26 
+we use the word formula unit for those substances whose constituent particles are ions. For example, sodium chloride as discussed above, has a formula unit NaCl. Its formula unit mass can be calculated as– 1 × 23 + 1 × 35.5 = 58.5 u **Example 3.2** Calculate the formula unit mass of CaCl . 2 **Solution:** Atomic mass of Ca + (2 × atomic mass of Cl) = 40 + 2 × 35.5 = 40 + 71 = 111 u[Q] 
+## uestions 
+_1. Calculate the molecular masses of H2, O2, Cl2, CO2, CH4, C2H6, C2H4, NH3,  CH3OH._ 
+_2. Calculate the formula unit masses of ZnO, Na2O, K2CO3, given atomic masses of Zn = 65 u, Na = 23 u, K = 39 u, C = 12 u, and O = 16 u._ 
+## **What you have learnt** 
+- During a chemical reaction, the sum of the masses of the reactants and  products remains unchanged. This is known as the Law of Conservation of Mass. 
+- In a pure chemical compound, elements are always present in a definite proportion by mass. This is known as the Law of Definite Proportions. 
+- An atom is the smallest particle of the element that cannot usually exist independently and retain all its chemical properties. 
+- A molecule is the smallest particle of an element or a compound capable of independent existence under ordinary conditions. It shows all the properties of the substance. 
+- A chemical formula of a compound shows its constituent elements and the number of atoms of each combining element. 
+- Clusters of atoms that act as an ion are called polyatomic ions.  They carry a fixed charge on them. 
+- The chemical formula of a molecular compound is determined by the valency of each element. 
+- 
+- In ionic compounds, the charge on each ion is used to determine the chemical formula of the compound. 
+**35** 
+_ATOMS AND MOLECULES_ 
+Reprint 2025-26 
+**==> picture [104 x 112] intentionally omitted <==**

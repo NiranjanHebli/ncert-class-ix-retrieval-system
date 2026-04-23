@@ -1,0 +1,53 @@
+## **10.1.3 WORK DONE BY A CONSTANT FORCE** 
+How is work defined in science? To understand this, we shall first consider the case when the force is acting in the direction of displacement. 
+Let a constant force, _F_ act on an object. Let the object be displaced through a distance, _s_ in the direction of the force (Fig. 10.1). Let _W_ be the work done. We define work to be equal to the product of the force and displacement. 
+**==> picture [209 x 23] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Work done = force × displacement<br>W = F s  (10.1)<br>**----- End of picture text -----**<br>
+If any one of the above conditions does not exist, work is not done. This is the way we view work in science. 
+A bullock is pulling a cart.  The cart moves. There is a force on the cart and the cart has moved. Do you think that work is done in this situation? 
+## _**Activity _____________10.2**_ 
+- Think of some situations from your daily life involving work. 
+- List them. 
+- Discuss with your friends whether work is being done in each situation. 
+- Try to reason out your response. 
+- If work is done, which is the force acting on the object? 
+- What is the object on which the work is done? 
+- What happens to the object on which work is done? 
+_**Fig. 10.1**_ 
+Thus, work done by a force acting on an object is equal to the magnitude of the force multiplied by the distance moved in the direction of the force. Work has only magnitude and no direction. 
+In Eq. (10.1), if _F_ = 1 N and _s_ = 1 m then the work done by the force will be 1 N m. Here the unit of work is newton metre (N m) or joule  (J).  Thus 1 J is the amount of work 
+_SCIENCE_ 
+**114** 
+Reprint 2025-26 
+done on an object when a force of 1 N displaces it by 1 m along the line of action of the force. 
+Look at Eq. (10.1) carefully.  What is the work done when the force on the object is zero? What would be the work done when the displacement of the object is zero? Refer to the conditions that are to be satisfied to say that work is done. 
+- **Example 10.1** A force of 5 N is acting on an object. The object is displaced through 2 m in the direction of the force (Fig. 10.2). If the force acts on the object all through the displacement, then work done is 5 N × 2 m  =10 N m or 10 J. 
+_**Fig. 10.2**_ 
+**==> picture [53 x 92] intentionally omitted <==**
+**==> picture [172 x 65] intentionally omitted <==**
+_**Fig. 10.4**_ 
+Consider a situation in which an object is moving with a uniform velocity along a particular direction. Now a retarding force, F, is applied in the opposite direction. That is, the angle between the two directions is 180º. Let the object stop after a displacement _s_ . In such a situation, the work done by the force, _F_ is taken as negative and denoted by the minus sign. The work done by the force is _F_ × ( _–s_ ) or (– _F_ × _s_ ). 
+It is clear from the above discussion that the work done by a force can be either positive or negative. To understand this, let us do the following activity: 
+## _**Activity _____________10.4**_ 
+uestion _1. A force of 7_ N _acts on an object. The displacement is, say 8_ m _, in the direction of the force (Fig. 10.3).  Let us take it that the force acts on the object through the displacement. What is the_ Q _work done in this case?_ 
+_**Fig. 10.3**_ 
+Consider another situation in which the force and the displacement are in the same direction:  a baby pulling a toy car parallel to the ground, as shown in Fig. 10.4.  The baby has exerted a force in the direction of displacement of the car. In this situation, the work done will be equal to the product of the force and displacement. In such situations, the work done by the force is taken as positive. 
+- Lift an object up. Work is done by the force exerted by you on the object.  The object moves upwards. The force you exerted is in the direction of displacement. However, there is the force of gravity acting on the object. 
+- • Which one of these forces is doing positive work? 
+- Which one is doing negative work? 
+- • Give reasons. 
+Work done is negative when the force acts opposite to the direction of displacement. Work done is positive when the force is in the direction of displacement. 
+- **Example 10.2** A porter lifts a luggage of 15 kg from the ground and puts it on his head 1.5 m above the ground. Calculate the work done by him on the luggage. 
+## **Solution:** 
+Mass of luggage, _m_ = 15 kg and displacement, _s_ = 1.5 m. 
+**115** 
+_WORK AND ENERGY_ 
+Reprint 2025-26 
+Work done is 225 J. 
+Work done, _W = F_ × _s_ = _mg_ × _s_ = 15 kg × 10 m s[-2 ] × 1.5 m = 225 kg m s[-2] m = 225 N m =  225 J 
+- uestions _1. When do we say that work is done?_ 
+- _2. Write an expression for the work done when a force is acting on an object in the direction of its displacement._ 
+- Q 
+   _3. Define 1_ J _of work._ 
+   _4. A pair of bullocks exerts a force of 140_ N _on a plough.  The field being ploughed is 15_ m _long. How much work is done in ploughing the length of the field?_ 

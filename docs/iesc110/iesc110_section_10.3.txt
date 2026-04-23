@@ -1,0 +1,61 @@
+## **10.3 Rate of Doing Work** 
+Do all of us work at the same rate? Do machines consume or transfer energy at the same rate? Agents that transfer energy do work at different rates. Let us understand this from the following activity: 
+## _**Activity**_ 
+## _**10.16**_ 
+**==> picture [89 x 2] intentionally omitted <==**
+- Consider two children, say A and B. Let us say they weigh the same.  Both start climbing up a rope separately. Both reach a height of 8 m.  Let us say A takes 15 s while B takes 20 s to accomplish the task. 
+- What is the work done by each? 
+- • The work done is the same. However, A has taken less time than B to do the work. 
+- Who has done more work in a given time, say in 1 s? 
+A stronger person may do certain work in relatively less time. A more powerful vehicle would complete a journey in a shorter time than a less powerful one. We talk of the power of machines like motorbikes and motorcars. The speed with which these vehicles change energy or do work is a basis for their classification.  Power measures the speed of work done, that is, how fast or slow work is done. Power is defined as the rate of doing work or the rate of transfer of energy. If an agent does a work _W_ in time _t,_ then power is given by: 
+**==> picture [228 x 41] intentionally omitted <==**
+The unit of power is watt [in honour of James Watt (1736 – 1819)] having the symbol W. 1 watt is the power of an agent, which does work at the rate of 1 joule per second. We can also say that power is 1 W when the rate of consumption of energy is    1 J s[–1] . 
+1 watt = 1 joule/second or 1 W = 1 J s[–1] . We express larger rates of energy transfer in kilowatts (kW). 
+**==> picture [135 x 34] intentionally omitted <==**
+The power of an agent may vary with time. This means that the agent may be doing work at different rates at different intervals of time. Therefore the concept of average power is useful. We obtain average power by dividing the total energy consumed by the total time taken. 
+**Example 10.7** Two girls, each of weight 400 N climb up a rope through a height of 8 m. We name one of the girls A and the other B.  Girl A takes 20 s while B takes 50 s to accomplish this task. What is the power expended by each girl? 
+## **Solution:** 
+- (i) Power expended by girl A: Weight of the girl, _mg_ = 400 N Displacement (height), _h_ = 8 m 
+**122** 
+_SCIENCE_ 
+Reprint 2025-26 
+Time taken, _t_ = 20 s From Eq. (10.8), 
+Power, _P_ = Work done/time taken 
+**==> picture [81 x 75] intentionally omitted <==**
+(ii) Power expended by girl B: Weight of the girl, _mg_ = 400 N Displacement (height), _h_ = 8 m Time taken, _t_ = 50 s 
+**==> picture [123 x 57] intentionally omitted <==**
+= 64 W. 
+Power expended by girl A is 160 W. Power expended by girl B is 64 W. 
+power, _P_ = Work done/time taken 
+**==> picture [90 x 74] intentionally omitted <==**
+Power is 375 W. 
+uestions _1. 2. 3._ Q 
+_1. What is power?_ 
+_2. Define 1 watt of power. 3. A lamp consumes 1000_ J _of electrical energy in 10_ s _.  What is its power?_ 
+_4. Define average power._ 
+## _**Activity ___________ 10.17**_ 
+- Take a close look at the electric meter installed in your house. Observe its features closely. 
+- Take the readings of the meter each day at 6.30 am and 6.30 pm. 
+**Example 10.8** A boy of mass 50 kg runs up a staircase of 45 steps in 9 s. If the height of each step is 15 cm, find his power. Take _g_ = 10 m s[–2] . 
+## **Solution:** 
+Weight of the boy, _mg_ = 50 kg × 10 m s[–2] = 500 N Height of the staircase, _h_ = 45 × 15/100 m = 6.75 m Time taken to climb, _t_ = 9 s From Eq. (10.8), 
+- Do this activity for about a week. 
+- • How many ‘units’ are consumed during day time? 
+- How many ‘units’ are used during night? 
+- • Tabulate your observations. 
+- Draw inferences from the data. 
+- Compare your observations with the details given in the monthly electricity bill (One can also estimate the electricity to be consumed by specific appliances by tabulating their known wattages and hours of operation). 
+**123** 
+_WORK AND ENERGY_ 
+Reprint 2025-26 
+**==> picture [102 x 76] intentionally omitted <==**
+## **What you have learnt** 
+- Work done on an object is defined as the magnitude of the force multiplied by the distance moved by the object in the direction of the applied force. The unit of work is joule: 1 joule = 1 newton × 1 metre. 
+- Work done on an object by a force would be zero if the displacement of the object is zero. 
+- An object having capability to do work is said to possess energy. Energy has the same unit as that of work. 
+- An object in motion possesses what is known as the kinetic energy of the object. An object of mass, _m_ moving with 
+**==> picture [227 x 23] intentionally omitted <==**
+- The energy possessed by a body due to its change in position or shape is called the potential energy. The gravitational potential energy of an object of mass, _m_ raised through a height, _h_ from the earth’s surface is given by _m g h_ . 
+- According to the law of conservation of energy, energy can only be transformed from one form to another; it can neither be created nor destroyed. The total energy before and after the transformation always remains constant. 
+- Energy exists in nature in several forms such as kinetic energy, potential energy, heat energy, chemical energy etc. The sum of the kinetic and potential energies of an object is called its mechanical energy. 
+- Power is defined as the rate of doing work. The SI unit of power is watt. 1 W = 1 J/s. 

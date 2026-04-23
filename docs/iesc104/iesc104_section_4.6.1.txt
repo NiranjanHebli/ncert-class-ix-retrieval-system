@@ -1,0 +1,26 @@
+## **4.6.1 ISOBARS** 
+Let us consider two elements — calcium, atomic number 20, and argon, atomic number 18. The number of protons in these atoms is different, but the mass number of both these elements is 40. That is, the total number of nucleons is the same in the atoms of this pair of elements. Atoms of different elements with different atomic numbers, which have the same mass number, are known as isobars. 
+**==> picture [80 x 105] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+uestions<br>1.<br>2.<br>Q<br>**----- End of picture text -----**<br>
+_1. For the symbol H,D and T tabulate three sub-atomic particles found in each of them._ 
+_2. Write the electronic configuration of any one pair of isotopes and isobars._ 
+## **What you have learnt** 
+- Credit for the discovery of electron and proton goes to J.J. Thomson and E.Goldstein, respectively. 
+- J.J. Thomson proposed that electrons are embedded in a positive sphere. 
+**45** 
+_STRUCTURE OF THE ATOM_ 
+Reprint 2025-26 
+- Rutherford’s alpha-particle scattering experiment led to the discovery of the atomic nucleus. 
+- Rutherford’s model of the atom proposed that a very tiny nucleus is present inside the atom and electrons revolve around  this nucleus. The stability of the atom could not be explained by this model. 
+- Neils Bohr’s model of the atom was more successful. He proposed that electrons are distributed in different shells with discrete energy around the nucleus. If the atomic shells are complete, then the atom will be stable and less reactive. 
+- J. Chadwick discovered presence of neutrons in the nucleus of an atom. So, the three sub-atomic particles of an atom are: (i) electrons, (ii) protons and (iii) neutrons. Electrons are negatively charged, protons are positively charged and neutrons 
+1 have no charges. The mass of an electron is about 2000[  times] 
+the mass of an hydrogen atom. The mass of a proton and a neutron is taken as one unit each. 
+- Shells of an atom are designated as K,L,M,N,…. 
+- Valency is the combining capacity of an atom. 
+- The atomic number of an element is the same as the number of protons in the nucleus of its atom. 
+- The mass number of an atom is equal to the number of nucleons in its nucleus. 
+- Isotopes are atoms of the same element, which have different mass numbers. 
+- Isobars are atoms having the same mass number but different atomic numbers. 
+- Elements are defined by the number of protons they possess. 

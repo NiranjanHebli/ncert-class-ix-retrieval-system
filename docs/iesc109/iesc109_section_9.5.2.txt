@@ -1,0 +1,11 @@
+## **9.5.2 BUOYANCY** 
+Have you ever had a swim in a pool and felt lighter? Have you ever drawn water from a well and felt that the bucket of water is heavier when it is out of the water? Have you ever wondered why a ship made of iron and steel does not sink in sea water, but while the same amount of iron and steel in the form of a sheet would sink? These questions can be answered by taking buoyancy in consideration. Let us understand the meaning of buoyancy by doing an activity. 
+## _**Activity ______________ 9.4**_ 
+- Take an empty plastic bottle. Close the mouth of the bottle with an airtight stopper. Put it in a bucket filled with water. You see that the bottle floats. 
+- Push the bottle into the water. You feel an upward push. Try to push it further down. You will find it difficult to push deeper and deeper. This indicates that water exerts a force on the bottle in the upward direction. The upward force exerted by the water goes on increasing as the bottle is pushed deeper  till it is completely immersed. 
+- Now, release the  bottle. It bounces back to the surface. 
+- Does the force due to the gravitational attraction of the earth act on this bottle? If so, why doesn’t the bottle stay immersed in water after it is released? How can you immerse the bottle in water? 
+The force due to the gravitational attraction of the earth acts on the bottle in the downward direction. So the bottle is pulled downwards. But the water exerts an upward force on the bottle. Thus, the bottle is pushed upwards. We have learnt that weight of an object is the force due to gravitational attraction of the earth. When the bottle is immersed, the upward force exerted by the 
+water on the bottle is greater than its weight. Therefore it rises up when released. 
+To keep the bottle completely immersed, the upward force on the bottle due to water must be balanced. This can be achieved by an externally applied force acting downwards. This force must at least be equal to the difference between the upward force and the weight of the bottle. 
+The upward force exerted by the water on the bottle is known as upthrust or buoyant force. In fact, all objects experience a force of buoyancy when they are immersed in a fluid. The magnitude of this buoyant force depends on the density of the fluid. 

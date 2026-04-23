@@ -1,0 +1,1 @@
+15. A stone is thrown vertically upward with an initial velocity of 40 m/s. Taking _g_ = 10 m/s[2] , find the maximum height reached by the stone. What is the net displacement and the total distance covered by the stone? 

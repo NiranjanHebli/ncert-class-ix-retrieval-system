@@ -1,0 +1,12 @@
+## **11.4 Range of Hearing** 
+The audible range of sound for human beings extends from about 20 Hz to 20000 Hz (one Hz = one cycle/s). Children under the age of five and some animals, such as dogs can hear up to 25 kHz (1 kHz = 1000 Hz). As people grow older their ears become less sensitive to higher frequencies. Sounds of frequencies below 20 Hz are called infrasonic sound or infrasound. If we could hear infrasound we would hear the vibrations of a pendulum just as we hear the vibrations of the wings of a bee. Rhinoceroses communicate using infrasound of frequency as low as 5 Hz. Whales and elephants produce sound in the infrasound range. It is observed that some animals get disturbed before earthquakes. Earthquakes produce low-frequency infrasound before the main shock waves begin which possibly alert the animals. Frequencies higher than 20 kHz are called ultrasonic sound or ultrasound. Ultrasound is produced by animals such as dolphins, bats and porpoises. Moths of certain families have very sensitive hearing equipment. These moths can hear the high frequency 
+**135** 
+_SOUND_ 
+Reprint 2025-26 
+squeaks of the bat and know when a bat is flying nearby, and are able to escape capture. Rats also play games by producing ultrasound. 
+**Hearing Aid:** People with hearing loss may need a hearing aid. A hearing aid is an electronic, battery operated device. The hearing aid receives sound through a microphone. The microphone converts the sound waves to electrical signals. These electrical signals are amplified by an amplifier. The amplified electrical signals are given to a speaker of the hearing aid. The speaker converts the amplified electrical signal to sound and sends to the ear for clear hearing. 
+- uestions _1. What is the audible range of the average human ear?_ 
+- _2. What is the range of frequencies associated with_ 
+- Q 
+   _2. What is the range of frequencies associated with_ 
+      - _(a) Infrasound? (b) Ultrasound?_ 

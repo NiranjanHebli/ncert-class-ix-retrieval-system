@@ -1,0 +1,3 @@
+7. A 8000 kg engine pulls a train of 5 wagons, each of 2000 kg, along a horizontal track. If the engine exerts a force of 40000 N and the track offers a friction force of 5000 N, then calculate: 
+   - (a) the net accelerating force and 
+   - (b) the acceleration of the train. 

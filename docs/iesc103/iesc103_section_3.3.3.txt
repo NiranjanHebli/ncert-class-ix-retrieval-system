@@ -1,0 +1,15 @@
+## **3.3.3 WHAT IS AN ION?** 
+Compounds composed of metals and nonmetals contain charged species. The charged species are known as _ions_ . Ions may consist of a single charged atom or a group of atoms that have a net charge on them. An ion can be negatively or positively charged. A negatively charged ion is called an ‘anion’ and the positively charged ion, a ‘cation’. Take, for example, sodium chloride (NaCl). Its constituent particles are positively charged sodium ions (Na[+] ) and negatively charged 
+**31** 
+_ATOMS AND MOLECULES_ 
+Reprint 2025-26 
+chloride ions (Cl[–] ).  A group of atoms carrying a charge is known as a polyatomic ion (Table 3.6). We shall learn more about the formation of ions in Chapter 4. 
+learn the symbols and combining capacity of the elements. 
+The combining power (or capacity) of an element is known as its valency. Valency can be used to find out how the atoms of an element will combine with the atom(s) of another element to form a chemical compound. The valency of the atom of an element can be thought of as hands or arms of that atom. 
+|**Table 3.5: Some ionic compounds**|**Table 3.5: Some ionic compounds**|**Table 3.5: Some ionic compounds**|
+|---|---|---|
+|**Ionic**<br>**Compound**|**Constituting**<br>**Elements**|**Ratio**<br>**by**|
+|||**Mass**|
+|Calcium oxide<br>Magnesium<br>sulphide<br>Sodium<br>chloride|Calcium and<br>oxygen<br>Magnesium<br>and sulphur<br>Sodium<br>and chlorine|5:2<br>3:4<br>23:35.5|
+||||
+Human beings have two arms and an octopus has eight. If one octopus has to catch hold of a few people in such a manner that all the eight arms of the octopus and both arms of all the humans are locked, how many humans do you think the octopus can hold? Represent the octopus with O and humans with H. Can you write a formula for this combination? Do you get OH4 as the formula? The subscript 4 indicates the number of humans held by the octopus. 

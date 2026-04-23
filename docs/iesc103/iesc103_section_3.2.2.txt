@@ -1,0 +1,30 @@
+## **3.2.2 ATOMIC MASS** 
+The most remarkable concept that Dalton’s atomic theory proposed was that of the atomic mass. According to him, each element had a characteristic atomic mass. The theory could explain the law of constant proportions so well that scientists were prompted to measure the atomic mass of an atom. Since determining the mass of an individual atom was a relatively difficult task, relative atomic masses were determined using the laws of chemical combinations and the compounds formed. 
+Let us take the example of a compound, carbon monoxide (CO) formed by carbon and oxygen. It was observed experimentally that 3 g of carbon combines with 4 g of oxygen to form CO. In other words, carbon combines with 4/3 times its mass of oxygen. Suppose we define the atomic mass unit (earlier abbreviated as ‘amu’, but according to the latest IUPAC recommendations, it is now written as ‘u’ – unified mass) as equal to the mass of one carbon atom, then we would 
+**Table 3.1: Symbols for some elements** 
+|**Table 3.1: Symbols for some elements**|**Table 3.1: Symbols for some elements**|**Table 3.1: Symbols for some elements**|
+|---|---|---|
+||||
+|**Element**<br>**Symbol**|**Element**<br>**Symbol**|**Element**<br>**Symbol**|
+||||
+|Aluminium<br>Al<br>Argon<br>Ar<br>Barium<br>Ba<br>Boron<br>B<br>Bromine<br>Br<br>Calcium<br>Ca<br>Carbon<br>C<br>Chlorine<br>Cl<br>Cobalt<br>Co|Copper<br>Cu<br>Fluorine<br>F<br>Gold<br>Au<br>Hydrogen<br>H<br>Iodine<br>I<br>Iron<br>Fe<br>Lead<br>Pb<br>Magnesium<br>Mg<br>Neon<br>Ne|Nitrogen<br>N<br>Oxygen<br>O<br>Potassium<br>K<br>Silicon<br>Si<br>Silver<br>Ag<br>Sodium<br>Na<br>Sulphur<br>S<br>Uranium<br>U<br>Zinc<br>Zn|
+||||
+(The above table is given for you to refer to whenever you study about elements. Do not bother to memorise all in one go. With the 
+assign carbon an atomic mass of 1.0 u and oxygen an atomic mass of 1.33 u. However, it is more convenient to have these numbers as 
+**29** 
+_ATOMS AND MOLECULES_ 
+Reprint 2025-26 
+whole numbers or as near to a whole numbers as possible. While searching for various atomic mass units, scientists initially took 1/ 16 of the mass of an atom of naturally occurring oxygen as the unit. This was considered relevant due to two reasons: 
+- oxygen reacted with a large number of elements and formed compounds. 
+- this atomic mass unit gave masses of most of the elements as whole numbers. 
+However, in 1961 for a universally accepted atomic mass unit, carbon-12 isotope was chosen as the standard reference for measuring atomic masses. One atomic mass unit is a mass unit equal to exactly one-twelfth (1/12[th] ) the mass of one atom of carbon-12. The relative atomic masses of all elements have been found with respect to an atom of carbon-12. 
+Imagine a fruit seller selling fruits without any standard weight with him. He takes a watermelon and says, “this has a mass equal to 12 units” (12 watermelon units or 12 fruit mass units). He makes twelve equal pieces of the watermelon and finds the mass of each fruit he is selling, relative to the mass of one piece of the watermelon. Now he sells his fruits by relative fruit mass unit (fmu), as in Fig. 3.4. 
+mass of the atom, as compared to 1/12[th] the mass of one carbon-12 atom. 
+|**Table 3.2: Atomic masses of**<br>**a few elements**|**Table 3.2: Atomic masses of**<br>**a few elements**|
+|---|---|
+|||
+|||
+|**Element**|**Atomic Mass (u)**|
+|Hydrogen<br>Carbon|1<br>12<br>14<br>16<br>23<br>24<br>32<br>35.5<br>40|
+|Nitrogen<br>Oxygen<br>Sodium<br>Magnesium<br>Sulphur<br>Chlorine<br>Calcium||
+|||
