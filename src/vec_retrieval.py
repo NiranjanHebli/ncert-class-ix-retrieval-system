@@ -4,6 +4,7 @@ import numpy as np
 import faiss
 import re
 import torch
+import atexit
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModel
 from rank_bm25 import BM25Okapi
@@ -21,6 +22,9 @@ class VectorDatabase:
         self.bm25 = None
         self.faiss_idx = None
         self.embeds = None
+        
+        # Register cleanup on program exit
+        atexit.register(self.flush_vector_db)
         
     def chunk_text_bert(self, text, max_tokens=500, overlap=50):
         """Chunk text using BERT tokenizer with IESC102 section awareness.
@@ -251,3 +255,27 @@ class VectorDatabase:
             results.append(chunk)
             
         return results
+    
+    def flush_vector_db(self):
+        """Flush and clean up vector database resources on program exit.
+        
+        Clears FAISS index, embeddings, BM25 index, chunks, and model references
+        to free memory and prevent resource leaks.
+        """
+        try:
+            if self.faiss_idx is not None:
+                self.faiss_idx.reset()
+                self.faiss_idx = None
+            
+            if self.embeds is not None:
+                self.embeds = None
+            
+            self.bm25 = None
+            self.chunks = []
+            self.bert_mod = None
+            self.bert_tok = None
+            
+            print("Vector database flushed successfully")
+            
+        except Exception as e:
+            print(f"Error flushing vector database: {e}")

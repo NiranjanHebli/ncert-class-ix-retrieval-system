@@ -408,7 +408,7 @@ def main(text_files: List[str | Path] = None,
     overlaps = overlaps or DEFAULT_OVERLAPS
     
     if text_files is None:
-        docs_dir = Path("./docs")
+        docs_dir = Path("./extracted")
         text_files = [
             docs_dir / "iesc101.txt",
             docs_dir / "iesc102.txt", 

@@ -102,15 +102,10 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     if data_dir is None:
         data_dir = Path('data')
     if docs_dir is None:
-        docs_dir = Path('docs')
-    
-    print("=" * 80)
-    print("VECTOR DATABASE RETRIEVAL DEMO - IESC102")
-    print("=" * 80)
+        docs_dir = Path('extracted')
     
     questions_data = load_iesc102_questions_and_concepts(data_dir)
     
-    doc_metadata = {"document_title": "IS MATTER AROUND US PURE?", "chapter": "Chapter 2"}
     if questions_data is None:
         questions_data = []
     else:
@@ -126,7 +121,7 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     with open(doc_file, 'r') as f:
         txt = f.read()
     
-    print(f"Loaded IESC102 text with {len(txt)} characters")
+    print(f"Loaded document text with {len(txt)} characters")
     print()
     
     print("Initializing Vector Database...")
@@ -152,10 +147,6 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     print("Content Type Distribution:")
     for ct, cnt in types.items():
         print(f"  {ct}: {cnt} chunks")
-    
-    print("\nChapter Distribution:")
-    for ch, cnt in chaps.items():
-        print(f"  {ch}: {cnt} chunks")
     
     print("\n" + "=" * 80)
     print("RETRIEVAL TESTING")
@@ -238,6 +229,7 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     print(f"Win Count: BM25 {bm25_wins} vs FAISS {faiss_wins}")
     print(f"\nCumulative Similarity Score: BM25 {cumulative_bm25:.3f} vs FAISS {cumulative_faiss:.3f}")
     print(f"Cumulative Winner: {'BM25' if cumulative_bm25 > cumulative_faiss else 'FAISS' if cumulative_faiss > cumulative_bm25 else 'TIE'}")
-    
+    db.flush_vector_db()
+
 if __name__ == "__main__":
     main()

@@ -1,7 +1,4 @@
-================================================================================
-VECTOR DATABASE RETRIEVAL DEMO - IESC102
-================================================================================
-Loaded IESC102 text with 26949 characters
+Loaded document text with 26949 characters
 
 Initializing Vector Database...
 Building chunk store with FAISS and BM25...
@@ -577,3 +574,5 @@ Win Count: BM25 6 vs FAISS 10
 
 Cumulative Similarity Score: BM25 10.994 vs FAISS 11.139
 Cumulative Winner: FAISS
+Vector database flushed successfully
+Vector database flushed successfully
