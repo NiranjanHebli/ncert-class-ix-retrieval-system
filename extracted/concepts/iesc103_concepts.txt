@@ -244,12 +244,6 @@ uestions 1. (i) (ii) (iii) (iv) Q
 (ii) PO43– ion? 
 ## **3.5 Molecular Mass** 
 In section 3.2.2 we discussed the concept of atomic mass. This concept can be extended to calculate molecular masses. The molecular mass of a substance is the sum of the atomic masses of all the atoms in a molecule of the substance. It is therefore the relative mass of a molecule expressed in atomic mass units (u). 
-**Example 3.1** (a) Calculate the relative molecular mass of water (H 2O). (b) Calculate the molecular mass of HNO . 3 
-**Solution:** 
-(a) Atomic mass of hydrogen = 1u, 
-oxygen = 16 u So the molecular mass of water, which contains two atoms of hydrogen and one atom of oxygen is = 2 ´ 1+ 1´16 = 18 u 
-(b) The molecular mass of HNO3 = the atomic mass of H + the atomic mass of N+ 3 ´ the atomic mass of O = 1 + 14 + 48 = 63 u 
-## **3.5.1 FORMULA UNIT MASS** 
 The formula unit mass of a substance is a sum of the atomic masses of all atoms in a formula unit of a compound. Formula unit mass is calculated in the same manner as we calculate the molecular mass. The only difference is that 
 SCIENCE 
 **34** 

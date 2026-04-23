@@ -1,0 +1,6 @@
+question,expected_answer,type,correctness,grounded,refusal_appropriate
+"What is Newton's second law of motion?","F = ma (Force equals mass times acceleration)","direct",,,
+"What happens to the rate of evaporation when humidity increases?","The rate of evaporation decreases with increasing humidity.","direct",,,
+"How does mass affect the acceleration of an object?","Acceleration is inversely proportional to mass for a constant force.","paraphrased",,,
+"Explain the concept of quantum entanglement in Chapter 9.","","out-of-scope",,,
+"Who is the Prime Minister of India?","","out-of-scope",,,

@@ -145,30 +145,6 @@ It is clear that the work done is equal to the change in the kinetic energy of a
 **==> picture [194 x 23] intentionally omitted <==**
 Thus, the kinetic energy possessed by an object of mass, _m_ and moving with a uniform velocity, _v_ is 
 **==> picture [169 x 22] intentionally omitted <==**
-**Example 10.3** An object of mass 15 kg is moving with a uniform velocity of              4 m s[–1] . What is the kinetic energy possessed by the object? 
-## **Solution:** 
-Mass of the object, _m_ = 15 kg, velocity of the object, _v_ = 4 m s[–1] . From Eq. (10.5), 
-**==> picture [199 x 85] intentionally omitted <==**
-**Example 10.4** What is the work to be done to increase the velocity of a car from 30 km h[–1] to 60 km h[–1] if the mass of the car is 1500 kg? 
-## **Solution:** 
-Mass of the car, _m_ =1500 kg, initial velocity of car, _u_ = 30 km h[–1] 
-**==> picture [73 x 41] intentionally omitted <==**
-Similarly, the final velocity of the car, 
-_v_ = 60 km h[–1] = 50/3 m s[–1] . 
-Therefore, the initial kinetic energy of the car, 
-**==> picture [158 x 70] intentionally omitted <==**
-The final kinetic energy of the car, 
-**==> picture [162 x 38] intentionally omitted <==**
-Thus, the work done =  Change in kinetic energy 
-**==> picture [63 x 27] intentionally omitted <==**
-_SCIENCE_ 
-**118** 
-Reprint 2025-26 
-- uestions _1. What is the kinetic energy of an object?_ 
-- _2. Write an expression for the kinetic energy of an object._ 
-- _3. The kinetic energy of an object of mass, m moving with a velocity_ 
-- Q _of 5 m s[–1] is 25 J. What will be its kinetic energy when its velocity is doubled? What will be its kinetic energy when its velocity is increased three times?_ 
-## **10.2.3 POTENTIAL ENERGY** 
 ## _**Activity _____________10.8**_ 
 - Take a rubber band. 
 - Hold it at one end and pull from the other. The band stretches. 
@@ -217,18 +193,6 @@ Consider an object of mass, _m_ . Let it be raised through a height, _h_ from th
 **==> picture [180 x 36] intentionally omitted <==**
 Since work done on the object is equal to _mgh_ , an energy equal to _mgh_ units is gained by the object. This is the potential energy ( _EP_ ) of the object. 
 **==> picture [191 x 14] intentionally omitted <==**
-**Example 10.5** Find the energy possessed by an object of mass 10 kg when it is at a height of 6 m above the ground. Given, _g_ = 9.8 m s[–2] . 
-## **Solution:** 
-Mass of the object, _m_ = 10 kg, displacement (height), _h_ = 6 m, and acceleration due to gravity, _g_ = 9.8 m s[–2] . From Eq. (10.6), Potential energy = _mgh_ 
-**==> picture [239 x 48] intentionally omitted <==**
-**120** 
-_SCIENCE_ 
-Reprint 2025-26 
-**Example 10.6** An object of mass 12 kg is at a certain height above the ground. If the  potential energy of the object is 480 J, find the height at which the object is with respect to the ground. Given, _g_ = 10 m s[–2] . 
-## **Solution:** 
-Mass of the object, _m_ = 12 kg, potential energy, _Ep_ = 480 J. 
-**==> picture [239 x 84] intentionally omitted <==**
-## **10.2.5 ARE VARIOUS ENERGY FORMS INTERCONVERTIBLE?** 
 Can we convert energy from one form to another? We find in nature a number of instances of conversion of energy from one form to another. 
 ## _**Activity ___________ 10.13**_ 
 - Sit in small groups. 
@@ -277,49 +241,3 @@ The unit of power is watt [in honour of James Watt (1736 – 1819)] having the s
 1 watt = 1 joule/second or 1 W = 1 J s[–1] . We express larger rates of energy transfer in kilowatts (kW). 
 **==> picture [135 x 34] intentionally omitted <==**
 The power of an agent may vary with time. This means that the agent may be doing work at different rates at different intervals of time. Therefore the concept of average power is useful. We obtain average power by dividing the total energy consumed by the total time taken. 
-**Example 10.7** Two girls, each of weight 400 N climb up a rope through a height of 8 m. We name one of the girls A and the other B.  Girl A takes 20 s while B takes 50 s to accomplish this task. What is the power expended by each girl? 
-## **Solution:** 
-- (i) Power expended by girl A: Weight of the girl, _mg_ = 400 N Displacement (height), _h_ = 8 m 
-**122** 
-_SCIENCE_ 
-Reprint 2025-26 
-Time taken, _t_ = 20 s From Eq. (10.8), 
-Power, _P_ = Work done/time taken 
-**==> picture [81 x 75] intentionally omitted <==**
-(ii) Power expended by girl B: Weight of the girl, _mg_ = 400 N Displacement (height), _h_ = 8 m Time taken, _t_ = 50 s 
-**==> picture [123 x 57] intentionally omitted <==**
-= 64 W. 
-Power expended by girl A is 160 W. Power expended by girl B is 64 W. 
-power, _P_ = Work done/time taken 
-**==> picture [90 x 74] intentionally omitted <==**
-Power is 375 W. 
-uestions _1. 2. 3._ Q 
-_1. What is power?_ 
-_2. Define 1 watt of power. 3. A lamp consumes 1000_ J _of electrical energy in 10_ s _.  What is its power?_ 
-_4. Define average power._ 
-## _**Activity ___________ 10.17**_ 
-- Take a close look at the electric meter installed in your house. Observe its features closely. 
-- Take the readings of the meter each day at 6.30 am and 6.30 pm. 
-**Example 10.8** A boy of mass 50 kg runs up a staircase of 45 steps in 9 s. If the height of each step is 15 cm, find his power. Take _g_ = 10 m s[–2] . 
-## **Solution:** 
-Weight of the boy, _mg_ = 50 kg × 10 m s[–2] = 500 N Height of the staircase, _h_ = 45 × 15/100 m = 6.75 m Time taken to climb, _t_ = 9 s From Eq. (10.8), 
-- Do this activity for about a week. 
-- • How many ‘units’ are consumed during day time? 
-- How many ‘units’ are used during night? 
-- • Tabulate your observations. 
-- Draw inferences from the data. 
-- Compare your observations with the details given in the monthly electricity bill (One can also estimate the electricity to be consumed by specific appliances by tabulating their known wattages and hours of operation). 
-**123** 
-_WORK AND ENERGY_ 
-Reprint 2025-26 
-**==> picture [102 x 76] intentionally omitted <==**
-## **What you have learnt** 
-- Work done on an object is defined as the magnitude of the force multiplied by the distance moved by the object in the direction of the applied force. The unit of work is joule: 1 joule = 1 newton × 1 metre. 
-- Work done on an object by a force would be zero if the displacement of the object is zero. 
-- An object having capability to do work is said to possess energy. Energy has the same unit as that of work. 
-- An object in motion possesses what is known as the kinetic energy of the object. An object of mass, _m_ moving with 
-**==> picture [227 x 23] intentionally omitted <==**
-- The energy possessed by a body due to its change in position or shape is called the potential energy. The gravitational potential energy of an object of mass, _m_ raised through a height, _h_ from the earth’s surface is given by _m g h_ . 
-- According to the law of conservation of energy, energy can only be transformed from one form to another; it can neither be created nor destroyed. The total energy before and after the transformation always remains constant. 
-- Energy exists in nature in several forms such as kinetic energy, potential energy, heat energy, chemical energy etc. The sum of the kinetic and potential energies of an object is called its mechanical energy. 
-- Power is defined as the rate of doing work. The SI unit of power is watt. 1 W = 1 J/s. 

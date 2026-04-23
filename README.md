@@ -61,6 +61,18 @@ If you already have text files and only need to re-run the splitting logic:
 python src/scripts/split_sections.py
 ```
 
+## Chunking Strategy
+
+Chunking is the process of splitting the text into smaller chunks that can be processed by the LLM. 
+
+The system uses a hybrid chunking strategy based on semantic classification and token-length optimization. Detailed justification can be found in [chunking_strategy.md](docs/chunking_strategy.md).
+
+## Data Organization
+
+Extracted content is categorized into concepts, worked examples, exercises, and sanitized paragraphs. 
+
+Detailed information on how this structure improves RAG performance can be found in [data_organization.md](docs/data_organization.md).
+
 ## Running the Retrieval System
 
 ### 1. Vector Database & Retrieval Demo
@@ -80,3 +92,10 @@ python tokenizer_evaluation.py
 ```
 
 Results and comparison tables will be saved in the `data/` directory.
+
+### 3. End-to-End Pipeline
+To run the entire pipeline (extraction, evaluation, and retrieval) in one go:
+
+```bash
+python main_pipeline.py
+```

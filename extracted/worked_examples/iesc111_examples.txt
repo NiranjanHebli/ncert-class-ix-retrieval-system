@@ -1,0 +1,12 @@
+**Example 11.2** A person clapped his hands near a cliff and heard the echo after 2 s. 
+What is the distance of the cliff from the person if the speed of the sound, _v_ is taken as 346 m s[–1] ? 
+## **Solution:** 
+Given, 
+Speed of sound, _v_ = 346 m s[–1] Time taken for hearing the echo, 
+_t_ = 2 s 
+Distance travelled by the sound 
+= _v_ × _t_ = 346 m s[–1 ] × 2 s = 692 m In 2 s sound has to travel twice the distance between the cliff and the person. Hence, the distance between the cliff and the person 
+= 692 m/2 = 346 m. 
+## uestion 
+uestion _1. An echo is heard in 3_ s _. What is the distance of the reflecting surface from the source, given that the speed of sound is  342_ m s[–1] _?_ Q 
+## **11.3.3 USES OF MULTIPLE REFLECTION OF SOUND** 

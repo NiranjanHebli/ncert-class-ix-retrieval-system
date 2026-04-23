@@ -111,56 +111,6 @@ The second law of motion is often seen in action in our everyday life. Have you 
 The first law of motion can be mathematically stated from the mathematical expression for the second law of motion. Eq. (8.4) is 
 **==> picture [209 x 57] intentionally omitted <==**
 That is, when _F_ = 0, _v = u_ for whatever time, _t_ is taken. This means that the object will continue moving with uniform velocity, _u_ throughout the time, _t_ . If _u_ is zero then _v_ will also be zero. That is, the object will remain at rest. 
-**Example 8.1** A constant force acts on an object of mass 5 kg for a duration of 2 s. It increases the object’s velocity from 3 m s[–1] to  7 m s[-1] . Find the magnitude of the applied force. Now, if the force was applied for a duration of 5 s, what would be the final velocity of the object? 
-## **Solution:** 
-We have been given that _u_ = 3 m s[–1] and _v_ = 7 m s[-1] , _t_ = 2 s and _m_ = 5 kg. From Eq. (8.5) we have, 
-**==> picture [63 x 23] intentionally omitted <==**
-Substitution of values in this relation gives 
-_F_ = 5 kg (7 m s[-1] – 3 m s[-1] )/2 s = 10 N. 
-Now, if this force is applied for a duration  of 5 s ( _t_ = 5 s), then the final velocity can be calculated by rewriting Eq. (8.5) as 
-**==> picture [49 x 23] intentionally omitted <==**
-_**Fig. 8.8:** A fielder pulls his hands gradually with the moving ball while holding a catch._ 
-On substituting the values of _u, F, m_ and _t,_ we get the final velocity, _v =_ 13 m s[-1] . 
-**93** 
-_FORCE AND LAWS OF MOTION_ 
-Reprint 2025-26 
-Example 8.2 Which would require a greater force –– accelerating a 2 kg mass at 5 m s[–2] or a 4 kg mass at 2 m s[-2 ] ? 
-## Solution: 
-From Eq. (8.4), we have _F = ma._ Here we have _m1 =_ 2 kg; _a1_ = 5 m s[-2] and _m2 =_ 4 kg; _a2_ = 2 m s[-2] . 
-Thus, _F1_ = _m1a1 =_ 2 kg × 5 m s[-2] = 10 N; and _F2_ = _m2a2  =_ 4 kg × 2 m s[-2] = 8 N. ⇒ _F_ > _F . 1 2_ 
-Thus, accelerating a 2 kg mass at 5 m s[-2] would require a greater force. 
-Example 8.3 A motorcar is moving with a velocity of 108 km/h and it takes 4 s to stop after the brakes are applied. Calculate the force exerted by the brakes on the motorcar if its mass along with the passengers is 1000 kg. 
-## Solution: 
-From Eq. (8.4) we have _m1 = F/a1;_ and _m2 = F/a2._ Here, _a1 =_ 10 m s[-2] ; 
-_a_ = 20 m s[-2] and _F_ = 5 N. 2 
-Thus, _m1 =_ 5 N/10 m s[-2] = 0.50 kg; and _m2 =_ 5 N/20 m s[-2] = 0.25 kg. 
-If the two masses were tied together, the total mass, _m_ would be 
-- _m =_ 0.50 kg + 0.25 kg = 0.75 kg. 
-The acceleration, _a_ produced in the combined mass by the 5 N force would be, _a = F/m =_ 5 N/0.75 kg = 6.67 m s[-2] . 
-Example 8.5 The velocity-time graph of a ball of mass 20 g moving along a straight line on a long table is given in Fig. 8.9. 
-## Solution: 
-The initial velocity of the motorcar _u_ = 108 km/h 
-= 108 × 1000 m/(60 × 60 s) 
-= 30 m s[-1] 
-and the final velocity of the motorcar _v_ = 0 m s[-1] . 
-The total mass of the motorcar along with its passengers = 1000 kg and the time taken to stop the motorcar, _t_ = 4 s. From Eq. (8.5) we have the magnitude of the force _(F) a_ pplied by the brakes as _m(v – u)/t_ . 
-On substituting the values, we get _F_ = 1000 kg × (0 – 30) m s[-1] /4 s 
-= _–_ 7500 kg m s[-2] or _–_ 7500 N. The negative sign tells us that the force exerted by the brakes is opposite to the direction of motion of the motorcar. 
-Example 8.4 A force of 5 N gives a mass _m1,_ an acceleration of 10 m s[–2] and a mass _m_ 2 _,_ an acceleration of 20 m s[-2] . What acceleration would it give if both the masses were tied together? 
-**==> picture [36 x 9] intentionally omitted <==**
-**----- Start of picture text -----**<br>
-Fig. 8.9<br>**----- End of picture text -----**<br>
-How much force does the table exert on the ball to bring it to rest? 
-## Solution: 
-The initial velocity of the ball is 20 cm s[-1] . Due to the frictional force exerted by the table, the velocity of the ball decreases down to zero in 10 s. Thus, _u_ = 20 cm s[–1] ; _v_ = 0 cm s[-1] and _t =_ 10 s. Since the velocity-time graph is a straight line, it is clear that the ball moves with a constant acceleration. The acceleration _a_ is 
-**==> picture [146 x 36] intentionally omitted <==**
-**==> picture [123 x 9] intentionally omitted <==**
-94 
-_SCIENCE_ 
-Reprint 2025-26 
-The force exerted on the ball _F_ is, _F_ = _ma_ = (20/1000) kg × (– 0.02 m s[-2] ) = – 0.0004 N. 
-The negative sign implies that the frictional force exerted by the table is opposite to the direction of motion of the ball. 
-## **8.5 Third Law of Motion** 
 The first two laws of motion tell us how an applied force changes the motion and provide us with a method of determining the force. The third law of motion states that when one object exerts a force on another object, the second object instantaneously exerts a force back on the first. These two forces are always equal in magnitude but opposite in direction. These forces act on different objects and never on the same object. In the game of football sometimes we, while looking at the football and trying to kick it with a greater force, collide with a player of the opposite team. Both feel hurt because each applies a force to the other. In other words, there is a pair of forces and not just one force. The two opposing forces are also known as action and reaction forces. 
 Let us consider two spring balances connected together as shown in Fig. 8.10. The fixed end of balance B is attached with a rigid support, like a wall. When a force is applied through the free end of spring balance A, it is observed that both the spring balances show the same readings on their scales. It means that the force exerted by spring balance A on balance B is equal but opposite in direction to the force exerted by the balance B on balance A. Any of these two forces can be called as _action_ and the other as _reaction_ . This gives us an alternative statement of the third law of motion i.e., to every action there is an equal and opposite reaction. However, it must be remembered that the action and reaction always act on two different objects, simultaneously. 
 _**Fig. 8.10:** Action and reaction forces are equal and opposite._ 
