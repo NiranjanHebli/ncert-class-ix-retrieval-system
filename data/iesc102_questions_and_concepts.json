@@ -1,0 +1,86 @@
+{
+  "document_title": "IS MATTER AROUND US PURE?",
+  "chapter": "Chapter 2",
+  "questions_and_concepts": [
+    {
+      "question_id": 1,
+      "question": "How can we determine whether common household items like milk, ghee, butter, salt, spices, mineral water, or juice are pure substances according to scientific standards, and what is the fundamental difference between a common person's definition of purity versus a scientist's definition?",
+      "key_concepts": ["pure substance", "mixture", "chemical constituents", "physical process", "characteristic properties"]
+    },
+    {
+      "question_id": 2,
+      "question": "Describe the experimental procedure in Activity 2.1 that demonstrates the difference between homogeneous and heterogeneous mixtures, and explain what observations indicate uniform versus non-uniform composition in mixtures.",
+      "key_concepts": ["homogeneous mixtures", "heterogeneous mixtures", "uniform composition", "non-uniform composition", "copper sulphate", "potassium permanganate"]
+    },
+    {
+      "question_id": 3,
+      "question": "Explain the complete experimental procedure in Activity 2.2 for identifying solutions, suspensions, and colloidal solutions, including the specific tests performed and the expected observations for each type of mixture.",
+      "key_concepts": ["solution", "suspension", "colloidal solution", "filtration", "light beam", "particle visibility", "stability test"]
+    },
+    {
+      "question_id": 4,
+      "question": "What are alloys, why are they considered mixtures rather than pure substances, and how does brass exemplify the properties of alloys as described in the context of solutions?",
+      "key_concepts": ["alloys", "brass", "zinc", "copper", "variable composition", "physical methods", "mixtures vs pure substances"]
+    },
+    {
+      "question_id": 5,
+      "question": "Describe the six key properties that define a solution, and explain how each property distinguishes solutions from suspensions and colloidal solutions.",
+      "key_concepts": ["homogeneous mixture", "particle size", "1 nanometer", "light scattering", "filtration", "stability", "variable composition"]
+    },
+    {
+      "question_id": 6,
+      "question": "Explain the experimental procedure in Activity 2.3 for determining solubility, and describe how the results demonstrate that different substances have different solubilities at the same temperature.",
+      "key_concepts": ["solubility", "saturated solution", "temperature", "unsaturated solution", "salt", "sugar", "barium chloride", "experimental procedure"]
+    },
+    {
+      "question_id": 7,
+      "question": "Calculate the concentration of a solution containing 40 g of common salt in 320 g of water using mass by mass percentage, showing all steps of the calculation and explaining the significance of each step.",
+      "key_concepts": ["mass by mass percentage", "concentration calculation", "solute", "solvent", "solution mass", "percentage formula"]
+    },
+    {
+      "question_id": 8,
+      "question": "What is the Tyndall effect, and provide at least three detailed examples from everyday life or nature where this phenomenon can be observed, explaining why it occurs in each case?",
+      "key_concepts": ["Tyndall effect", "light scattering", "visible beam", "dust particles", "smoke", "forest canopy", "mist", "colloidal particles"]
+    },
+    {
+      "question_id": 9,
+      "question": "Compare and contrast the properties of colloids with those of solutions and suspensions, focusing on particle size, visibility, light scattering, stability, and separation methods.",
+      "key_concepts": ["colloids", "solutions", "suspensions", "particle size", "visibility", "light scattering", "stability", "separation methods", "centrifugation"]
+    },
+    {
+      "question_id": 10,
+      "question": "Explain the classification of colloids based on the states of dispersed phase and dispersion medium, and provide detailed examples for each type mentioned in Table 2.1.",
+      "key_concepts": ["colloid classification", "dispersed phase", "dispersion medium", "aerosol", "foam", "emulsion", "sol", "gel", "solid sol"]
+    },
+    {
+      "question_id": 11,
+      "question": "Distinguish between physical and chemical changes using specific examples, and explain how the interconversion of states of water demonstrates physical changes while burning demonstrates chemical changes.",
+      "key_concepts": ["physical changes", "chemical changes", "properties", "composition", "chemical nature", "interconversion of states", "water states", "burning"]
+    },
+    {
+      "question_id": 12,
+      "question": "Describe the historical development of the concept of elements, including the contributions of Robert Boyle and Antoine Laurent Lavoisier, and explain how the modern definition differs from ancient concepts.",
+      "key_concepts": ["elements", "Robert Boyle", "Antoine Laurent Lavoisier", "basic form of matter", "chemical reactions", "historical development", "modern definition"]
+    },
+    {
+      "question_id": 13,
+      "question": "Compare the characteristic properties of metals and non-metals in detail, and explain how metalloids exhibit intermediate properties with specific examples.",
+      "key_concepts": ["metals", "non-metals", "metalloids", "lustre", "conductivity", "ductile", "malleable", "sonorous", "intermediate properties"]
+    },
+    {
+      "question_id": 14,
+      "question": "Explain the complete experimental procedure in Activity 2.4, and describe how the results demonstrate the fundamental differences between mixtures and compounds.",
+      "key_concepts": ["mixtures vs compounds", "iron filings", "sulphur", "physical change", "chemical change", "magnetic properties", "experimental procedure"]
+    },
+    {
+      "question_id": 15,
+      "question": "Systematically compare mixtures and compounds using the four criteria presented in the text, providing detailed explanations for each point.",
+      "key_concepts": ["mixtures", "compounds", "formation", "composition", "properties", "separation methods", "variable composition", "fixed composition"]
+    },
+    {
+      "question_id": 16,
+      "question": "Provide a comprehensive summary of the key concepts learned in Chapter 2, including the classification systems for matter, the properties of different mixture types, and the fundamental distinctions between pure substances and mixtures.",
+      "key_concepts": ["matter classification", "pure substances", "mixtures", "solutions", "suspensions", "colloids", "elements", "compounds", "physical changes", "chemical changes"]
+    }
+  ]
+}
