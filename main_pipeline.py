@@ -35,7 +35,11 @@ def main():
 
     # 3. Retrieval Demo
     print("\n[STEP 3] Running Retrieval Demo...")
-    run_command(["python3", "src/retrieval_demo.py"])
+    run_command(["python3", "src/retrieval.py"])
+
+    # 4. Grounded Generation (Stage 3)
+    print("\n[STEP 4] Running Grounded Generation Test (Groq)...")
+    run_command(["python3", "src/groq_generation.py"])
 
     print("\n" + "=" * 60)
     print("PIPELINE COMPLETED SUCCESSFULLY")

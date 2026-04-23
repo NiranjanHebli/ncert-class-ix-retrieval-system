@@ -11,7 +11,7 @@ source .venv/bin/activate
 
 2. Install dependencies:
 ```bash
-pip install pymupdf pdfplumber transformers tokenizers torch rank_bm25 google-generativeai sentence-transformers
+pip install pymupdf pdfplumber transformers tokenizers torch rank_bm25 google-genai groq sentence-transformers
 ```
 
 or 
@@ -28,6 +28,7 @@ cp .env.example .env
 
 ```env
 API_KEY=your_gemini_api_key
+GROQ_API_KEY=your_groq_api_key
 OCR_SPACE_API_KEY=your_ocr_space_api_key
 ```
 
@@ -98,4 +99,34 @@ To run the entire pipeline (extraction, evaluation, and retrieval) in one go:
 
 ```bash
 python main_pipeline.py
+```
+
+## Grounded Generation
+
+The system supports two backends for grounded generation. Both use strict grounding prompts to ensure answers are based only on NCERT context.
+
+### 1. Gemini Implementation
+Standard implementation using the Gemini-1.5-Flash model.
+```bash
+python src/grounded_generation.py         # Standard Test
+python src/grounded_generation.py --full  # Full Corpus Test
+```
+
+### 2. Groq Implementation (Recommended)
+High-speed implementation using Llama-3-8B via Groq.
+```bash
+python src/groq_generation.py         # Standard Test
+python src/groq_generation.py --full  # Full Corpus Test
+```
+
+### 3. Interactive Q&A Mode
+To start a live interactive session with the assistant:
+```bash
+python src/groq_generation.py --interactive
+```
+
+## Diagnostic Tools
+A dedicated retrieval test script is available in the tests directory:
+```bash
+python tests/test_retrieval.py
 ```
