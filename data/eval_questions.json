@@ -1,0 +1,57 @@
+[
+    {
+        "category": "Chapter 1: Matter",
+        "questions": [
+            "What are the three states of matter?",
+            "Why is ice at 273 K more effective in cooling than water at the same temperature?",
+            "What produces more severe burns, boiling water or steam?"
+        ]
+    },
+    {
+        "category": "Chapter 3: Atoms and Molecules",
+        "questions": [
+            "Calculate the molecular mass of water (H2O)."
+        ]
+    },
+    {
+        "category": "Chapter 5: Cell",
+        "questions": [
+            "What is the powerhouse of the cell and why?",
+            "What is the difference between a plant cell and an animal cell?"
+        ]
+    },
+    {
+        "category": "Chapter 8: Motion",
+        "questions": [
+            "Define displacement and how it differs from distance."
+        ]
+    },
+    {
+        "category": "Chapter 9: Force and Laws of Motion",
+        "questions": [
+            "Why do we fall in the forward direction when a moving bus brakes to a stop?"
+        ]
+    },
+    {
+        "category": "Chapter 10: Gravitation",
+        "questions": [
+            "State the universal law of gravitation."
+        ]
+    },
+    {
+        "category": "Chapter 11: Work and Energy",
+        "questions": [
+            "How do we define work done by a force?",
+            "What is the kinetic energy of an object?"
+        ]
+    },
+    {
+        "category": "Out of Domain (OOD)",
+        "questions": [
+            "Who is the current Prime Minister of India?",
+            "What is the capital of France?",
+            "How do I bake a chocolate cake?",
+            "What is the latest score in the IPL match?"
+        ]
+    }
+]

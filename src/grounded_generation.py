@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -100,9 +101,21 @@ def run_full_corpus_demo():
                 files_loaded += 1
     
     print(f"Loaded {files_loaded} files.")
-    q = "State the universal law of gravitation."
-    print(f"Question: {q}")
-    print(f"Answer: {generator.answer(q)['answer']}")
+    test_questions = []
+    questions_file = os.path.join(project_root, "data", "eval_questions.json")
+    if os.path.exists(questions_file):
+        with open(questions_file, "r") as f:
+            categories = json.load(f)
+            for cat in categories:
+                test_questions.extend(cat["questions"])
+    else:
+        # Fallback if file missing
+        test_questions = ["State the universal law of gravitation."]
+    
+    for q in test_questions:
+        print(f"\n[QUESTION]: {q}")
+        res = generator.answer(q)
+        print(f"[ANSWER]: {res['answer']}")
 
 def run_interactive_session():
     """Interactive session for the user."""
