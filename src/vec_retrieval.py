@@ -7,6 +7,7 @@ import torch
 import atexit
 import os
 from pathlib import Path
+import pickle
 from transformers import AutoTokenizer, AutoModel
 from rank_bm25 import BM25Okapi
 
@@ -158,6 +159,54 @@ class VectorDatabase:
         top_k = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
         return [self.chunks[i] for i in top_k]
     
+    def save_to_disk(self, directory: str | Path):
+        """Save the database and index to a directory."""
+        path = Path(directory)
+        path.mkdir(parents=True, exist_ok=True)
+        
+        # Save chunks
+        with open(path / "chunks.pkl", "wb") as f:
+            pickle.dump(self.chunks, f)
+            
+        # Save BM25
+        with open(path / "bm25.pkl", "wb") as f:
+            pickle.dump(self.bm25, f)
+            
+        # Save FAISS index if it exists
+        if self.faiss_idx is not None:
+            faiss.write_index(self.faiss_idx, str(path / "faiss.idx"))
+            np.save(path / "embeds.npy", self.embeds)
+            
+        print(f"Database saved to {directory}")
+
+    def load_from_disk(self, directory: str | Path):
+        """Load the database and index from a directory."""
+        path = Path(directory)
+        if not path.exists():
+            raise FileNotFoundError(f"Database directory {directory} not found.")
+            
+        # Load chunks
+        with open(path / "chunks.pkl", "rb") as f:
+            self.chunks = pickle.load(f)
+            
+        # Load BM25
+        bm25_path = path / "bm25.pkl"
+        if bm25_path.exists():
+            with open(bm25_path, "rb") as f:
+                self.bm25 = pickle.load(f)
+        else:
+            # Re-build BM25 if missing
+            self._refresh_indexes()
+            
+        # Load FAISS index if it exists
+        faiss_path = path / "faiss.idx"
+        if faiss_path.exists():
+            self.faiss_idx = faiss.read_index(str(faiss_path))
+            self.embeds = np.load(path / "embeds.npy")
+            self.use_embeddings = True
+            
+        print(f"Database loaded from {directory} ({len(self.chunks)} chunks)")
+
     def flush_vector_db(self):
         self.faiss_idx = None
         self.embeds = None

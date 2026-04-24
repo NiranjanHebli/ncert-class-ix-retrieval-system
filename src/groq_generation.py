@@ -39,6 +39,21 @@ class GroqGroundedGenerator:
         """Build chunk store from a specific text file."""
         self.db.build_chunk_store_from_file(text_file)
 
+    def save_db(self, path="data/vector_db"):
+        """Save current database to disk."""
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        full_path = os.path.join(project_root, path) if not os.path.isabs(path) else path
+        self.db.save_to_disk(full_path)
+
+    def load_db(self, path="data/vector_db"):
+        """Load database from disk."""
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        full_path = os.path.join(project_root, path) if not os.path.isabs(path) else path
+        if os.path.exists(full_path):
+            self.db.load_from_disk(full_path)
+            return True
+        return False
+
     def answer(self, question, k=3):
         """
         Retrieves context and generates a grounded answer using Groq.
@@ -77,17 +92,22 @@ def run_full_corpus_demo():
     print("\n--- Groq Full Corpus Demo (All Chapters) ---")
     generator = GroqGroundedGenerator()
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    db_path = os.path.join(project_root, "data", "vector_db")
     extracted_dir = os.path.join(project_root, "extracted")
     
-    files_loaded = 0
-    for root, dirs, files in os.walk(extracted_dir):
-        if root == extracted_dir: continue
-        for f in files:
-            if f.endswith(".txt"):
-                generator.initialize_db(os.path.join(root, f))
-                files_loaded += 1
-    
-    print(f"Loaded {files_loaded} files.")
+    if generator.load_db(db_path):
+        print("Loaded existing database from disk.")
+    else:
+        print("Building new database from scratch...")
+        files_loaded = 0
+        for root, dirs, files in os.walk(extracted_dir):
+            if root == extracted_dir: continue
+            for f in files:
+                if f.endswith(".txt"):
+                    generator.initialize_db(os.path.join(root, f))
+                    files_loaded += 1
+        print(f"Loaded {files_loaded} files.")
+        generator.save_db(db_path)
     
     test_questions = []
     questions_file = os.path.join(project_root, "data", "eval_questions.json")

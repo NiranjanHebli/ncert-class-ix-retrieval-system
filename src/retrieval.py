@@ -126,9 +126,16 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     
     print("Initializing Vector Database...")
     db = VectorDatabase()
+    db_path = data_dir / "vector_db"
     
-    print("Building chunk store with FAISS and BM25...")
-    chunks = db.build_chunk_store(txt)
+    if db_path.exists():
+        print("Loading existing Vector Database from disk...")
+        db.load_from_disk(db_path)
+        chunks = db.chunks
+    else:
+        print("Building chunk store from scratch...")
+        chunks = db.build_chunk_store(txt)
+        db.save_to_disk(db_path)
     
     print("\n" + "=" * 80)
     print("CHUNK ANALYSIS")

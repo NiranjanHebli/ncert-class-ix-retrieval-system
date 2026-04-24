@@ -1,5 +1,16 @@
 # PariShiksha NCERT Science QA Retrieval System
 
+![Python](https://img.shields.io/badge/python-3.13-3670A0?logo=python&logoColor=ffdd54)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0-%23EE4C2C.svg?logo=PyTorch&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-5.5.4-yellow)
+![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-8E75B2?logo=google%20gemini&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-Llama%203.1-f55036)
+![FAISS](https://img.shields.io/badge/FAISS-1.13.2-blue)
+![BM25](https://img.shields.io/badge/Rank--BM25-0.2.2-green)
+![Pandas](https://img.shields.io/badge/pandas-3.0.2-%23150458.svg?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.8-%23ffffff.svg?logo=Matplotlib&logoColor=black)
+
+
 ## Environment Setup
 The project uses Python 3.10+.
 
@@ -106,7 +117,7 @@ python main_pipeline.py
 The system supports two backends for grounded generation. Both use strict grounding prompts to ensure answers are based only on NCERT context.
 
 ### 1. Gemini Implementation
-Standard implementation using the Gemini-1.5-Flash model.
+Standard implementation using the Gemini 2.5 Flash model.
 ```bash
 python src/grounded_generation.py         # Standard Test
 python src/grounded_generation.py --full  # Full Corpus Test
