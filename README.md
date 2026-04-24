@@ -161,13 +161,27 @@ This generates:
 - `data/evaluation_results.csv` — Raw scores for each question
 - [evaluation_results.md](docs/evaluation_results.md) — Summary report with working/failing example analysis
 
+## High-Level Design
+
+![High-Level Design](./docs/diagrams/HLD.png)
+
+The system follows a 4-stage RAG pipeline. PDFs are extracted and chunked using BERT tokenization, indexed with BM25 and FAISS, and queried through a grounding prompt that forces the LLM to either answer from context or refuse.
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Extraction | pymupdf4llm | PDF → structured markdown |
+| Chunking | BERT WordPiece | 400-token chunks, 50-token overlap |
+| Retrieval | BM25 + FAISS | Keyword + semantic search |
+| Generation | Groq / Gemini | Grounded answer with refusal capability |
+| Storage | Pickle + FAISS | Persistent indexes on disk |
+
 ## Project Documentation
 
 | Document | Description |
 |---|---|
 | [notebook.ipynb](notebook.ipynb) | End-to-end pipeline demonstration (Stages 1–4) |
 | [evaluation_results.md](docs/evaluation_results.md) | 20-question evaluation with 3-axis scoring |
-| [reflection.md](docs/reflection.md) | Project reflection (700–1000 words, 8 sections) |
+| [reflection.md](docs/reflection.md) | Project Reflection (Parts A–E, 13 questions) |
 | [failure_modes.md](docs/failure_modes.md) | Top 3 production failure modes analysis |
 | [chunking_strategy.md](docs/chunking_strategy.md) | Chunking size, overlap, and strategy justification |
 | [data_organization.md](docs/data_organization.md) | Content classification and data structure |
