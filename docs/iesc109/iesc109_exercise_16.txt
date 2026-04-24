@@ -1,1 +1,0 @@
-16. Calculate the force of gravitation between the earth and the Sun, given that the mass of the earth = 6 × 10[24] kg and of the Sun = 2 × 10[30] kg. The average distance between the two is 1.5 × 10[11] m. 

@@ -2,27 +2,25 @@ import os
 import re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-docs_dir = os.path.join(BASE_DIR, "docs")
+extracted_dir = os.path.join(BASE_DIR, "extracted")
 
 def split_text_file(filepath, pdf_name):
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
         
-    # Regular expressions for identifying sections and exercises
-    # Matches markdown headers like `## **8.1 Balanced and Unbalanced Forces**` or just `1.1 Intro`
+    # Regular expressions for identifying sections, exercises and examples
     section_pattern = re.compile(r"^(?:#*\s*)?(?:\*\*_*)?(\d+\.\d+(?:\.\d+)?)(?:_*\*\*)?\s*(.*)")
-    # Match "Exercises" even with markdown bold/italic
     exercise_header_pattern = re.compile(r"^(?:#*\s*)?(?:\*\*_*)?Exercises?(?:_*\*\*)?\s*$", re.IGNORECASE)
-    # Match "1. An object"
-    exercise_item_pattern = re.compile(r"^(?:#*\s*)?(?:\*\*_*)?(\d+)\.(?!\d)\s*(.*)")
+    # Match "Example 1.1" or "**Example 1.1**"
+    example_pattern = re.compile(r"(?:^|[\n\r])(?:#*\s*)?(?:\*\*_*)?Example\s+\d+\.\d+(?:_*\*\*)?", re.IGNORECASE)
+    solution_pattern = re.compile(r"(?:^|[\n\r])(?:#*\s*)?(?:\*\*_*)?Solution:?(?:_*\*\*)?", re.IGNORECASE)
     
-    current_section = "Intro"
     in_exercises = False
-    current_exercise = "Intro"
+    in_example = False
     
-    # Store lines for each section and exercise
-    sections = {"Intro": []}
-    exercises = {"Intro": []}
+    concepts_content = []
+    exercises_content = []
+    examples_content = []
     
     for line in lines:
         stripped_line = line.strip()
@@ -35,63 +33,81 @@ def split_text_file(filepath, pdf_name):
             continue
             
         if not in_exercises:
-            # Check if this line actually looks like an exercise even before header
-            ex_match = exercise_item_pattern.match(stripped_line)
-            sec_match = section_pattern.match(stripped_line)
+            # Detect start of a worked example
+            if example_pattern.search(stripped_line):
+                in_example = True
             
-            # Heuristic: if we see a numbered list starting with 1. near the end, it might be exercises
-            # But it's safer to just rely on section match
-            if sec_match and not sec_match.group(2).startswith("is called"):
-                current_section = sec_match.group(1)
-                if current_section not in sections:
-                    sections[current_section] = []
-            sections[current_section].append(line)
+            if in_example:
+                examples_content.append(line)
+                # Heuristic: example ends when a new section starts or we see a clear boundary
+                # But for now, we'll just keep adding to examples until the next section
+            else:
+                concepts_content.append(line)
+                
+            # If we see a new section header, we might be out of the example
+            if section_pattern.match(stripped_line):
+                in_example = False
         else:
-            ex_match = exercise_item_pattern.match(stripped_line)
-            if ex_match:
-                current_exercise = ex_match.group(1)
-                if current_exercise not in exercises:
-                    exercises[current_exercise] = []
-            exercises[current_exercise].append(line)
+            exercises_content.append(line)
 
-    # Output directory for the PDF
-    # "folder name of the pdf file"
-    output_dir = os.path.join(docs_dir, pdf_name)
-    os.makedirs(output_dir, exist_ok=True)
+    # Paragraph extraction
+    full_text = "".join(lines)
+    paragraphs = [p.strip() for p in re.split(r'\n\s*\n', full_text) if p.strip()]
+    paragraphs_content = "\n\n".join(paragraphs)
+
+    # Output directories
+    concepts_dir = os.path.join(extracted_dir, "concepts")
+    exercises_dir = os.path.join(extracted_dir, "exercises")
+    examples_dir = os.path.join(extracted_dir, "worked_examples")
+    paragraphs_dir = os.path.join(extracted_dir, "paragraphs")
     
-    # Write sections
-    for sec_num, sec_lines in sections.items():
-        if sec_num == "Intro" and not sec_lines:
-            continue
-        file_name = f"{pdf_name}_section_{sec_num}.txt"
-        out_path = os.path.join(output_dir, file_name)
+    os.makedirs(concepts_dir, exist_ok=True)
+    os.makedirs(exercises_dir, exist_ok=True)
+    os.makedirs(examples_dir, exist_ok=True)
+    os.makedirs(paragraphs_dir, exist_ok=True)
+    
+    # Write concepts file
+    if concepts_content:
+        file_name = f"{pdf_name}_concepts.txt"
+        out_path = os.path.join(concepts_dir, file_name)
         with open(out_path, 'w', encoding='utf-8') as f:
-            f.writelines(sec_lines)
+            f.writelines(concepts_content)
             
-    # Write exercises
-    for ex_num, ex_lines in exercises.items():
-        if ex_num == "Intro" and not ex_lines:
-            continue
-        file_name = f"{pdf_name}_exercise_{ex_num}.txt"
-        out_path = os.path.join(output_dir, file_name)
+    # Write exercises file
+    if exercises_content:
+        file_name = f"{pdf_name}_exercises.txt"
+        out_path = os.path.join(exercises_dir, file_name)
         with open(out_path, 'w', encoding='utf-8') as f:
-            f.writelines(ex_lines)
+            f.writelines(exercises_content)
 
-    print(f"Processed {pdf_name}: {len(sections)} sections, {len(exercises)} exercises.")
+    # Write examples file
+    if examples_content:
+        file_name = f"{pdf_name}_examples.txt"
+        out_path = os.path.join(examples_dir, file_name)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.writelines(examples_content)
+
+    # Write paragraphs file
+    if paragraphs_content:
+        file_name = f"{pdf_name}_paragraphs.txt"
+        out_path = os.path.join(paragraphs_dir, file_name)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(paragraphs_content)
+
+    print(f"Processed {pdf_name}: Classified into concepts, exercises, examples, and paragraphs.")
 
 def main():
-    if not os.path.exists(docs_dir):
-        print(f"Error: Directory not found at {docs_dir}")
+    if not os.path.exists(extracted_dir):
+        print(f"Error: Directory not found at {extracted_dir}")
         return
         
-    for filename in os.listdir(docs_dir):
+    for filename in os.listdir(extracted_dir):
         if not filename.lower().endswith(".txt"):
             continue
             
-        filepath = os.path.join(docs_dir, filename)
+        filepath = os.path.join(extracted_dir, filename)
         pdf_name = os.path.splitext(filename)[0]
         
-        # Avoid processing directories or already processed output
         if os.path.isdir(filepath):
             continue
             

@@ -5,7 +5,7 @@ import shutil
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FOLDER_NAME  = "iesc1dd"
 source_dir = os.path.join(BASE_DIR, FOLDER_NAME)
-output_dir = os.path.join(BASE_DIR, "docs")
+output_dir = os.path.join(BASE_DIR, "extracted")
 
 # Ensure a fresh run by clearing the docs directory if it exists
 if os.path.exists(output_dir):

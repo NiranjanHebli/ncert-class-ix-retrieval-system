@@ -1,0 +1,75 @@
+**Example 7.1** An object travels 16 m in 4 s and then another 16 m in 2 s. What is the average speed of the object? 
+## **Solution:** 
+Total distance travelled by the object = 16 m + 16 m = 32 m Total time taken = 4 s + 2 s = 6 s 
+**==> picture [199 x 59] intentionally omitted <==**
+Therefore, the average speed of the object is 5.33 m s[–1] . 
+## **7.2.1 SPEED WITH DIRECTION** 
+**Example 7.3** Usha swims in a 90 m long pool. She covers 180 m in one minute by swimming from one end to the other and back along the same straight path. Find the average speed and average velocity of Usha. 
+Q 
+## uestions 
+_1. Distinguish between speed and velocity._ 
+**Solution:** 
+Total distance covered by Usha in 1 min is 180 m. Displacement of Usha in 1 min = 0 m 
+_2. Under what condition(s) is the magnitude of average velocity of an object equal to its average speed?_ 
+_3. What does the odometer of an automobile measure?_ 
+_4. What does the path of an object look like when it is in uniform motion?_ 
+**==> picture [198 x 202] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+Total distance covered<br>Average speed =  Totaltimetaken<br>180m 180 m 1 min<br>= 1min = 1min × 60s<br>= 3 m s [-1]<br>Displacement<br>Average velocity = Totaltimetaken<br>0m<br>=<br>60 s<br>= 0 m s [–1]<br>The average speed of Usha is 3 m s [–1]<br>and her average velocity is 0 m s [–1] .<br>**----- End of picture text -----**<br>
+_5. During an experiment, a signal from a spaceship reached the ground station in five minutes. What was the distance of the spaceship from the ground station? The signal travels at the speed of light, that is, 3_ × _10[8]_ m s[–1] _._ 
+**Example 7.2** The odometer of a car reads 2000 km at the start of a trip and 2400 km at the end of the trip. If the trip took 8 h, calculate the average speed of the car in km h[[–1]] and m s[[–1]] . 
+## **7.3 Rate of Change of Velocity** 
+**Example 7.4** Starting from a stationary position, Rahul paddles his bicycle to 
+attain a velocity of 6 m s[–1] in 30 s. Then he applies brakes such that the velocity of the bicycle comes down to 4 m s[-1 ] in the next 5 s. Calculate the acceleration of the bicycle in both the cases. 
+## **Solution:** 
+In the first case: initial velocity, _u_ = 0 ; final velocity, _v_ = 6 m s[–1 ] ; time, _t_ = 30 s . From Eq. (8.3), we have 
+**==> picture [46 x 24] intentionally omitted <==**
+Substituting the given values of _u_ , _v_ and _t_ in the above equation, we get 
+**==> picture [106 x 31] intentionally omitted <==**
+**==> picture [53 x 9] intentionally omitted <==**
+In the second case: initial velocity _, u_ = 6 m s[–1] ; final velocity _, v =_ 4 m s[–1] ; time, _t =_ 5 s. 
+**==> picture [138 x 31] intentionally omitted <==**
+= –0.4 m s[–2 ] . 
+The acceleration of the bicycle in the first case is 0.2 m s[–2] and in the second case, it is –0.4 m s[–2] . 
+Q 
+## uestions 
+_1. When will you say a body is in (i) uniform acceleration?  (ii) nonuniform acceleration?_ 
+_2. A bus decreases its speed from 80_ km h[–1] _to 60_ km h[–1] _in 5_ s _. Find the acceleration of the bus._ 
+_3. A train starting from a railway station and moving with uniform acceleration attains a speed 40_ km h[–1] _in 10 minutes. Find its acceleration._ 
+**77** 
+_MOTION_ 
+Reprint 2025-26 
+## **7.4 Graphical Representation of Motion** 
+Example 7.5 A train starting from rest attains a velocity of 72 km h[–1] in 5 minutes. Assuming that the acceleration is uniform, find (i) the acceleration and (ii) the distance travelled by the train for attaining this velocity. 
+## Solution: 
+We have been given _u_ = 0 ; _v_ = 72 km h[–1] = 20 m s[-1 ] and _t =_ 5 minutes = 300 s. 
+- (i) From Eq. (7.5) we know that 
+**==> picture [104 x 94] intentionally omitted <==**
+**----- Start of picture text -----**<br>
+v – u<br>( )<br>a =<br>t<br>20 m s–1 – 0 m s–1<br>=<br>300s<br>= 1 m s–2<br>15<br>**----- End of picture text -----**<br>
+81 
+_MOTION_ 
+Reprint 2025-26 
+(ii) From Eq. (7.7) we have _2 as = v[2] – u[2] = v[2] –_ 0 Thus, 
+Example 7.7 The brakes applied to a car produce an acceleration of 6 m s[-2 ] in the opposite direction to the motion. If the car takes 2 s to stop after the application of  brakes, calculate the distance it travels during this time. 
+**==> picture [89 x 100] intentionally omitted <==**
+## Solution: 
+We have been given _a_ = – 6 m s[–2] ; _t_ = 2 s and _v_ = 0 m s[–1] . From Eq. (7.5) we know that _v = u + at_ 
+1 The acceleration of the train is 15[m s] _[– 2]_ and the distance travelled is 3 km. 
+**==> picture [136 x 37] intentionally omitted <==**
+**==> picture [76 x 22] intentionally omitted <==**
+Example 7.6 A car accelerates uniformly –1 –1 from 18 km h to 36 km h in 5 s. Calculate (i) the acceleration and (ii) the distance covered by the car in that time. 
+**==> picture [188 x 48] intentionally omitted <==**
+## Solution: 
+Thus, the car will move 12 m before it stops after the application of brakes. Can you now appreciate why drivers are cautioned to maintain some distance between vehicles while travelling on the road? 
+We are given that _u_ = 18 km h[–1] = 5 m s[–1] _v_ = 36 km h[–1] = 10 m s[–1 ] and _t_ = 5 s . 
+**==> picture [450 x 108] intentionally omitted <==**
+_2. A train is travelling at a speed of 90_ km h[–1] . _Brakes are applied so as to produce a uniform acceleration of – 0.5_ m s[-2] _. Find how far the train will go before it is brought to rest._ 
+**==> picture [199 x 114] intentionally omitted <==**
+_3. A trolley, while going down an inclined plane, has an acceleration of 2_ cm s[-2] _. What will be its velocity 3_ s _after the start?_ 
+82 
+_SCIENCE_ 
+Reprint 2025-26 
+_4. A racing car has a uniform acceleration of 4_ m s[-2] _. What distance will it cover in 10_ s _after start?_ 
+_5. A stone is thrown in a vertically upward direction with a velocity of 5_ m s[-1] _. If the acceleration of the stone during its motion is 10_ m s[–2] _in the downward direction, what will be the height attained by the stone and how much time will it take to reach there?_ 
+## **7.6 Uniform Circular Motion** 

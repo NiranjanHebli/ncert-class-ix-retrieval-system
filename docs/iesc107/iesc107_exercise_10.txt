@@ -1,4 +1,0 @@
-10. An artificial satellite is moving in a circular orbit of radius 42250 km. Calculate its speed if it takes 24 hours to revolve around the earth. 
-**86** 
-_SCIENCE_ 
-Reprint 2025-26 

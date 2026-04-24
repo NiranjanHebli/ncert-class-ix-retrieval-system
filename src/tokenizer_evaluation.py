@@ -1,4 +1,5 @@
 import json
+import os
 import time
 from typing import List, Dict, Tuple, Optional
 from pathlib import Path
@@ -12,18 +13,17 @@ DEFAULT_TOKENIZERS = {
     't5-small': 't5-small'
 }
 
-DEFAULT_CHUNK_SIZES = [100, 200, 300, 500, 800, 1000]
-DEFAULT_OVERLAPS = [0, 50, 100, 200]
+DEFAULT_CHUNK_SIZES = [200, 300, 500, 800, 1000]
+DEFAULT_OVERLAPS = [0, 50, 100]
 
 SCORING_WEIGHTS = {
-    'compression_ratio': 0.33,
-    'token_consistency': 0.33,
-    'encoding_speed': 0.33
+    'compression_ratio': 0.5,
+    'token_consistency': 0.5
 }
 
 OUTPUT_FILES = {
-    'results': '../data/tokenizer_results.json',
-    'comparison': '../data/tokenizer_comparison.csv'
+    'results': Path('../data/tokenizer_results.json'),
+    'comparison': Path('../data/tokenizer_comparison.csv')
 }
 
 class TokenizerEvaluator:
@@ -52,11 +52,11 @@ class TokenizerEvaluator:
                 print(f"Warning: Failed to load tokenizer {name}: {e}")
         return tks
     
-    def load_sample_text(self, filepath: str) -> str:
+    def load_sample_text(self, filepath: str | Path) -> str:
         """Load sample text from file.
         
         Args:
-            filepath: Path to the text file
+            filepath: Path to the text file (string or Path object)
             
         Returns:
             The loaded text content
@@ -203,12 +203,12 @@ class TokenizerEvaluator:
         unique = len(set(all_tokens))
         return unique / tk.vocab_size
     
-    def run_evaluation(self, text_file: str, sizes: List[int] = None, 
+    def run_evaluation(self, text_file: str | Path, sizes: List[int] = None, 
                        overlaps: List[int] = None) -> Dict[str, Dict]:
         """Run complete evaluation for all tokenizers.
         
         Args:
-            text_file: Path to the text file
+            text_file: Path to the text file (string or Path object)
             sizes: List of chunk sizes to test (uses default if None)
             overlaps: List of overlaps to test (uses default if None)
             
@@ -275,36 +275,37 @@ class TokenizerEvaluator:
         return best_config, best_score
     
     def _compute_configuration_score(self, metrics: Dict) -> float:
-        """Compute a composite score for a configuration."""
+        """Compute a composite score for a configuration.
+        
+        Args:
+            metrics: Configuration metrics dictionary
+            
+        Returns:
+            float: Composite score for the configuration
+        """
         w = SCORING_WEIGHTS
         
-        # Context retention bonus: reward configurations with meaningful overlap
         overlap_ratio = metrics['overlap'] / metrics['chunk_size']
-        # Optimal overlap is between 10-30% of chunk size for context retention
         if 0.1 <= overlap_ratio <= 0.3:
-            context_bonus = 1.2  # 20% bonus for optimal overlap
+            context_bonus = 1.2
         elif overlap_ratio > 0:
-            context_bonus = 1.1  # 10% bonus for any positive overlap
+            context_bonus = 1.1
         else:
-            context_bonus = 0.8  # 20% penalty for no overlap
+            context_bonus = 0.8
         
         effective_compression = metrics['compression_ratio']
         comp_score = effective_compression * context_bonus
         
         cons_score = 1 / (metrics['std_tokens_per_chunk'] + 1)
         
-        speed_score = 1 / (metrics['avg_encoding_time'] * 1000 + 1)
-        
-        comp_normalized = min(comp_score / 5.0, 1.0)  # Normalize compression to 0-1 (max ~5)
-        cons_normalized = min(cons_score, 1.0)  # Already 0-1 range
-        speed_normalized = min(speed_score, 1.0)  # Already 0-1 range
+        comp_normalized = min(comp_score / 5.0, 1.0)
+        cons_normalized = min(cons_score, 1.0)
         
         return (comp_normalized * w['compression_ratio'] + 
-                cons_normalized * w['token_consistency'] + 
-                speed_normalized * w['encoding_speed'])
+                cons_normalized * w['token_consistency'])
     
     def save_results(self, results: Dict[str, Dict], analysis: Dict[str, Dict], 
-                     filename: str = None) -> None:
+                     filename: str | Path = None) -> None:
         """Save results to JSON file.
         
         Args:
@@ -312,7 +313,7 @@ class TokenizerEvaluator:
             analysis: Analysis dictionary from analyze_results
             filename: Output filename (uses default if None)
         """
-        filename = filename or OUTPUT_FILES['results']
+        filename = Path(filename) if filename else OUTPUT_FILES['results']
         
         output = {
             'results': results,
@@ -321,6 +322,7 @@ class TokenizerEvaluator:
         }
         
         try:
+            filename.parent.mkdir(parents=True, exist_ok=True)
             with open(filename, 'w') as f:
                 json.dump(output, f, indent=2)
             print(f"Results saved to {filename}")
@@ -376,36 +378,55 @@ class TokenizerEvaluator:
             'Avg_Encoding_Time_ms': metrics['avg_encoding_time'] * 1000
         }
     
-    def save_comparison_table(self, results: Dict[str, Dict], filename: str = None) -> None:
+    def save_comparison_table(self, results: Dict[str, Dict], filename: str | Path = None) -> None:
         """Save comparison table to CSV.
         
         Args:
             results: Results dictionary from run_evaluation
             filename: Output filename (uses default if None)
         """
-        filename = filename or OUTPUT_FILES['comparison']
+        filename = Path(filename) if filename else OUTPUT_FILES['comparison']
         
         try:
+            filename.parent.mkdir(parents=True, exist_ok=True)
             df = self.create_comparison_table(results)
             df.to_csv(filename, index=False)
             print(f"Comparison table saved to {filename}")
         except Exception as e:
             print(f"Error saving comparison table: {e}")
 
-def main(text_file: str = "../data/sample_science_text.txt", 
+def main(text_files: List[str | Path] = None, 
          sizes: List[int] = None, 
          overlaps: List[int] = None) -> None:
     """Main function to run tokenizer evaluation.
     
     Args:
-        text_file: Path to the text file to evaluate
+        text_files: List of paths to text files to evaluate (uses IESC files if None)
         sizes: List of chunk sizes to test
         overlaps: List of overlaps to test
     """
     sizes = sizes or DEFAULT_CHUNK_SIZES
     overlaps = overlaps or DEFAULT_OVERLAPS
     
+    if text_files is None:
+        docs_dir = Path("./extracted")
+        text_files = [
+            docs_dir / "iesc101.txt",
+            docs_dir / "iesc102.txt", 
+            docs_dir / "iesc103.txt",
+            docs_dir / "iesc104.txt",
+            docs_dir / "iesc105.txt",
+            docs_dir / "iesc106.txt",
+            docs_dir / "iesc107.txt",
+            docs_dir / "iesc108.txt",
+            docs_dir / "iesc109.txt",
+            docs_dir / "iesc110.txt",
+            docs_dir / "iesc111.txt",
+            docs_dir / "iesc112.txt"
+        ]
+    
     print("Starting tokenizer evaluation...")
+    print(f"Testing files: {[Path(f).name for f in text_files]}")
     print(f"Testing chunk sizes: {sizes}")
     print(f"Testing overlaps: {overlaps}")
     print("-" * 50)
@@ -413,16 +434,29 @@ def main(text_file: str = "../data/sample_science_text.txt",
     try:
         evaluator = TokenizerEvaluator()
         
-        results = evaluator.run_evaluation(text_file, sizes, overlaps)
+        all_results = {}
+        for text_file in text_files:
+            text_path = Path(text_file)
+            print(f"\nEvaluating file: {text_path.name}")
+            results = evaluator.run_evaluation(text_path, sizes, overlaps)
+            
+            if not results:
+                print(f"No results generated for {text_file}. Check error messages above.")
+                continue
+            
+            file_prefix = Path(text_file).stem
+            for tokenizer_name, tokenizer_results in results.items():
+                merged_name = f"{file_prefix}_{tokenizer_name}"
+                all_results[merged_name] = tokenizer_results
         
-        if not results:
-            print("No results generated. Check error messages above.")
+        if not all_results:
+            print("No results generated from any files. Check error messages above.")
             return
         
-        analysis = evaluator.analyze_results(results)
+        analysis = evaluator.analyze_results(all_results)
         
-        evaluator.save_results(results, analysis)
-        evaluator.save_comparison_table(results)
+        evaluator.save_results(all_results, analysis)
+        evaluator.save_comparison_table(all_results)
         
         _print_evaluation_summary(analysis)
         
@@ -466,5 +500,9 @@ def _print_evaluation_summary(analysis: Dict[str, Dict]) -> None:
 if __name__ == "__main__":
     import sys
     
-    text_file = sys.argv[1] if len(sys.argv) > 1 else "../data/sample_science_text.txt"
-    main(text_file)
+    if len(sys.argv) > 1:
+        text_files = sys.argv[1:]
+    else:
+        text_files = None
+    
+    main(text_files)

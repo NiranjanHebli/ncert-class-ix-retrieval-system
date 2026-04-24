@@ -1,3 +1,0 @@
-13. A ball is thrown vertically upwards with a velocity of 49 m/s. Calculate 
-   - (i) the maximum height to which it rises, 
-   - (ii) the total time it  takes to return to the surface of the earth. 

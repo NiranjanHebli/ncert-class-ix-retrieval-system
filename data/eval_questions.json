@@ -1,0 +1,40 @@
+[
+    {
+        "category": "Direct Textbook",
+        "type": "direct",
+        "questions": [
+            "What are the three states of matter?",
+            "Why is ice at 273 K more effective in cooling than water at the same temperature?",
+            "What produces more severe burns, boiling water or steam?",
+            "Calculate the molecular mass of water (H2O).",
+            "What is the powerhouse of the cell and why?",
+            "What is the difference between a plant cell and an animal cell?",
+            "Define displacement and how it differs from distance.",
+            "Why do we fall in the forward direction when a moving bus brakes to a stop?",
+            "State the universal law of gravitation.",
+            "How do we define work done by a force?",
+            "What is the kinetic energy of an object?",
+            "What is the SI unit of force?"
+        ]
+    },
+    {
+        "category": "Paraphrased",
+        "type": "paraphrased",
+        "questions": [
+            "How does mass affect the force of gravity between two objects?",
+            "In what way does the speed of particles change when a solid is heated?",
+            "What role does the nucleus play inside a cell?"
+        ]
+    },
+    {
+        "category": "Out of Scope",
+        "type": "out_of_scope",
+        "questions": [
+            "Who is the current Prime Minister of India?",
+            "How do I bake a chocolate cake?",
+            "What is the latest score in the IPL match?",
+            "Explain quantum entanglement from Chapter 9",
+            "What is the theory of relativity?"
+        ]
+    }
+]

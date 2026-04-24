@@ -1,4 +1,0 @@
-18. A ball thrown up vertically returns to the thrower after 6 s. Find 
-   - (a) the velocity with which it was thrown up, 
-   - (b) the maximum height it reaches, and 
-   - (c) its position after 4 s. 

@@ -10,7 +10,7 @@ FOLDER_NAME  = "iesc1dd"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 source_dir = os.path.join(BASE_DIR, FOLDER_NAME)
-output_dir = os.path.join(BASE_DIR, "docs")
+output_dir = os.path.join(BASE_DIR, "extracted")
 
 os.makedirs(output_dir, exist_ok=True)
 
