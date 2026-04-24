@@ -130,13 +130,19 @@ def run_interactive_session():
     print("\n--- Interactive Q&A Mode (Groq) ---")
     generator = GroqGroundedGenerator()
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    db_path = os.path.join(project_root, "data", "vector_db")
     extracted_dir = os.path.join(project_root, "extracted")
     
-    for root, dirs, files in os.walk(extracted_dir):
-        if root == extracted_dir: continue
-        for f in files:
-            if f.endswith(".txt"):
-                generator.initialize_db(os.path.join(root, f))
+    if generator.load_db(db_path):
+        print("Loaded existing database from disk.")
+    else:
+        print("Building new database from scratch...")
+        for root, dirs, files in os.walk(extracted_dir):
+            if root == extracted_dir: continue
+            for f in files:
+                if f.endswith(".txt"):
+                    generator.initialize_db(os.path.join(root, f))
+        generator.save_db(db_path)
     
     print("System Ready! Type 'exit' to quit.")
     while True:

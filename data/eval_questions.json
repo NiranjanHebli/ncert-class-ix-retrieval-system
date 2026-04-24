@@ -1,57 +1,40 @@
 [
     {
-        "category": "Chapter 1: Matter",
+        "category": "Direct Textbook",
+        "type": "direct",
         "questions": [
             "What are the three states of matter?",
             "Why is ice at 273 K more effective in cooling than water at the same temperature?",
-            "What produces more severe burns, boiling water or steam?"
-        ]
-    },
-    {
-        "category": "Chapter 3: Atoms and Molecules",
-        "questions": [
-            "Calculate the molecular mass of water (H2O)."
-        ]
-    },
-    {
-        "category": "Chapter 5: Cell",
-        "questions": [
+            "What produces more severe burns, boiling water or steam?",
+            "Calculate the molecular mass of water (H2O).",
             "What is the powerhouse of the cell and why?",
-            "What is the difference between a plant cell and an animal cell?"
-        ]
-    },
-    {
-        "category": "Chapter 8: Motion",
-        "questions": [
-            "Define displacement and how it differs from distance."
-        ]
-    },
-    {
-        "category": "Chapter 9: Force and Laws of Motion",
-        "questions": [
-            "Why do we fall in the forward direction when a moving bus brakes to a stop?"
-        ]
-    },
-    {
-        "category": "Chapter 10: Gravitation",
-        "questions": [
-            "State the universal law of gravitation."
-        ]
-    },
-    {
-        "category": "Chapter 11: Work and Energy",
-        "questions": [
+            "What is the difference between a plant cell and an animal cell?",
+            "Define displacement and how it differs from distance.",
+            "Why do we fall in the forward direction when a moving bus brakes to a stop?",
+            "State the universal law of gravitation.",
             "How do we define work done by a force?",
-            "What is the kinetic energy of an object?"
+            "What is the kinetic energy of an object?",
+            "What is the SI unit of force?"
         ]
     },
     {
-        "category": "Out of Domain (OOD)",
+        "category": "Paraphrased",
+        "type": "paraphrased",
+        "questions": [
+            "How does mass affect the force of gravity between two objects?",
+            "In what way does the speed of particles change when a solid is heated?",
+            "What role does the nucleus play inside a cell?"
+        ]
+    },
+    {
+        "category": "Out of Scope",
+        "type": "out_of_scope",
         "questions": [
             "Who is the current Prime Minister of India?",
-            "What is the capital of France?",
             "How do I bake a chocolate cake?",
-            "What is the latest score in the IPL match?"
+            "What is the latest score in the IPL match?",
+            "Explain quantum entanglement from Chapter 9",
+            "What is the theory of relativity?"
         ]
     }
 ]

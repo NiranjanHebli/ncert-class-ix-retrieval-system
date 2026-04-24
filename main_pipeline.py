@@ -41,9 +41,16 @@ def main():
     print("\n[STEP 4] Running Grounded Generation Test (Groq)...")
     run_command(["python3", "src/groq_generation.py"])
 
+    # 5. Evaluation (Stage 4)
+    print("\n[STEP 5] Running Stage 4 Evaluation...")
+    run_command(["python3", "src/evaluate.py"])
+
     print("\n" + "=" * 60)
     print("PIPELINE COMPLETED SUCCESSFULLY")
     print("=" * 60)
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "--evaluate":
+        run_command(["python3", "src/evaluate.py"])
+    else:
+        main()
