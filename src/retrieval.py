@@ -126,16 +126,9 @@ def main(data_dir: Path = None, docs_dir: Path = None):
     
     print("Initializing Vector Database...")
     db = VectorDatabase()
-    db_path = data_dir / "vector_db"
     
-    if db_path.exists():
-        print("Loading existing Vector Database from disk...")
-        db.load_from_disk(db_path)
-        chunks = db.chunks
-    else:
-        print("Building chunk store from scratch...")
-        chunks = db.build_chunk_store(txt)
-        db.save_to_disk(db_path)
+    print("Building chunk store from scratch...")
+    chunks = db.build_chunk_store(txt)
     
     print("\n" + "=" * 80)
     print("CHUNK ANALYSIS")
@@ -181,7 +174,7 @@ def main(data_dir: Path = None, docs_dir: Path = None):
         print("-" * 60)
         
         print("BM25 Results:")
-        bm25_res = db.retrieve_bm25(test['question'], k=3)
+        bm25_res = db.retrieve_bm25_with_scores(test['question'], k=3)
         for j, res in enumerate(bm25_res, 1):
             sim = calculate_semantic_similarity(res['text'], test['key_concepts'], db)
             rel = "RELEVANT" if sim >= 0.6 else "LESS RELEVANT"
