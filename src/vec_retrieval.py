@@ -37,7 +37,7 @@ class VectorDatabase:
         
         atexit.register(self.flush_vector_db)
         
-    def chunk_text_bert(self, text, max_tokens=400, overlap=50):
+    def chunk_text_bert(self, text, max_tokens=180, overlap=50):
         paragraphs = text.split('\n\n')
         all_chunks = []
         current_tokens = []
@@ -158,6 +158,17 @@ class VectorDatabase:
         scores = self.bm25.get_scores(query.lower().split())
         top_k = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
         return [self.chunks[i] for i in top_k]
+
+    def retrieve_bm25_with_scores(self, query, k=3):
+        if self.bm25 is None: return []
+        scores = self.bm25.get_scores(query.lower().split())
+        top_k = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
+        results = []
+        for i in top_k:
+            chunk = self.chunks[i].copy()
+            chunk['bm25_score'] = scores[i]
+            results.append(chunk)
+        return results
     
     def save_to_disk(self, directory: str | Path):
         """Save the database and index to a directory."""

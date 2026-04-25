@@ -1,19 +1,15 @@
 Loaded document text with 26949 characters
 
 Initializing Vector Database...
-Building chunk store with FAISS and BM25...
+Building chunk store from scratch...
 
 ================================================================================
 CHUNK ANALYSIS
 ================================================================================
 Content Type Distribution:
-  content: 8 chunks
-  example: 8 chunks
-  activity: 3 chunks
-  exercise: 1 chunks
-
-Chapter Distribution:
-  Unknown: 20 chunks
+  content: 23 chunks
+  example: 19 chunks
+  solution: 16 chunks
 
 ================================================================================
 RETRIEVAL TESTING
@@ -24,32 +20,32 @@ Question ID: 1
 Description: Question 1: pure substance, mixture, chemical constituents...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 41.990
+  1. [RELEVANT] BM25 Score: 43.048
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  2. [LESS RELEVANT] BM25 Score: 17.381
+     Text: # # c hapter * * 2 * * * * = = > picture [ 86 x 86 ] intentionally omitted < = = * * # # * * is matt...
+  2. [RELEVANT] BM25 Score: 22.522
      Type: example
-     Text: # # * * = = > picture [ 65 x 9 ] intentionally omitted < = = * * * * - - - - - start of picture text...
-  3. [LESS RELEVANT] BM25 Score: 14.422
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
+  3. [RELEVANT] BM25 Score: 21.570
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.679
+  1. [RELEVANT] FAISS Similarity: 0.662
+     Type: example
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
+  2. [RELEVANT] FAISS Similarity: 0.645
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  2. [RELEVANT] FAISS Similarity: 0.650
+     Text: # # c hapter * * 2 * * * * = = > picture [ 86 x 86 ] intentionally omitted < = = * * # # * * is matt...
+  3. [RELEVANT] FAISS Similarity: 0.651
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
-  3. [LESS RELEVANT] FAISS Similarity: 0.588
-     Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: ##ubility of each salt at 293 k. which salt has the highest solubility at this temperature? - ( d ) ...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.613 vs FAISS 0.639
-  Concept Precision@5: BM25 0.333 vs FAISS 0.667
-  Concept Precision@3: BM25 0.333 vs FAISS 0.667
-  Winner: ConceptRelevance=FAISS, ConceptP@5=FAISS, ConceptP@3=FAISS
+  Concept Relevance Score: BM25 0.641 vs FAISS 0.653
+  Concept Precision@5: BM25 1.000 vs FAISS 1.000
+  Concept Precision@3: BM25 1.000 vs FAISS 1.000
+  Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
 
 ============================================================
 
@@ -58,32 +54,32 @@ Question ID: 2
 Description: Question 2: homogeneous mixtures, heterogeneous mixtures, uniform composition...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 21.132
+  1. [RELEVANT] BM25 Score: 20.285
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  2. [RELEVANT] BM25 Score: 12.606
+     Text: . compare the reprint 2025 - 26 colour of the solutions of the two groups. though both the groups ha...
+  2. [RELEVANT] BM25 Score: 20.124
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  3. [RELEVANT] BM25 Score: 9.970
+     Text: two spatula full of copper sulphate powder in a beaker. - groups c and d can take different amounts ...
+  3. [RELEVANT] BM25 Score: 17.916
      Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
+     Text: the following sections. uestions _ 1. what is meant by a substance? 2. list the points of difference...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.734
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.786
+  1. [RELEVANT] FAISS Similarity: 0.761
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  2. [RELEVANT] FAISS Similarity: 0.749
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  3. [RELEVANT] FAISS Similarity: 0.772
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
+  3. [RELEVANT] FAISS Similarity: 0.752
+     Type: solution
+     Text: ##ility. if the amount of solute contained in a solution is less than the saturation level, it is ca...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.746 vs FAISS 0.764
+  Concept Relevance Score: BM25 0.779 vs FAISS 0.754
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
-  Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
+  Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
 
 ============================================================
 
@@ -92,32 +88,32 @@ Question ID: 3
 Description: Question 3: solution, suspension, colloidal solution...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 17.791
+  1. [RELEVANT] BM25 Score: 19.511
+     Type: solution
+     Text: got a suspension. group d has got a colloidal solution. _ * * = = > picture [ 202 x 117 ] intentiona...
+  2. [RELEVANT] BM25 Score: 15.771
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  2. [RELEVANT] BM25 Score: 12.127
-     Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
-  3. [RELEVANT] BM25 Score: 11.619
-     Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
+     Text: a suspension is left undisturbed, that is, a suspension is unstable. they can be separated from the ...
+  3. [RELEVANT] BM25 Score: 15.510
+     Type: solution
+     Text: in water and stir properly using a glass rod. are the particles in the mixture visible? - direct a b...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.702
+  1. [RELEVANT] FAISS Similarity: 0.752
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  2. [RELEVANT] FAISS Similarity: 0.731
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  2. [RELEVANT] FAISS Similarity: 0.696
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  3. [RELEVANT] FAISS Similarity: 0.711
+     Text: ##s with examples. 2. how are sol, solution and suspension different from each other? 3. to make a s...
+  3. [RELEVANT] FAISS Similarity: 0.729
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.719 vs FAISS 0.703
+  Concept Relevance Score: BM25 0.729 vs FAISS 0.737
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
-  Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
+  Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
 
 ============================================================
 
@@ -126,29 +122,29 @@ Question ID: 4
 Description: Question 4: alloys, brass, zinc...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 19.192
+  1. [RELEVANT] BM25 Score: 24.717
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
-  2. [RELEVANT] BM25 Score: 15.089
+     Text: ( alloys ) and gaseous solutions ( air ). in a solution there is homogeneity at the particle level. ...
+  2. [RELEVANT] BM25 Score: 16.885
+     Type: example
+     Text: scientist says that something is pure, it means that all the constituent particles of that substance...
+  3. [RELEVANT] BM25 Score: 15.890
      Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  3. [RELEVANT] BM25 Score: 14.607
-     Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
+     Text: # # c hapter * * 2 * * * * = = > picture [ 86 x 86 ] intentionally omitted < = = * * # # * * is matt...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.655
+  1. [RELEVANT] FAISS Similarity: 0.660
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  2. [RELEVANT] FAISS Similarity: 0.677
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  3. [RELEVANT] FAISS Similarity: 0.663
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
+     Text: ##s. _ # # * * 2. 4 what are the types of pure substances? * * on the basis of their chemical compos...
+  2. [RELEVANT] FAISS Similarity: 0.726
+     Type: example
+     Text: liquid at room temperature. non - metals usually show some or all of the following properties : - th...
+  3. [RELEVANT] FAISS Similarity: 0.642
+     Type: example
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.675 vs FAISS 0.665
+  Concept Relevance Score: BM25 0.676 vs FAISS 0.676
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
@@ -160,29 +156,29 @@ Question ID: 5
 Description: Question 5: homogeneous mixture, particle size, 1 nanometer...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 13.434
+  1. [RELEVANT] BM25 Score: 15.050
+     Type: solution
+     Text: got a suspension. group d has got a colloidal solution. _ * * = = > picture [ 202 x 117 ] intentiona...
+  2. [RELEVANT] BM25 Score: 14.021
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  2. [RELEVANT] BM25 Score: 8.476
+     Text: ##s with examples. 2. how are sol, solution and suspension different from each other? 3. to make a s...
+  3. [RELEVANT] BM25 Score: 13.672
      Type: example
-     Text: * * 293 * * < br > * * 313 * * < br > * * 333 * * < br > * * 353 * * | | - - - | - - - | - - - | - -...
-  3. [RELEVANT] BM25 Score: 8.285
-     Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.728
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  2. [RELEVANT] FAISS Similarity: 0.700
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  3. [RELEVANT] FAISS Similarity: 0.712
+  1. [RELEVANT] FAISS Similarity: 0.710
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: the following sections. uestions _ 1. what is meant by a substance? 2. list the points of difference...
+  2. [RELEVANT] FAISS Similarity: 0.736
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  3. [RELEVANT] FAISS Similarity: 0.738
+     Type: example
+     Text: a suspension is left undisturbed, that is, a suspension is unstable. they can be separated from the ...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.680 vs FAISS 0.713
+  Concept Relevance Score: BM25 0.716 vs FAISS 0.728
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -194,32 +190,32 @@ Question ID: 6
 Description: Question 6: solubility, saturated solution, temperature...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 15.874
+  1. [RELEVANT] BM25 Score: 20.654
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 3 * * _ - take approximately 50 ml of water each i...
-  2. [RELEVANT] BM25 Score: 11.760
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
-  3. [RELEVANT] BM25 Score: 11.133
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
+  2. [RELEVANT] BM25 Score: 20.473
+     Type: solution
+     Text: ##ility. if the amount of solute contained in a solution is less than the saturation level, it is ca...
+  3. [RELEVANT] BM25 Score: 15.873
      Type: example
-     Text: * * 293 * * < br > * * 313 * * < br > * * 333 * * < br > * * 353 * * | | - - - | - - - | - - - | - -...
+     Text: ##s with examples. 2. how are sol, solution and suspension different from each other? 3. to make a s...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.697
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.723
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
-  3. [RELEVANT] FAISS Similarity: 0.712
+  1. [RELEVANT] FAISS Similarity: 0.759
      Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
+  2. [RELEVANT] FAISS Similarity: 0.752
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  3. [RELEVANT] FAISS Similarity: 0.748
+     Type: solution
+     Text: ##ility. if the amount of solute contained in a solution is less than the saturation level, it is ca...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.713 vs FAISS 0.711
+  Concept Relevance Score: BM25 0.751 vs FAISS 0.753
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
-  Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
+  Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
 
 ============================================================
 
@@ -228,29 +224,29 @@ Question ID: 7
 Description: Question 7: mass by mass percentage, concentration calculation, solute...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 30.263
+  1. [RELEVANT] BM25 Score: 46.829
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 3 * * _ - take approximately 50 ml of water each i...
-  2. [RELEVANT] BM25 Score: 25.925
-     Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
-  3. [RELEVANT] BM25 Score: 19.569
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
+     Text: ) mass by mass percentage of a solution * * = = > picture [ 118 x 23 ] intentionally omitted < = = *...
+  2. [RELEVANT] BM25 Score: 39.528
+     Type: solution
+     Text: : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mass of solution = m...
+  3. [RELEVANT] BM25 Score: 26.219
+     Type: solution
+     Text: ##ility. if the amount of solute contained in a solution is less than the saturation level, it is ca...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.726
+  1. [RELEVANT] FAISS Similarity: 0.714
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 3 * * _ - take approximately 50 ml of water each i...
-  2. [RELEVANT] FAISS Similarity: 0.658
-     Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  3. [RELEVANT] FAISS Similarity: 0.692
-     Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
+  2. [RELEVANT] FAISS Similarity: 0.761
+     Type: solution
+     Text: ##ility. if the amount of solute contained in a solution is less than the saturation level, it is ca...
+  3. [RELEVANT] FAISS Similarity: 0.733
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.693 vs FAISS 0.692
+  Concept Relevance Score: BM25 0.768 vs FAISS 0.736
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
@@ -262,32 +258,32 @@ Question ID: 8
 Description: Question 8: Tyndall effect, light scattering, visible beam...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 14.462
+  1. [RELEVANT] BM25 Score: 17.633
      Type: example
-     Text: # # * * = = > picture [ 65 x 9 ] intentionally omitted < = = * * * * - - - - - start of picture text...
-  2. [RELEVANT] BM25 Score: 12.979
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
+  2. [RELEVANT] BM25 Score: 14.331
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 3 * * _ - take approximately 50 ml of water each i...
-  3. [RELEVANT] BM25 Score: 10.353
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
+  3. [RELEVANT] BM25 Score: 13.709
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.649
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.664
-     Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  3. [RELEVANT] FAISS Similarity: 0.651
+  1. [RELEVANT] FAISS Similarity: 0.654
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
+  2. [RELEVANT] FAISS Similarity: 0.671
+     Type: content
+     Text: in the previous chapter, we have learnt about a few physical properties of matter. the properties th...
+  3. [RELEVANT] FAISS Similarity: 0.649
+     Type: content
+     Text: compounds. 2. the composition of each new substance is always fixed. 3. the new substance has totall...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.647 vs FAISS 0.655
+  Concept Relevance Score: BM25 0.661 vs FAISS 0.658
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
-  Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
+  Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
 
 ============================================================
 
@@ -296,29 +292,29 @@ Question ID: 9
 Description: Question 9: colloids, solutions, suspensions...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 15.018
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  2. [RELEVANT] BM25 Score: 12.282
+  1. [RELEVANT] BM25 Score: 16.564
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  3. [RELEVANT] BM25 Score: 11.604
+     Text: ( alloys ) and gaseous solutions ( air ). in a solution there is homogeneity at the particle level. ...
+  2. [RELEVANT] BM25 Score: 16.075
      Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
+     Text: two spatula full of copper sulphate powder in a beaker. - groups c and d can take different amounts ...
+  3. [RELEVANT] BM25 Score: 15.368
+     Type: solution
+     Text: iv ) air is a mixture of gas in gas. air is a homogeneous mixture of a number of gases. its two main...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.746
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  2. [RELEVANT] FAISS Similarity: 0.742
+  1. [RELEVANT] FAISS Similarity: 0.760
      Type: example
-     Text: # # * * solution : * * mass of solute ( salt ) = 40 g mass of solvent ( water ) = 320 g we know, mas...
-  3. [RELEVANT] FAISS Similarity: 0.725
+     Text: a suspension is left undisturbed, that is, a suspension is unstable. they can be separated from the ...
+  2. [RELEVANT] FAISS Similarity: 0.766
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
+  3. [RELEVANT] FAISS Similarity: 0.747
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.728 vs FAISS 0.738
+  Concept Relevance Score: BM25 0.741 vs FAISS 0.758
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -330,29 +326,29 @@ Question ID: 10
 Description: Question 10: colloid classification, dispersed phase, dispersion medium...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 20.749
+  1. [RELEVANT] BM25 Score: 28.289
      Type: example
-     Text: # # * * = = > picture [ 65 x 9 ] intentionally omitted < = = * * * * - - - - - start of picture text...
-  2. [RELEVANT] BM25 Score: 15.798
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  3. [RELEVANT] BM25 Score: 11.723
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
+  2. [RELEVANT] BM25 Score: 20.965
+     Type: solution
+     Text: of solute present per unit volume or per unit mass of the solution. - materials that are insoluble i...
+  3. [RELEVANT] BM25 Score: 17.943
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.642
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.676
+  1. [RELEVANT] FAISS Similarity: 0.723
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  3. [RELEVANT] FAISS Similarity: 0.662
+     Text: x 159 ] intentionally omitted < = = * * - they cannot be separated from the mixture by the process o...
+  2. [RELEVANT] FAISS Similarity: 0.681
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
+  3. [RELEVANT] FAISS Similarity: 0.696
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.680 vs FAISS 0.660
+  Concept Relevance Score: BM25 0.707 vs FAISS 0.700
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
@@ -364,29 +360,29 @@ Question ID: 11
 Description: Question 11: physical changes, chemical changes, properties...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 13.332
+  1. [RELEVANT] BM25 Score: 32.505
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  2. [RELEVANT] BM25 Score: 11.978
+     Text: of states is a physical change because these changes occur without a change in composition and no ch...
+  2. [RELEVANT] BM25 Score: 29.561
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  3. [RELEVANT] BM25 Score: 9.842
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
+     Text: in the previous chapter, we have learnt about a few physical properties of matter. the properties th...
+  3. [RELEVANT] BM25 Score: 29.073
+     Type: content
+     Text: change in chemical composition. chemical change brings change in the chemical properties of matter a...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.700
+  1. [RELEVANT] FAISS Similarity: 0.731
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.654
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
-  3. [RELEVANT] FAISS Similarity: 0.680
-     Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: of states is a physical change because these changes occur without a change in composition and no ch...
+  2. [RELEVANT] FAISS Similarity: 0.657
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  3. [RELEVANT] FAISS Similarity: 0.707
+     Type: content
+     Text: change in chemical composition. chemical change brings change in the chemical properties of matter a...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.679 vs FAISS 0.678
+  Concept Relevance Score: BM25 0.729 vs FAISS 0.698
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=BM25, ConceptP@5=TIE, ConceptP@3=TIE
@@ -398,29 +394,29 @@ Question ID: 12
 Description: Question 12: elements, Robert Boyle, Antoine Laurent Lavoisier...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 13.119
+  1. [RELEVANT] BM25 Score: 29.485
      Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  2. [RELEVANT] BM25 Score: 11.856
-     Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  3. [RELEVANT] BM25 Score: 11.240
+     Text: ##s. _ # # * * 2. 4 what are the types of pure substances? * * on the basis of their chemical compos...
+  2. [RELEVANT] BM25 Score: 15.865
      Type: example
-     Text: * * 293 * * < br > * * 313 * * < br > * * 333 * * < br > * * 353 * * | | - - - | - - - | - - - | - -...
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
+  3. [RELEVANT] BM25 Score: 15.787
+     Type: example
+     Text: ##ubility of each salt at 293 k. which salt has the highest solubility at this temperature? - ( d ) ...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.697
+  1. [RELEVANT] FAISS Similarity: 0.789
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.702
+     Text: ##s. _ # # * * 2. 4 what are the types of pure substances? * * on the basis of their chemical compos...
+  2. [RELEVANT] FAISS Similarity: 0.719
+     Type: example
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
+  3. [RELEVANT] FAISS Similarity: 0.689
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  3. [RELEVANT] FAISS Similarity: 0.706
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
+     Text: compounds. 2. the composition of each new substance is always fixed. 3. the new substance has totall...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.669 vs FAISS 0.702
+  Concept Relevance Score: BM25 0.720 vs FAISS 0.732
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -432,29 +428,29 @@ Question ID: 13
 Description: Question 13: metals, non-metals, metalloids...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 9.825
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
-  2. [RELEVANT] BM25 Score: 9.752
-     Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  3. [RELEVANT] BM25 Score: 9.326
+  1. [RELEVANT] BM25 Score: 19.703
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: liquid at room temperature. non - metals usually show some or all of the following properties : - th...
+  2. [RELEVANT] BM25 Score: 15.435
+     Type: example
+     Text: ##s with examples. 2. how are sol, solution and suspension different from each other? 3. to make a s...
+  3. [RELEVANT] BM25 Score: 14.583
+     Type: example
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.663
+  1. [RELEVANT] FAISS Similarity: 0.690
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.705
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  3. [RELEVANT] FAISS Similarity: 0.693
+     Text: ##s. _ # # * * 2. 4 what are the types of pure substances? * * on the basis of their chemical compos...
+  2. [RELEVANT] FAISS Similarity: 0.759
      Type: example
-     Text: , lemonade tastes the same throughout. this shows that particles of sugar or salt are evenly distrib...
+     Text: liquid at room temperature. non - metals usually show some or all of the following properties : - th...
+  3. [RELEVANT] FAISS Similarity: 0.690
+     Type: content
+     Text: — iron and sulphur. - the properties of the mixture are the same as that of its constituents. * * 20...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.671 vs FAISS 0.687
+  Concept Relevance Score: BM25 0.707 vs FAISS 0.713
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -466,29 +462,29 @@ Question ID: 14
 Description: Question 14: mixtures vs compounds, iron filings, sulphur...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 13.072
+  1. [RELEVANT] BM25 Score: 13.548
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  2. [RELEVANT] BM25 Score: 10.657
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  3. [RELEVANT] BM25 Score: 9.155
-     Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
+     Text: 3. pragya tested the solubility of three different substances at different temperatures and collecte...
+  2. [RELEVANT] BM25 Score: 13.336
+     Type: example
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
+  3. [RELEVANT] BM25 Score: 13.299
+     Type: solution
+     Text: got a suspension. group d has got a colloidal solution. _ * * = = > picture [ 202 x 117 ] intentiona...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.747
+  1. [RELEVANT] FAISS Similarity: 0.749
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.756
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
-  3. [RELEVANT] FAISS Similarity: 0.728
+     Text: compounds. 2. the composition of each new substance is always fixed. 3. the new substance has totall...
+  2. [RELEVANT] FAISS Similarity: 0.784
+     Type: content
+     Text: , odourless and combustible – it is not advised to do the combustion test for hydrogen in the class....
+  3. [RELEVANT] FAISS Similarity: 0.735
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
+     Text: ##sing medium and the dispersed phase. a few common examples are given in table 2. 1. from this tabl...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.734 vs FAISS 0.744
+  Concept Relevance Score: BM25 0.721 vs FAISS 0.756
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -500,29 +496,29 @@ Question ID: 15
 Description: Question 15: mixtures, compounds, formation...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 11.223
-     Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  2. [RELEVANT] BM25 Score: 9.298
+  1. [RELEVANT] BM25 Score: 13.928
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  3. [RELEVANT] BM25 Score: 8.105
+     Text: _ _ _ _ 2. 2 * * _ - let us again divide the class into four groups — a, b, c and d. - distribute th...
+  2. [RELEVANT] BM25 Score: 13.443
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
+     Text: . compare the reprint 2025 - 26 colour of the solutions of the two groups. though both the groups ha...
+  3. [RELEVANT] BM25 Score: 10.638
+     Type: solution
+     Text: in water and stir properly using a glass rod. are the particles in the mixture visible? - direct a b...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.697
+  1. [RELEVANT] FAISS Similarity: 0.690
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.662
+     Text: compounds. 2. the composition of each new substance is always fixed. 3. the new substance has totall...
+  2. [RELEVANT] FAISS Similarity: 0.694
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 1 * * _ - let us divide the class into groups a, b...
-  3. [RELEVANT] FAISS Similarity: 0.643
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
+     Text: two spatula full of copper sulphate powder in a beaker. - groups c and d can take different amounts ...
+  3. [RELEVANT] FAISS Similarity: 0.675
+     Type: content
+     Text: till red hot. remove from flame and let the mixture cool. # # * * groups i and ii * * - check for ma...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.663 vs FAISS 0.667
+  Concept Relevance Score: BM25 0.640 vs FAISS 0.686
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -534,29 +530,29 @@ Question ID: 16
 Description: Question 16: matter classification, pure substances, mixtures...
 ------------------------------------------------------------
 BM25 Results:
-  1. [RELEVANT] BM25 Score: 18.056
+  1. [RELEVANT] BM25 Score: 19.428
      Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
-  2. [RELEVANT] BM25 Score: 15.633
+     Text: of electric current, through water and the water breaking down into hydrogen and oxygen gases, _ - _...
+  2. [RELEVANT] BM25 Score: 19.270
+     Type: solution
+     Text: of light is not visible in a solution. - the solute particles cannot be separated from the mixture b...
+  3. [RELEVANT] BM25 Score: 19.258
      Type: example
-     Text: # # _ * * activity _ _ _ _ _ _ _ _ _ _ _ _ _ _ 2. 2 * * _ - let us again divide the class into four ...
-  3. [RELEVANT] BM25 Score: 15.454
-     Type: activity
-     Text: # # * * none * * group i * * - mix and crush iron filings and sulphur powder. # # * * group ii * * -...
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
 
 FAISS Results:
-  1. [RELEVANT] FAISS Similarity: 0.714
+  1. [RELEVANT] FAISS Similarity: 0.723
      Type: content
-     Text: # # * * mixtures * * # # * * compounds * * 1. elements or compounds just mix together to form a mixt...
-  2. [RELEVANT] FAISS Similarity: 0.706
+     Text: ##s. _ # # * * 2. 4 what are the types of pure substances? * * on the basis of their chemical compos...
+  2. [RELEVANT] FAISS Similarity: 0.710
+     Type: example
+     Text: characteristic properties. therefore, we can say that a mixture contains more than one pure substanc...
+  3. [RELEVANT] FAISS Similarity: 0.738
      Type: content
-     Text: # # * * none * * is matter around us pure? * * how do we judge whether milk, ghee, butter, salt, spi...
-  3. [RELEVANT] FAISS Similarity: 0.746
-     Type: content
-     Text: # # * * 21 * * reprint 2025 - 26 - mixtures can be separated into pure substances using appropriate ...
+     Text: — iron and sulphur. - the properties of the mixture are the same as that of its constituents. * * 20...
 
 COMPARISON ANALYSIS:
-  Concept Relevance Score: BM25 0.684 vs FAISS 0.722
+  Concept Relevance Score: BM25 0.696 vs FAISS 0.724
   Concept Precision@5: BM25 1.000 vs FAISS 1.000
   Concept Precision@3: BM25 1.000 vs FAISS 1.000
   Winner: ConceptRelevance=FAISS, ConceptP@5=TIE, ConceptP@3=TIE
@@ -566,13 +562,11 @@ COMPARISON ANALYSIS:
 ================================================================================
 OVERALL PERFORMANCE ANALYSIS
 ================================================================================
-Average Concept Relevance Score: BM25 0.687 vs FAISS 0.696
-Average Concept Precision@5: BM25 0.958 vs FAISS 0.979
-Average Concept Precision@3: BM25 0.958 vs FAISS 0.979
+Average Concept Relevance Score: BM25 0.711 vs FAISS 0.716
+Average Concept Precision@5: BM25 1.000 vs FAISS 1.000
+Average Concept Precision@3: BM25 1.000 vs FAISS 1.000
 Overall Winner: FAISS
 Win Count: BM25 6 vs FAISS 10
 
-Cumulative Similarity Score: BM25 10.994 vs FAISS 11.139
+Cumulative Similarity Score: BM25 11.382 vs FAISS 11.463
 Cumulative Winner: FAISS
-Vector database flushed successfully
-Vector database flushed successfully

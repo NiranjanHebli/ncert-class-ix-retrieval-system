@@ -1,80 +1,116 @@
 Starting tokenizer evaluation...
 Testing files: ['iesc101.txt', 'iesc102.txt', 'iesc103.txt', 'iesc104.txt', 'iesc105.txt', 'iesc106.txt', 'iesc107.txt', 'iesc108.txt', 'iesc109.txt', 'iesc110.txt', 'iesc111.txt', 'iesc112.txt']
-Testing chunk sizes: [200, 300, 500, 800, 1000]
-Testing overlaps: [0, 50, 100]
+Testing chunk sizes: [80, 100, 130, 150, 180]
+Testing overlaps: [0, 50, 80]
 --------------------------------------------------
 
 Evaluating file: iesc101.txt
 Loaded text with 31583 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc102.txt
 Loaded text with 26949 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc103.txt
 Loaded text with 28547 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc104.txt
 Loaded text with 27725 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc105.txt
 Loaded text with 34588 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc106.txt
 Loaded text with 29271 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc107.txt
 Loaded text with 38073 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc108.txt
 Loaded text with 36507 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc109.txt
 Loaded text with 34864 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc110.txt
 Loaded text with 36420 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc111.txt
 Loaded text with 34872 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 
 Evaluating file: iesc112.txt
 Loaded text with 37144 characters
 Evaluating gpt2...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating bert-base-uncased...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Evaluating t5-small...
+Skipping invalid configuration 80_80: Overlap (80) must be less than chunk size (80)
 Results saved to ../data/tokenizer_results.json
 Comparison table saved to ../data/tokenizer_comparison.csv
 
@@ -83,367 +119,367 @@ EVALUATION SUMMARY
 ============================================================
 
 IESC101_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.44
-  Avg Tokens/Chunk: 129.5
-  Std Tokens/Chunk: 20.8
-  Avg Encoding Time: 0.14ms
-  Vocab Utilization: 2.91%
-  Score: 0.4353
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.72
+  Avg Tokens/Chunk: 47.8
+  Std Tokens/Chunk: 9.6
+  Avg Encoding Time: 0.06ms
+  Vocab Utilization: 3.18%
+  Score: 0.3735
 
 IESC101_BERT-BASE-UNCASED:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 3.70
-  Avg Tokens/Chunk: 243.7
-  Std Tokens/Chunk: 28.0
-  Avg Encoding Time: 0.32ms
-  Vocab Utilization: 3.72%
-  Score: 0.4615
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.81
+  Avg Tokens/Chunk: 46.3
+  Std Tokens/Chunk: 9.7
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 4.20%
+  Score: 0.3838
 
 IESC101_T5-SMALL:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 3.49
-  Avg Tokens/Chunk: 258.6
-  Std Tokens/Chunk: 29.2
-  Avg Encoding Time: 0.29ms
-  Vocab Utilization: 4.19%
-  Score: 0.4352
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.66
+  Avg Tokens/Chunk: 48.9
+  Std Tokens/Chunk: 10.1
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 4.52%
+  Score: 0.3640
 
 IESC102_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.34
-  Avg Tokens/Chunk: 134.4
-  Std Tokens/Chunk: 26.9
-  Avg Encoding Time: 0.14ms
-  Vocab Utilization: 2.64%
-  Score: 0.4189
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.64
+  Avg Tokens/Chunk: 49.4
+  Std Tokens/Chunk: 11.7
+  Avg Encoding Time: 0.06ms
+  Vocab Utilization: 2.89%
+  Score: 0.3560
 
 IESC102_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.61
-  Avg Tokens/Chunk: 124.5
-  Std Tokens/Chunk: 27.6
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 3.41%
-  Score: 0.4503
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.77
+  Avg Tokens/Chunk: 47.0
+  Std Tokens/Chunk: 12.8
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 3.75%
+  Score: 0.3689
 
 IESC102_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.31
-  Avg Tokens/Chunk: 135.9
-  Std Tokens/Chunk: 31.5
-  Avg Encoding Time: 0.40ms
-  Vocab Utilization: 3.80%
-  Score: 0.4121
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.54
+  Avg Tokens/Chunk: 51.2
+  Std Tokens/Chunk: 14.0
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 4.01%
+  Score: 0.3386
 
 IESC103_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.01
-  Avg Tokens/Chunk: 148.2
-  Std Tokens/Chunk: 40.6
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 2.88%
-  Score: 0.3733
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.40
+  Avg Tokens/Chunk: 54.2
+  Std Tokens/Chunk: 17.0
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 3.04%
+  Score: 0.3153
 
 IESC103_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.19
-  Avg Tokens/Chunk: 139.6
-  Std Tokens/Chunk: 43.3
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 3.53%
-  Score: 0.3946
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.48
+  Avg Tokens/Chunk: 52.4
+  Std Tokens/Chunk: 18.4
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 3.84%
+  Score: 0.3231
 
 IESC103_T5-SMALL:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 2.89
-  Avg Tokens/Chunk: 308.5
-  Std Tokens/Chunk: 83.8
-  Avg Encoding Time: 0.30ms
-  Vocab Utilization: 4.05%
-  Score: 0.3529
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.24
+  Avg Tokens/Chunk: 58.0
+  Std Tokens/Chunk: 21.6
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 4.27%
+  Score: 0.2904
 
 IESC104_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.10
-  Avg Tokens/Chunk: 144.2
-  Std Tokens/Chunk: 44.1
-  Avg Encoding Time: 0.16ms
-  Vocab Utilization: 2.53%
-  Score: 0.3832
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.47
+  Avg Tokens/Chunk: 52.8
+  Std Tokens/Chunk: 18.6
+  Avg Encoding Time: 0.06ms
+  Vocab Utilization: 2.75%
+  Score: 0.3217
 
 IESC104_BERT-BASE-UNCASED:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 3.33
-  Avg Tokens/Chunk: 268.9
-  Std Tokens/Chunk: 89.0
-  Avg Encoding Time: 0.37ms
-  Vocab Utilization: 3.11%
-  Score: 0.4047
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.52
+  Avg Tokens/Chunk: 51.6
+  Std Tokens/Chunk: 20.2
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 3.48%
+  Score: 0.3265
 
 IESC104_T5-SMALL:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 2.92
-  Avg Tokens/Chunk: 306.2
-  Std Tokens/Chunk: 108.3
-  Avg Encoding Time: 0.31ms
-  Vocab Utilization: 3.65%
-  Score: 0.3551
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.25
+  Avg Tokens/Chunk: 57.9
+  Std Tokens/Chunk: 23.9
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 3.88%
+  Score: 0.2900
 
 IESC105_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.59
-  Avg Tokens/Chunk: 125.2
-  Std Tokens/Chunk: 19.5
-  Avg Encoding Time: 0.32ms
-  Vocab Utilization: 3.37%
-  Score: 0.4551
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.83
+  Avg Tokens/Chunk: 45.9
+  Std Tokens/Chunk: 10.0
+  Avg Encoding Time: 0.06ms
+  Vocab Utilization: 3.62%
+  Score: 0.3853
 
 IESC105_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.67
-  Avg Tokens/Chunk: 122.4
-  Std Tokens/Chunk: 24.5
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 4.44%
-  Score: 0.4601
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.81
+  Avg Tokens/Chunk: 46.3
+  Std Tokens/Chunk: 11.8
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 4.80%
+  Score: 0.3757
 
 IESC105_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.44
-  Avg Tokens/Chunk: 130.6
-  Std Tokens/Chunk: 23.4
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 4.69%
-  Score: 0.4333
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.66
+  Avg Tokens/Chunk: 48.9
+  Std Tokens/Chunk: 11.2
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.93%
+  Score: 0.3603
 
 IESC106_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.40
-  Avg Tokens/Chunk: 132.3
-  Std Tokens/Chunk: 23.5
-  Avg Encoding Time: 0.14ms
-  Vocab Utilization: 3.01%
-  Score: 0.4290
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.69
+  Avg Tokens/Chunk: 48.3
+  Std Tokens/Chunk: 10.7
+  Avg Encoding Time: 0.06ms
+  Vocab Utilization: 3.15%
+  Score: 0.3659
 
 IESC106_BERT-BASE-UNCASED:
-  Best Config: 1000_100
-  Chunk Size: 1000, Overlap: 100
-  Compression Ratio: 3.47
-  Avg Tokens/Chunk: 255.3
-  Std Tokens/Chunk: 50.5
-  Avg Encoding Time: 0.32ms
-  Vocab Utilization: 3.91%
-  Score: 0.4266
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.63
+  Avg Tokens/Chunk: 49.4
+  Std Tokens/Chunk: 13.8
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.24%
+  Score: 0.3499
 
 IESC106_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.21
-  Avg Tokens/Chunk: 140.3
-  Std Tokens/Chunk: 29.3
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 4.22%
-  Score: 0.4016
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.49
+  Avg Tokens/Chunk: 52.3
+  Std Tokens/Chunk: 13.9
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.37%
+  Score: 0.3320
 
 IESC107_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.22
-  Avg Tokens/Chunk: 139.3
-  Std Tokens/Chunk: 30.0
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 2.63%
-  Score: 0.4020
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.54
+  Avg Tokens/Chunk: 51.1
+  Std Tokens/Chunk: 14.0
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 2.88%
+  Score: 0.3381
 
 IESC107_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.28
-  Avg Tokens/Chunk: 136.4
-  Std Tokens/Chunk: 31.7
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 3.37%
-  Score: 0.4093
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.52
+  Avg Tokens/Chunk: 51.5
+  Std Tokens/Chunk: 15.1
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 3.76%
+  Score: 0.3337
 
 IESC107_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.07
-  Avg Tokens/Chunk: 146.1
-  Std Tokens/Chunk: 33.6
-  Avg Encoding Time: 0.16ms
-  Vocab Utilization: 3.84%
-  Score: 0.3823
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.37
+  Avg Tokens/Chunk: 54.8
+  Std Tokens/Chunk: 15.8
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.08%
+  Score: 0.3142
 
 IESC108_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.40
-  Avg Tokens/Chunk: 131.0
-  Std Tokens/Chunk: 28.4
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 2.98%
-  Score: 0.4249
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.69
+  Avg Tokens/Chunk: 48.4
+  Std Tokens/Chunk: 11.6
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 3.27%
+  Score: 0.3621
 
 IESC108_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.47
-  Avg Tokens/Chunk: 128.5
-  Std Tokens/Chunk: 26.7
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 4.04%
-  Score: 0.4339
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.65
+  Avg Tokens/Chunk: 49.0
+  Std Tokens/Chunk: 11.1
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 4.40%
+  Score: 0.3597
 
 IESC108_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.19
-  Avg Tokens/Chunk: 139.4
-  Std Tokens/Chunk: 28.8
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 4.35%
-  Score: 0.4001
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.46
+  Avg Tokens/Chunk: 52.9
+  Std Tokens/Chunk: 11.9
+  Avg Encoding Time: 0.10ms
+  Vocab Utilization: 4.58%
+  Score: 0.3336
 
 IESC109_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.21
-  Avg Tokens/Chunk: 139.2
-  Std Tokens/Chunk: 24.7
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 2.70%
-  Score: 0.4048
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.55
+  Avg Tokens/Chunk: 51.0
+  Std Tokens/Chunk: 11.4
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 2.94%
+  Score: 0.3461
 
 IESC109_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.38
-  Avg Tokens/Chunk: 132.1
-  Std Tokens/Chunk: 24.9
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 3.41%
-  Score: 0.4253
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.62
+  Avg Tokens/Chunk: 49.7
+  Std Tokens/Chunk: 11.2
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 3.75%
+  Score: 0.3552
 
 IESC109_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.15
-  Avg Tokens/Chunk: 141.8
-  Std Tokens/Chunk: 26.3
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 3.95%
-  Score: 0.3967
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.46
+  Avg Tokens/Chunk: 52.9
+  Std Tokens/Chunk: 11.3
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.19%
+  Score: 0.3356
 
 IESC110_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.25
-  Avg Tokens/Chunk: 138.2
-  Std Tokens/Chunk: 20.2
-  Avg Encoding Time: 0.15ms
-  Vocab Utilization: 2.95%
-  Score: 0.4139
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.60
+  Avg Tokens/Chunk: 50.1
+  Std Tokens/Chunk: 10.1
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 3.24%
+  Score: 0.3565
 
 IESC110_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.47
-  Avg Tokens/Chunk: 129.5
-  Std Tokens/Chunk: 19.5
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 3.88%
-  Score: 0.4410
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.69
+  Avg Tokens/Chunk: 48.3
+  Std Tokens/Chunk: 9.7
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 4.29%
+  Score: 0.3699
 
 IESC110_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.25
-  Avg Tokens/Chunk: 138.5
-  Std Tokens/Chunk: 22.1
-  Avg Encoding Time: 0.18ms
-  Vocab Utilization: 4.32%
-  Score: 0.4114
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.53
+  Avg Tokens/Chunk: 51.4
+  Std Tokens/Chunk: 10.7
+  Avg Encoding Time: 0.09ms
+  Vocab Utilization: 4.57%
+  Score: 0.3464
 
 IESC111_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.57
-  Avg Tokens/Chunk: 125.3
-  Std Tokens/Chunk: 23.0
-  Avg Encoding Time: 0.33ms
-  Vocab Utilization: 3.08%
-  Score: 0.4489
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.81
+  Avg Tokens/Chunk: 46.2
+  Std Tokens/Chunk: 10.5
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 3.39%
+  Score: 0.3812
 
 IESC111_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.78
-  Avg Tokens/Chunk: 118.4
-  Std Tokens/Chunk: 20.7
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 4.11%
-  Score: 0.4762
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.89
+  Avg Tokens/Chunk: 45.1
+  Std Tokens/Chunk: 9.4
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 4.55%
+  Score: 0.3948
 
 IESC111_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.48
-  Avg Tokens/Chunk: 128.4
-  Std Tokens/Chunk: 24.7
-  Avg Encoding Time: 0.63ms
-  Vocab Utilization: 4.45%
-  Score: 0.4374
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.68
+  Avg Tokens/Chunk: 48.6
+  Std Tokens/Chunk: 10.7
+  Avg Encoding Time: 0.10ms
+  Vocab Utilization: 4.72%
+  Score: 0.3638
 
 IESC112_GPT2:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.69
-  Avg Tokens/Chunk: 121.2
-  Std Tokens/Chunk: 26.1
-  Avg Encoding Time: 0.14ms
-  Vocab Utilization: 3.86%
-  Score: 0.4617
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.93
+  Avg Tokens/Chunk: 44.3
+  Std Tokens/Chunk: 11.8
+  Avg Encoding Time: 0.07ms
+  Vocab Utilization: 4.18%
+  Score: 0.3906
 
 IESC112_BERT-BASE-UNCASED:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.81
-  Avg Tokens/Chunk: 117.5
-  Std Tokens/Chunk: 30.5
-  Avg Encoding Time: 0.17ms
-  Vocab Utilization: 5.26%
-  Score: 0.4730
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.93
+  Avg Tokens/Chunk: 44.4
+  Std Tokens/Chunk: 12.5
+  Avg Encoding Time: 0.08ms
+  Vocab Utilization: 5.65%
+  Score: 0.3880
 
 IESC112_T5-SMALL:
-  Best Config: 500_50
-  Chunk Size: 500, Overlap: 50
-  Compression Ratio: 3.56
-  Avg Tokens/Chunk: 125.8
-  Std Tokens/Chunk: 30.9
-  Avg Encoding Time: 0.20ms
-  Vocab Utilization: 5.54%
-  Score: 0.4425
+  Best Config: 180_50
+  Chunk Size: 180, Overlap: 50
+  Compression Ratio: 2.74
+  Avg Tokens/Chunk: 47.3
+  Std Tokens/Chunk: 12.9
+  Avg Encoding Time: 0.10ms
+  Vocab Utilization: 5.83%
+  Score: 0.3653
 
 ============================================================
 OVERALL BEST: IESC111_BERT-BASE-UNCASED
-Best Config: 500_50
-Score: 0.4762
+Best Config: 180_50
+Score: 0.3948
 ============================================================
