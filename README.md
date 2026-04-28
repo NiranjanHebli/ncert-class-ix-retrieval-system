@@ -190,7 +190,7 @@ The system follows a 4-stage RAG pipeline. PDFs are extracted and chunked using 
 | Layer      | Technology     | Purpose                                 |
 | ---------- | -------------- | --------------------------------------- |
 | Extraction | pymupdf4llm    | PDF → structured markdown              |
-| Chunking   | BERT WordPiece | 400-token chunks, 50-token overlap      |
+| Chunking   | BERT WordPiece | 180-token chunks, 50-token overlap      |
 | Retrieval  | BM25 + FAISS   | Keyword + semantic search               |
 | Generation | Groq / Gemini  | Grounded answer with refusal capability |
 | Storage    | Pickle + FAISS | Persistent indexes on disk              |
