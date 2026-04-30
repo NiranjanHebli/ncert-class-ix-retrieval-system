@@ -1,0 +1,44 @@
+
+=== Enhanced Ensemble Retrieval Test ===
+
+Query: What are the three states of matter?
+  1. [cohere] score=0.9995  iesc101_concepts — 3 States of Matter** 
+Observe different types of matter around you. Wh…
+     Latency: 639.3 ms
+  2. [cohere] score=0.9985  iesc101 — _M ATTER IN OUR S URROUNDINGS_
+
+**3**
+
+Reprint 2025-26
+
+## **1.3 State…
+     Latency: 639.3 ms
+  3. [cohere] score=0.9945  iesc101_concepts — What type of clothes should we wear in summer. _ 
+## **What you have l…
+     Latency: 639.3 ms
+
+Query: State the universal law of gravitation.
+  1. [cohere] score=0.9989  iesc109 — ## **9.1.1 UNIVERSAL LAW OF GRAVITATION**
+
+Every object in the univers…
+     Latency: 469.5 ms
+  2. [cohere] score=0.9987  iesc109_paragraphs — From Eq. (9.4), the force exerted by the earth on the moon is
+
+**==> p…
+     Latency: 469.5 ms
+  3. [cohere] score=0.9981  iesc109_concepts — The law is universal in the sense that it is applicable to all bodies,…
+     Latency: 469.5 ms
+
+Query: Explain the process of photosynthesis.
+  1. [cohere] score=0.3591  iesc112_paragraphs — Different crops require different climatic conditions, temperature and…
+     Latency: 2095.9 ms
+  2. [cohere] score=0.0685  iesc112_concepts — 1 CROP VARIETY IMPROVEMENT** 
+_**Fig. 12. 1:** Different types of crop…
+     Latency: 2095.9 ms
+  3. [cohere] score=0.0174  iesc105_concepts — - The presence of the cell wall enables the cells of plants, fungi and…
+     Latency: 2095.9 ms
+
+=== Latency Report ===
+base_retrieval: 59.6 ms avg  (n=3)
+reranking: 1008.6 ms avg  (n=3)
+total: 1068.2 ms avg  (n=3)

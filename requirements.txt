@@ -78,3 +78,6 @@ groq
 chromadb
 langchain-community
 langchain
+cohere
+sentence-transformers
+langchain-classic
