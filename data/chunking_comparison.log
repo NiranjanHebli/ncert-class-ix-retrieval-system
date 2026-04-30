@@ -1,0 +1,96 @@
+Database loaded from data/vector_db (923 chunks)
+
+============================================================
+CHUNKING STRATEGY COMPARISON REPORT
+============================================================
+
+DATABASE STATISTICS:
+  Original chunks: 923
+  Improved chunks: 2129
+  Difference: 1206
+  Avg tokens (old): 152.7
+  Avg tokens (new): 143.1
+  Chunks over limit: 72
+
+CONTENT TYPE DISTRIBUTION (Improved):
+  concept: 1961 chunks
+  exercise: 151 chunks
+  worked_example: 17 chunks
+
+SEMANTIC BOUNDARIES:
+  paragraph: 1961 chunks
+  question: 151 chunks
+  example: 17 chunks
+
+RETRIEVAL OVERLAP ANALYSIS:
+  Total queries: 20
+  Exact matches: 0 (0.0%)
+  Partial overlap: 20 (100.0%)
+  No overlap: 0 (0.0%)
+
+QUALITY METRICS:
+  Avg relevance (old): 19.329
+  Avg relevance (new): 23.472
+  Improvement: +4.143
+
+SPEED PERFORMANCE:
+  Old avg time: 0.012s
+  New avg time: 0.022s
+  Speed ratio: 1.84x
+
+============================================================
+Database loaded from data/vector_db (923 chunks)
+
+================================================================================
+END-TO-END RETRIEVAL EVALUATION RESULTS
+================================================================================
+
+OVERALL PERFORMANCE:
+  Total Questions: 20
+  Old DB - Correct: 15/20 (75.0%)
+  New DB - Correct: 16/20 (80.0%)
+  Old DB - Grounded: 15/20 (75.0%)
+  New DB - Grounded: 16/20 (80.0%)
+
+PERFORMANCE BY QUESTION TYPE:
+  DIRECT (12 questions):
+    Old Correct: 12/12 (100.0%)
+    New Correct: 12/12 (100.0%)
+    Old Grounded: 12/12 (100.0%)
+    New Grounded: 12/12 (100.0%)
+  PARAPHRASED (3 questions):
+    Old Correct: 3/3 (100.0%)
+    New Correct: 3/3 (100.0%)
+    Old Grounded: 3/3 (100.0%)
+    New Grounded: 3/3 (100.0%)
+  OUT_OF_SCOPE (5 questions):
+    Old Correct: 0/5 (0.0%)
+    New Correct: 1/5 (20.0%)
+    Old Grounded: 0/5 (0.0%)
+    New Grounded: 1/5 (20.0%)
+
+DETAILED RESULTS:
+#   Type            Old_Correct  New_Correct  Old_Grounded New_Grounded Question                                          
+------------------------------------------------------------------------------------------------------------------------
+1   direct          yes          yes          yes          yes          What are the three states of matter?...
+2   direct          yes          yes          yes          yes          Why is ice at 273 K more effective in cooling t...
+3   direct          yes          yes          yes          yes          What produces more severe burns, boiling water ...
+4   direct          yes          yes          yes          yes          Calculate the molecular mass of water (H2O)....
+5   direct          yes          yes          yes          yes          What is the powerhouse of the cell and why?...
+6   direct          yes          yes          yes          yes          What is the difference between a plant cell and...
+7   direct          yes          yes          yes          yes          Define displacement and how it differs from dis...
+8   direct          yes          yes          yes          yes          Why do we fall in the forward direction when a ...
+9   direct          yes          yes          yes          yes          State the universal law of gravitation....
+10  direct          yes          yes          yes          yes          How do we define work done by a force?...
+11  direct          yes          yes          yes          yes          What is the kinetic energy of an object?...
+12  direct          yes          yes          yes          yes          What is the SI unit of force?...
+13  paraphrased     yes          yes          yes          yes          How does mass affect the force of gravity betwe...
+14  paraphrased     yes          yes          yes          yes          In what way does the speed of particles change ...
+15  paraphrased     yes          yes          yes          yes          What role does the nucleus play inside a cell?...
+16  out_of_scope    no           yes          no           yes          Who is the current Prime Minister of India?...
+17  out_of_scope    no           no           no           no           How do I bake a chocolate cake?...
+18  out_of_scope    no           no           no           no           What is the latest score in the IPL match?...
+19  out_of_scope    no           no           no           no           Explain quantum entanglement from Chapter 9...
+20  out_of_scope    no           no           no           no           What is the theory of relativity?...
+
+================================================================================

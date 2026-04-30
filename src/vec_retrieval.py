@@ -8,7 +8,8 @@ import atexit
 import os
 from pathlib import Path
 import pickle
-from transformers import AutoTokenizer, AutoModel
+import tiktoken
+from transformers import AutoModel
 from rank_bm25 import BM25Okapi
 
 
@@ -17,15 +18,18 @@ class VectorDatabase:
     
     def __init__(self, use_embeddings=True):
         """Initialize models and storage for vector database."""
-        model_name = 'bert-base-uncased'
-        self.bert_tok = AutoTokenizer.from_pretrained(model_name)
+        self.tiktoken_enc = tiktoken.get_encoding('cl100k_base')  # GPT-3.5/4 encoding
         
         self.use_embeddings = use_embeddings
         if self.use_embeddings:
             try:
+                model_name = 'bert-base-uncased'
                 self.bert_mod = AutoModel.from_pretrained(model_name)
                 self.bert_mod.eval()
                 torch.set_num_threads(1)
+                # Keep BERT tokenizer for embeddings only
+                from transformers import AutoTokenizer
+                self.bert_tok = AutoTokenizer.from_pretrained(model_name)
             except Exception as e:
                 print(f"Warning: Could not load BERT model, disabling embeddings: {e}")
                 self.use_embeddings = False
@@ -37,30 +41,35 @@ class VectorDatabase:
         
         atexit.register(self.flush_vector_db)
         
-    def chunk_text_bert(self, text, max_tokens=180, overlap=50):
+    def chunk_text_tiktoken(self, text, max_tokens=180, overlap=50):
+        """Chunk text using tiktoken encoding."""
         paragraphs = text.split('\n\n')
         all_chunks = []
         current_tokens = []
         
         for para in paragraphs:
             if not para.strip(): continue
-            para_tokens = self.bert_tok.encode(para, add_special_tokens=False)
+            para_tokens = self.tiktoken_enc.encode(para)
             
             if len(para_tokens) > max_tokens:
                 for i in range(0, len(para_tokens), max_tokens - overlap):
-                    all_chunks.append(self.bert_tok.decode(para_tokens[i:i + max_tokens]))
+                    all_chunks.append(self.tiktoken_enc.decode(para_tokens[i:i + max_tokens]))
                 continue
 
             if len(current_tokens) + len(para_tokens) > max_tokens:
-                all_chunks.append(self.bert_tok.decode(current_tokens))
+                all_chunks.append(self.tiktoken_enc.decode(current_tokens))
                 overlap_tokens = current_tokens[-(overlap):] if len(current_tokens) > overlap else current_tokens
                 current_tokens = overlap_tokens + para_tokens
             else:
                 current_tokens.extend(para_tokens)
                 
         if current_tokens:
-            all_chunks.append(self.bert_tok.decode(current_tokens))
+            all_chunks.append(self.tiktoken_enc.decode(current_tokens))
         return all_chunks
+    
+    def chunk_text_bert(self, text, max_tokens=180, overlap=50):
+        """Legacy method - redirects to tiktoken chunking."""
+        return self.chunk_text_tiktoken(text, max_tokens, overlap)
     
     def get_bert_embeddings(self, texts):
         if not self.use_embeddings: return None
@@ -157,7 +166,12 @@ class VectorDatabase:
         if self.bm25 is None: return []
         scores = self.bm25.get_scores(query.lower().split())
         top_k = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
-        return [self.chunks[i] for i in top_k]
+        results = []
+        for i in top_k:
+            chunk = self.chunks[i].copy()
+            chunk['score'] = float(scores[i])
+            results.append(chunk)
+        return results
 
     def retrieve_bm25_with_scores(self, query, k=3):
         if self.bm25 is None: return []
@@ -224,4 +238,6 @@ class VectorDatabase:
         self.bm25 = None
         self.chunks = []
         self.bert_mod = None
-        self.bert_tok = None
+        self.tiktoken_enc = None
+        if hasattr(self, 'bert_tok'):
+            self.bert_tok = None
