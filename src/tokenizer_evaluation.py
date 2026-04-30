@@ -21,9 +21,13 @@ SCORING_WEIGHTS = {
     'token_consistency': 0.5
 }
 
+# Determine project root (one level up from src)
+PROJECT_ROOT = Path(__file__).parent.parent
+DATA_DIR = PROJECT_ROOT / 'data'
+
 OUTPUT_FILES = {
-    'results': Path('../data/tokenizer_results.json'),
-    'comparison': Path('../data/tokenizer_comparison.csv')
+    'results': DATA_DIR / 'tokenizer_results.json',
+    'comparison': DATA_DIR / 'tokenizer_comparison.csv'
 }
 
 class TokenizerEvaluator:

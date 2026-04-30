@@ -1,9 +1,11 @@
-"""Vector Database Retrieval Demo."""
-
+import os
 import json
 import numpy as np
 from pathlib import Path
 from vec_retrieval import VectorDatabase
+
+# Prevent OpenMP runtime initialization error for FAISS
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 
 def calculate_semantic_similarity(chunk_text, key_concepts, db):
@@ -99,10 +101,13 @@ def load_iesc102_questions_and_concepts(data_dir: Path = None):
 
 
 def main(data_dir: Path = None, docs_dir: Path = None):
+    # Determine project root (one level up from src)
+    project_root = Path(__file__).parent.parent
+    
     if data_dir is None:
-        data_dir = Path('data')
+        data_dir = project_root / 'data'
     if docs_dir is None:
-        docs_dir = Path('extracted')
+        docs_dir = project_root / 'extracted'
     
     questions_data = load_iesc102_questions_and_concepts(data_dir)
     

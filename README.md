@@ -109,8 +109,7 @@ Detailed information on how this structure improves RAG performance can be found
 To run the primary retrieval demo which tests semantic (FAISS) and keyword (BM25) search:
 
 ```bash
-cd src
-python retrieval_demo.py
+python src/retrieval.py
 ```
 
 ### 2. Tokenizer & Chunking Evaluation
