@@ -40,7 +40,7 @@ def run_v2_evaluation():
             grounded = "yes" if "[" in answer and "]" in answer and any(c["chunk_id"] in answer for c in res["sources"]) else "no"
             
             # Refusal: Did it use the strict phrase for OOS?
-            is_refusal = "outside the provided NCERT content" in answer.lower()
+            is_refusal = "outside the provided ncert content" in answer.lower()
             
             # Correctness: Manual/Heuristic check
             # For OOS questions, a refusal is correct.
@@ -62,7 +62,7 @@ def run_v2_evaluation():
 
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_path = PROJECT_ROOT / f"data/eval_v2_scored_{timestamp}.csv"
+    csv_path = PROJECT_ROOT / f"data/eval_v3_scored_{timestamp}.csv"
     
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["question", "type", "category", "answer", "correctness", "grounded", "refusal_appropriate", "sources"])

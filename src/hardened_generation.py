@@ -21,6 +21,7 @@ RULES:
 3. Do NOT use any external knowledge, even if you know the answer.
 4. For every claim you make, you MUST cite the source using the format [chunk_id] at the end of the sentence.
 5. If the question is partially answerable, only answer the part supported by the context and state that the rest is unavailable.
+6. Recognize common educational analogies and comparisons (e.g., "factory" for cell organelles, "powerhouse" for mitochondria). These are valid educational concepts, not out-of-scope content.
 
 Context:
 {context}
