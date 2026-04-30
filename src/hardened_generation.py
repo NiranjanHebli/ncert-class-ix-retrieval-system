@@ -1,13 +1,14 @@
 import os
+from pathlib import Path
 from typing import List, Dict, Any
-from google import genai
-from google.genai import types
+from groq import Groq
 from dotenv import load_dotenv
 from hybrid_retrieval import HybridRetriever
 from improved_chunking import ImprovedChunker
 
+PROJECT_ROOT = Path(__file__).parent.parent
 load_dotenv()
-API_KEY = os.getenv("API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 HARDENED_PROMPT = """
 You are a strict study assistant for PariShiksha.
@@ -30,14 +31,18 @@ Answer (with [chunk_id] citations):
 """
 
 class HardenedGenerator:
-    def __init__(self, collection_name: str = "gemini_embedding_001"):
-        self.client = genai.Client(api_key=API_KEY)
+    def __init__(self, collection_name: str = "bge_small_en_v1.5", model_name: str = "llama-3.1-8b-instant"):
+        if not GROQ_API_KEY:
+            raise ValueError("GROQ_API_KEY not found in .env file.")
+            
+        self.client = Groq(api_key=GROQ_API_KEY)
+        self.model_name = model_name
         self.retriever = HybridRetriever(collection_name)
         self.chunker = ImprovedChunker()
         
         # Pre-build BM25 for the retriever
         print("Initializing Hybrid Retriever with BM25...")
-        chunks = self.chunker.chunk_directory("extracted")
+        chunks = self.chunker.chunk_directory(str(PROJECT_ROOT / "extracted"))
         self.retriever.build_bm25(chunks)
         
     def ask(self, question: str, k: int = 5) -> Dict[str, Any]:
@@ -59,17 +64,20 @@ class HardenedGenerator:
         prompt = HARDENED_PROMPT.format(context=full_context, question=question)
         
         try:
-            response = self.client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.0, # Strictness
-                    max_output_tokens=1024
-                )
+            chat_completion = self.client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt,
+                    }
+                ],
+                model=self.model_name,
+                temperature=0.0,
+                max_tokens=1024,
             )
             
             return {
-                "answer": response.text,
+                "answer": chat_completion.choices[0].message.content,
                 "sources": retrieved_chunks,
                 "prompt_used": prompt
             }

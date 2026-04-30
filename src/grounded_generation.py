@@ -1,12 +1,15 @@
 import os
 import sys
 import json
+from pathlib import Path
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 from vec_retrieval import VectorDatabase
 
-# Load environment variables
+PROJECT_ROOT = Path(__file__).parent.parent
+
+
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
@@ -51,18 +54,18 @@ class GroundedGenerator:
         """Build chunk store from a specific text file."""
         self.db.build_chunk_store_from_file(text_file)
 
-    def save_db(self, path="data/vector_db"):
+    def save_db(self, path=None):
         """Save current database to disk."""
-        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        full_path = os.path.join(project_root, path) if not os.path.isabs(path) else path
-        self.db.save_to_disk(full_path)
+        if path is None:
+            path = str(PROJECT_ROOT / "data/vector_db")
+        self.db.save_to_disk(path)
 
-    def load_db(self, path="data/vector_db"):
+    def load_db(self, path=None):
         """Load database from disk."""
-        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        full_path = os.path.join(project_root, path) if not os.path.isabs(path) else path
-        if os.path.exists(full_path):
-            self.db.load_from_disk(full_path)
+        if path is None:
+            path = str(PROJECT_ROOT / "data/vector_db")
+        if os.path.exists(path):
+            self.db.load_from_disk(path)
             return True
         return False
 
@@ -89,8 +92,7 @@ def run_demo():
     """Standard test on Chapter 1."""
     print("\n--- Grounded Generation Demo (Chapter 1) ---")
     generator = GroundedGenerator()
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    sample_file = os.path.join(project_root, "extracted", "iesc101.txt")
+    sample_file = str(PROJECT_ROOT / "extracted/iesc101.txt")
     
     if os.path.exists(sample_file):
         generator.initialize_db(sample_file)
@@ -104,9 +106,8 @@ def run_full_corpus_demo():
     """Demo across all chapters."""
     print("\n--- Full Corpus Demo (All Chapters) ---")
     generator = GroundedGenerator()
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    db_path = os.path.join(project_root, "data", "vector_db")
-    extracted_dir = os.path.join(project_root, "extracted")
+    db_path = str(PROJECT_ROOT / "data/vector_db")
+    extracted_dir = str(PROJECT_ROOT / "extracted")
     
     if generator.load_db(db_path):
         print("Loaded existing database from disk.")
@@ -122,7 +123,7 @@ def run_full_corpus_demo():
         print(f"Loaded {files_loaded} files.")
         generator.save_db(db_path)
     test_questions = []
-    questions_file = os.path.join(project_root, "data", "eval_questions.json")
+    questions_file = str(PROJECT_ROOT / "data/eval_questions.json")
     if os.path.exists(questions_file):
         with open(questions_file, "r") as f:
             categories = json.load(f)
@@ -141,9 +142,8 @@ def run_interactive_session():
     """Interactive session for the user."""
     print("\n--- Interactive Q&A Mode (Gemini) ---")
     generator = GroundedGenerator()
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    db_path = os.path.join(project_root, "data", "vector_db")
-    extracted_dir = os.path.join(project_root, "extracted")
+    db_path = str(PROJECT_ROOT / "data/vector_db")
+    extracted_dir = str(PROJECT_ROOT / "extracted")
     
     if generator.load_db(db_path):
         print("Loaded existing database from disk.")

@@ -112,7 +112,7 @@ class ImprovedChunker:
                             chunks.append(chunk)
                         current_text = sentence + "."
                 
-                # Add remaining text
+
                 if current_text:
                     chunk = Chunk(
                         text=current_text.strip(),
@@ -168,7 +168,7 @@ class ImprovedChunker:
                     chunk_id += len(sentence_chunks)
                     current_chunk = ""
         
-        # Add final chunk
+
         if current_chunk:
             chunk = Chunk(
                 text=current_chunk,
@@ -215,7 +215,7 @@ class ImprovedChunker:
                     chunks.append(chunk)
                 current_text = sentence
         
-        # Add remaining text
+
         if current_text:
             chunk = Chunk(
                 text=current_text + ".",

@@ -1,0 +1,52 @@
+question,type,category,answer,correctness,grounded,refusal_appropriate,sources
+What are the three states of matter?,direct,Direct Textbook,"The three states of matter are solid, liquid, and gas. [iesc101_paragraphs | ID: iesc101_paragraphs_concept_12]",yes,yes,yes,"['iesc103_concept_23', 'iesc101_paragraphs_concept_12', 'iesc101_concept_12', 'iesc103_concept_22', 'iesc101_concepts_concept_0_12']"
+Why is ice at 273 K more effective in cooling than water at the same temperature?,direct,Direct Textbook,"Ice at 273 K is more effective in cooling than water at the same temperature because the particles in ice are arranged in a crystalline structure, which allows for more efficient transfer of heat energy. This is due to the fact that the particles in ice are more closely packed and have a more regular arrangement, resulting in a lower entropy state. As a result, ice can absorb more heat energy from its surroundings without a significant increase in temperature, making it more effective in cooling. [iesc101_paragraphs_concept_44] and [iesc101_concept_44]",yes,yes,yes,"['iesc101_exercises_exercise_6', 'iesc103_concept_18', 'iesc1an_concept_1', 'iesc101_paragraphs_concept_44', 'iesc101_concept_44']"
+"What produces more severe burns, boiling water or steam?",direct,Direct Textbook,"What produces more severe burns, boiling water or steam?
+
+Steam produces more severe burns than boiling water [iesc101_concept_44].",yes,yes,yes,"['iesc101_paragraphs_concept_44', 'iesc1an_concept_0', 'iesc101_concept_44', 'iesc103_concept_39', 'iesc102_paragraphs_concept_21']"
+Calculate the molecular mass of water (H2O).,direct,Direct Textbook,"The molecular mass of water (H2O) is the sum of the atomic masses of all the atoms in a molecule of water. 
+
+Atomic mass of hydrogen = 1u [iesc103_concept_42]
+Atomic mass of oxygen = 16 u [iesc103_concept_42]
+
+The molecular mass of water, which contains two atoms of hydrogen and one atom of oxygen is = 2 ´ 1 + 1´16 = 18 u [iesc103_concept_42]
+
+Therefore, the molecular mass of water (H2O) is 18 u.",yes,yes,yes,"['iesc103_concept_42', 'iesc103_concept_41', 'iesc103_paragraphs_concept_42', 'iesc1ps_concept_19_1', 'iesc103_examples_example_0']"
+What is the powerhouse of the cell and why?,direct,Direct Textbook,"The powerhouse of the cell is the mitochondria. It is known as the powerhouse because it generates most of the cell's supply of adenosine triphosphate (ATP), which is used as a source of chemical energy (iesc105_exercises_exercise_4).
+
+In other words, the mitochondria is the organelle where cellular respiration takes place, and it produces energy in the form of ATP for the cell (iesc105_exercises_exercise_4).
+
+The rest of the information is unavailable as it is not provided in the context.",yes,no,yes,"['iesc105_exercises_exercise_4', 'iesc103_concept_22', 'iesc103_concept_23', 'iesc105_concept_53', 'iesc105_paragraphs_concept_53']"
+What is the difference between a plant cell and an animal cell?,direct,Direct Textbook,This question is outside the provided NCERT content.,yes,no,yes,"['iesc103_concept_23', 'iesc105_paragraphs_concept_53', 'iesc103_concept_22', 'iesc105_concept_53', 'iesc103_concept_6']"
+Define displacement and how it differs from distance.,direct,Direct Textbook,"Displacement is not explicitly defined in the provided context. However, it is mentioned that the object is displaced through a distance, _s_ in the direction of the force [iesc110_paragraphs | ID: iesc110_paragraphs_concept_7]. 
+
+The context does not provide a clear distinction between displacement and distance. However, it can be inferred that displacement refers to the change in position of an object in the direction of the force, while distance is a measure of the total length of the path traveled by the object [iesc1an | ID: iesc1an_concept_4].
+
+The rest of the information regarding the difference between displacement and distance is unavailable.",yes,yes,yes,"['iesc110_concept_7', 'iesc1an_concept_4', 'iesc109_concept_19', 'iesc110_paragraphs_concept_7', 'iesc110_concepts_concept_0_6']"
+Why do we fall in the forward direction when a moving bus brakes to a stop?,direct,Direct Textbook,"When a moving bus brakes to a stop, we tend to fall in the forward direction because the sudden application of brakes causes the bus to slow down, but our body tends to continue in the same state of motion because of its inertia [iesc108_concept_16]. This is why we tend to fall forward, as our body tries to maintain its original state of motion [iesc108_concept_21].",yes,yes,yes,"['iesc108_concept_29', 'iesc108_concept_21', 'iesc108_concept_16', 'iesc108_concept_9_0', 'iesc108_paragraphs_concept_29']"
+State the universal law of gravitation.,direct,Direct Textbook,The universal law of gravitation states that the force of attraction between any two objects is proportional to the product of their masses and inversely proportional to the square of the distance between them.  The law applies to objects anywhere in the universe.  Such a law is said to be universal. [iesc109 | ID: iesc109_concept_47],yes,yes,yes,"['iesc109_concept_9', 'iesc109_concept_47', 'iesc109_concept_50', 'iesc109_concept_6', 'iesc109_concept_13']"
+What is the kinetic energy of an object?,direct,Direct Textbook,"The kinetic energy of an object is the energy it possesses due to its motion. 
+
+1. What is the kinetic energy of an object?
+The kinetic energy of an object is the energy it possesses due to its motion [iesc110_paragraphs | ID: iesc110_paragraphs_concept_29].
+2. Write an expression for the kinetic energy of an object.
+The expression for the kinetic energy of an object is ½ mv^2 [iesc110_concepts | ID: iesc110_concepts_concept_0_32].
+
+The rest of the information regarding the kinetic energy of an object is unavailable.",yes,yes,yes,"['iesc108_concept_27', 'iesc110_paragraphs_concept_29', 'iesc108_concept_30_1', 'iesc110_concept_29', 'iesc110_concepts_concept_0_32']"
+What is the SI unit of force?,direct,Direct Textbook,The SI unit of force is kg m s[–2] [iesc108_concept_56]. This is also known as a newton and represented by the symbol N [iesc108_concept_56].,yes,yes,yes,"['iesc108_concept_56', 'iesc109_concept_23', 'iesc108_concept_35', 'iesc108_concept_32', 'iesc109_concept_33']"
+How does mass affect the force of gravity between two objects?,paraphrased,Paraphrased,"The force of gravity between two objects is directly proportional to the product of their masses [iesc109_concept_6]. This means that if the mass of one object is doubled, the force of gravity between the two objects will also double [iesc109_concept_50].",yes,yes,yes,"['iesc109_concept_49', 'iesc109_concept_6', 'iesc109_concept_50', 'iesc109_concept_8', 'iesc109_concept_47']"
+In what way does the speed of particles change when a solid is heated?,paraphrased,Paraphrased,The speed of particles increases when a solid is heated. [iesc101_paragraphs_concept_24],yes,yes,yes,"['iesc101_paragraphs_concept_24', 'iesc109_concept_4', 'iesc108_concept_61', 'iesc101_concept_24', 'iesc108_concept_50']"
+What role does the nucleus play inside a cell?,paraphrased,Paraphrased,"The nucleus plays a central role in cellular reproduction, the process by which a single cell divides and forms two new cells [iesc105_concepts_concept_0_23]. It also plays a crucial part, along with the environment, in determining the way the cell will develop and what form it will exhibit at maturity, by directing the chemical activities of the cell [iesc105_concepts_concept_0_23].",yes,yes,yes,"['iesc103_concept_22', 'iesc105_paragraphs_concept_15', 'iesc103_concept_23', 'iesc105_concept_15', 'iesc105_concepts_concept_0_23']"
+Describe the visual evidence that suggests particles of matter are moving.,paraphrased,Paraphrased,"The visual evidence that suggests particles of matter are moving is not explicitly mentioned in the provided context. However, we can infer that particles of matter are moving from the following statements:
+
+- ""Particles of matter are continuously moving, that is, they possess what we call the kinetic energy."" [iesc101_concepts | ID: iesc101_concepts_concept_0_8]
+- ""As the temperature rises, particles move faster."" [iesc101_concepts | ID: iesc101_concepts_concept_0_8]
+- ""On heating, diffusion becomes faster."" [iesc101_concepts | ID: iesc101_concepts_concept_0_8]
+
+However, the visual evidence is not explicitly mentioned.",yes,yes,yes,"['iesc108_concept_3', 'iesc101_concepts_concept_0_8', 'iesc108_concept_57', 'iesc101_paragraphs_concept_8', 'iesc108_concept_50']"
+Compare the structural features of a factory to those of a biological cell.,paraphrased,Paraphrased,This question is outside the provided NCERT content.,yes,no,yes,"['iesc1ps_concept_4', 'iesc105_paragraphs_concept_13', 'iesc105_concept_13', 'iesc103_concept_22', 'iesc105_concepts_concept_0_9']"
+Who is the current Prime Minister of India?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,no,no,no,"['iesc1ps_concept_22_0', 'iesc1ps_concept_3', 'iesc112_concepts_concept_0_0', 'iesc112_paragraphs_concept_1', 'iesc1ps_concept_15_1']"
+How do I bake a chocolate cake?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,no,no,no,"['iesc109_concept_34', 'iesc103_concept_41', 'iesc103_paragraphs_concept_41', 'iesc103_concept_20', 'iesc103_concept_22']"
+What is the latest score in the IPL match?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,no,no,no,"['iesc1ps_concept_0', 'iesc107_concepts_concept_0_20', 'iesc103_concepts_concept_0_14', 'iesc1ps_concept_14', 'iesc1ps_concept_4']"
+Explain quantum entanglement from Chapter 9,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,no,no,no,"['iesc1ps_concept_19_1', 'iesc108_concept_21', 'iesc108_concept_54', 'iesc1ps_paragraphs_concept_19_1', 'iesc104_exercises_exercise_8']"
+What is the theory of relativity?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,no,no,no,"['iesc108_concept_19', 'iesc108_concept_34', 'iesc103_paragraphs_concept_8', 'iesc103_concept_8', 'iesc108_concept_17_1']"

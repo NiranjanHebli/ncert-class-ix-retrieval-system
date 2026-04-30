@@ -16,6 +16,9 @@ import re
 
 from vec_retrieval import VectorDatabase
 from improved_chunking import ImprovedVectorDatabase
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent
 
 
 @dataclass
@@ -56,10 +59,13 @@ class ChunkingComparator:
 
     def setup_databases(
         self,
-        extracted_dir: str = "extracted",
-        old_db_path: str = "data/vector_db",
-        new_db_path: str = "data/improved_vector_db",
+        extracted_dir: str = None,
+        old_db_path: str = None,
+        new_db_path: str = None,
     ):
+        if extracted_dir is None: extracted_dir = str(PROJECT_ROOT / "extracted")
+        if old_db_path is None: old_db_path = str(PROJECT_ROOT / "data/vector_db")
+        if new_db_path is None: new_db_path = str(PROJECT_ROOT / "data/improved_vector_db")
         """Setup both databases for comparison"""
         if os.path.exists(old_db_path):
             self.old_db.load_from_disk(old_db_path)
@@ -389,8 +395,9 @@ class ChunkingComparator:
     def save_evaluation_report(
         self,
         eval_results: List[EvaluationResult],
-        output_path: str = "data/retrieval_evaluation_report.json",
+        output_path: str = None,
     ):
+        if output_path is None: output_path = str(PROJECT_ROOT / "data/retrieval_evaluation_report.json")
         """Save evaluation report to file"""
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         
@@ -495,8 +502,9 @@ class ChunkingComparator:
     def save_comparison_report(
         self,
         report: Dict[str, Any],
-        output_path: str = "data/chunking_comparison_report.json",
+        output_path: str = None,
     ):
+        if output_path is None: output_path = str(PROJECT_ROOT / "data/chunking_comparison_report.json")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
         with open(output_path, 'w', encoding='utf-8') as f:
@@ -554,7 +562,7 @@ def run_comparison():
 
     comparator.setup_databases()
 
-    with open('data/eval_questions.json', 'r', encoding='utf-8') as f:
+    with open(str(PROJECT_ROOT / 'data/eval_questions.json'), 'r', encoding='utf-8') as f:
         test_data = json.load(f)
 
     test_queries = []
@@ -579,8 +587,8 @@ def run_retrieval_evaluation():
     
     comparator.setup_databases()
     
-    # Load evaluation questions
-    with open('data/eval_questions.json', 'r', encoding='utf-8') as f:
+
+    with open(str(PROJECT_ROOT / 'data/eval_questions.json'), 'r', encoding='utf-8') as f:
         test_data = json.load(f)
     
     # Prepare test queries with type information
@@ -592,7 +600,7 @@ def run_retrieval_evaluation():
                 'type': category['type']
             })
     
-    # Run end-to-end evaluation
+
     eval_results = comparator.evaluate_end_to_end_retrieval(test_queries)
     
     # Display and save results

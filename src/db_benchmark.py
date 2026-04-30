@@ -1,19 +1,27 @@
 import os
+
 import time
 import json
 import csv
+import logging
 import numpy as np
 import chromadb
+from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 from sentence_transformers import SentenceTransformer
 from typing import List, Dict, Any
 from google import genai
 from dotenv import load_dotenv
 from improved_chunking import ImprovedChunker, Chunk
+from pathlib import Path
 
-# Load environment variables
+PROJECT_ROOT = Path(__file__).parent.parent
+
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
+logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
 
 class GeminiEmbeddingFunction(chromadb.EmbeddingFunction):
     def __init__(self, api_key: str, model_name: str = "models/gemini-embedding-001"):
@@ -48,7 +56,10 @@ class LocalEmbeddingFunction(chromadb.EmbeddingFunction):
 class DBBenchmark:
     def __init__(self, chunks: List[Chunk]):
         self.chunks = chunks
-        self.chroma_client = chromadb.PersistentClient(path="data/chroma_db")
+        self.chroma_client = chromadb.PersistentClient(
+            path=str(PROJECT_ROOT / "data/chroma_db"),
+            settings=Settings(anonymized_telemetry=False)
+        )
         
         # Models
         self.local_ef_1 = LocalEmbeddingFunction("BAAI/bge-small-en-v1.5")
@@ -132,7 +143,7 @@ class DBBenchmark:
                     "recall_hit": recall_hit
                 })
                 
-            # Print stats for model
+
             model_latencies = [r["latency_ms"] for r in results if r["model"] == model_name]
             model_recall = [r["recall_hit"] for r in results if r["model"] == model_name]
             
@@ -144,7 +155,7 @@ class DBBenchmark:
         return results
 
     def save_results(self, results: List[Dict[str, Any]]):
-        csv_path = "data/db_benchmark.csv"
+        csv_path = str(PROJECT_ROOT / "data/db_benchmark.csv")
         with open(csv_path, 'w', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=["model", "query", "latency_ms", "recall_hit"])
             writer.writeheader()
@@ -152,9 +163,9 @@ class DBBenchmark:
         print(f"\nResults saved to {csv_path}")
 
 def main():
-    # Load chunks
+
     chunker = ImprovedChunker()
-    extracted_dir = "extracted"
+    extracted_dir = str(PROJECT_ROOT / "extracted")
     print(f"Loading and chunking files from {extracted_dir}...")
     chunks = chunker.chunk_directory(extracted_dir)
     print(f"Total chunks created: {len(chunks)}")
@@ -163,15 +174,15 @@ def main():
     chunks = chunks[:200]
     print(f"Sampled to {len(chunks)} chunks for benchmark.")
     
-    # Load queries
-    with open("data/eval_questions.json", "r") as f:
+
+    with open(str(PROJECT_ROOT / "data/eval_questions.json"), "r") as f:
         categories = json.load(f)
     
     queries = []
     for cat in categories:
         queries.extend(cat["questions"])
     
-    # Run benchmark
+
     benchmark = DBBenchmark(chunks)
     benchmark.setup_collections()
     results = benchmark.run_benchmark(queries)

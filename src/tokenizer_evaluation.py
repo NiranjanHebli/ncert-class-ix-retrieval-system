@@ -21,7 +21,7 @@ SCORING_WEIGHTS = {
     'token_consistency': 0.5
 }
 
-# Determine project root (one level up from src)
+
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
 

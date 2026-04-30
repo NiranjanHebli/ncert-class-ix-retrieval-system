@@ -101,7 +101,7 @@ def load_iesc102_questions_and_concepts(data_dir: Path = None):
 
 
 def main(data_dir: Path = None, docs_dir: Path = None):
-    # Determine project root (one level up from src)
+
     project_root = Path(__file__).parent.parent
     
     if data_dir is None:

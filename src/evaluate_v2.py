@@ -1,18 +1,21 @@
 import os
 import json
 import csv
+from pathlib import Path
 from datetime import datetime
 from hardened_generation import HardenedGenerator
+
+PROJECT_ROOT = Path(__file__).parent.parent
 
 def run_v2_evaluation():
     """Runs the Stage 2 evaluation using the HardenedGenerator."""
     print("\n--- Stage 2: Hardened RAG Evaluation ---")
     
-    # Initialize generator
+
     gen = HardenedGenerator()
     
-    # Load questions
-    with open("data/eval_questions.json", "r") as f:
+
+    with open(PROJECT_ROOT / "data/eval_questions.json", "r") as f:
         categories = json.load(f)
     
     results = []
@@ -20,10 +23,10 @@ def run_v2_evaluation():
     for cat in categories:
         cat_name = cat["category"]
         q_type = cat["type"]
-        print(f"\nEvaluating Category: {cat_name}...")
+        print(f"\nEvaluating Category: {cat_name}")
         
         for q in cat["questions"]:
-            print(f"  Question: {q[:60]}...")
+            print(f"  Question: {q}")
             res = gen.ask(q)
             
             if "error" in res:
@@ -34,7 +37,7 @@ def run_v2_evaluation():
             
             # Heuristic axes (to be refined in Stage 4/5)
             # Grounding: Does it have [chunk_id] citations?
-            grounded = "yes" if "[" in answer and "]" in answer and any(c.chunk_id in answer for c in res["sources"]) else "no"
+            grounded = "yes" if "[" in answer and "]" in answer and any(c["chunk_id"] in answer for c in res["sources"]) else "no"
             
             # Refusal: Did it use the strict phrase for OOS?
             is_refusal = "outside the provided NCERT content" in answer.lower()
@@ -57,9 +60,9 @@ def run_v2_evaluation():
                 "sources": [s["chunk_id"] for s in res["sources"]]
             })
 
-    # Save results
+
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_path = f"data/eval_v2_scored_{timestamp}.csv"
+    csv_path = PROJECT_ROOT / f"data/eval_v2_scored_{timestamp}.csv"
     
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["question", "type", "category", "answer", "correctness", "grounded", "refusal_appropriate", "sources"])

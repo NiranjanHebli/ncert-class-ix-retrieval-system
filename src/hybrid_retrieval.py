@@ -1,18 +1,33 @@
 import os
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 from typing import List, Dict, Any
+from pathlib import Path
+import logging
 import chromadb
+from chromadb.config import Settings
 from rank_bm25 import BM25Okapi
 import re
 import numpy as np
 from improved_chunking import ImprovedChunker, Chunk
+
+PROJECT_ROOT = Path(__file__).parent.parent
+
+# Suppress annoying ChromaDB telemetry errors
+logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
 
 class HybridRetriever:
     """
     Implements Hybrid Retrieval (BM25 + Dense) with Reciprocal Rank Fusion (RRF).
     """
     
-    def __init__(self, chroma_collection_name: str, chroma_path: str = "data/chroma_db"):
-        self.chroma_client = chromadb.PersistentClient(path=chroma_path)
+    def __init__(self, chroma_collection_name: str, chroma_path: str = None):
+        if chroma_path is None:
+            chroma_path = str(PROJECT_ROOT / "data/chroma_db")
+        self.chroma_client = chromadb.PersistentClient(
+            path=chroma_path,
+            settings=Settings(anonymized_telemetry=False)
+        )
         self.collection = self.chroma_client.get_collection(chroma_collection_name)
         
         self.bm25 = None
@@ -66,7 +81,7 @@ class HybridRetriever:
         
         # Fetch chunk details
         results = []
-        # Create a mapping of id to chunk for quick lookup
+
         chunk_map = {c.chunk_id: c for c in self.chunks}
         
         for chunk_id, rrf_score in sorted_ids:

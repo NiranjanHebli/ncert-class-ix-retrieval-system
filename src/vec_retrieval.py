@@ -189,15 +189,15 @@ class VectorDatabase:
         path = Path(directory)
         path.mkdir(parents=True, exist_ok=True)
         
-        # Save chunks
+
         with open(path / "chunks.pkl", "wb") as f:
             pickle.dump(self.chunks, f)
             
-        # Save BM25
+
         with open(path / "bm25.pkl", "wb") as f:
             pickle.dump(self.bm25, f)
             
-        # Save FAISS index if it exists
+
         if self.faiss_idx is not None:
             faiss.write_index(self.faiss_idx, str(path / "faiss.idx"))
             np.save(path / "embeds.npy", self.embeds)
@@ -210,11 +210,11 @@ class VectorDatabase:
         if not path.exists():
             raise FileNotFoundError(f"Database directory {directory} not found.")
             
-        # Load chunks
+
         with open(path / "chunks.pkl", "rb") as f:
             self.chunks = pickle.load(f)
             
-        # Load BM25
+
         bm25_path = path / "bm25.pkl"
         if bm25_path.exists():
             with open(bm25_path, "rb") as f:
@@ -223,7 +223,7 @@ class VectorDatabase:
             # Re-build BM25 if missing
             self._refresh_indexes()
             
-        # Load FAISS index if it exists
+
         faiss_path = path / "faiss.idx"
         if faiss_path.exists():
             self.faiss_idx = faiss.read_index(str(faiss_path))
