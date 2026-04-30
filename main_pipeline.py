@@ -7,6 +7,9 @@ import os
 import subprocess
 import sys
 
+# Prevent OpenMP runtime initialization error for FAISS
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 def run_command(command):
     print(f"\nExecuting: {' '.join(command)}")
     try:

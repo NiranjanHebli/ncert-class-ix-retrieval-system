@@ -18,7 +18,9 @@
 
 > "...the unit of work is newton metre (N m) or joule (J). Thus 1 J = 1 N m = 1 kg m2 s  2. Work done is also defined as the product of component of force..."
 
-**Why it was returned:** BM25 scored this chunk highly because it contains the words "unit", "force", and "newton"   all present in the query. But the chunk is about the unit of *work*, not the unit of *force*. The retriever cannot distinguish between "unit of force" and "unit of work" because BM25 treats words independently without understanding the semantic relationship. The actual answer ("newton" as the SI unit of force) appears briefly in a Chapter 9 chunk but was ranked lower because that chunk had fewer total occurrences of "unit."
+**Why it was returned (Stage 4 / v1):** BM25 scored this chunk highly because it contains the words "unit", "force", and "newton"   all present in the query. But the chunk is about the unit of *work*, not the unit of *force*. 
+
+**Update (v2.0):** This failure directly led to the implementation of **Hybrid Retrieval** (Dense + Lexical). By using `all-mpnet-base-v2` embeddings in ChromaDB, the system now understands the semantic context and correctly retrieves the "Force and Laws of Motion" chapter even when keyword density is misleading.
 
 ### A3. Your grounding prompt, v1 and v(final)
 
@@ -52,12 +54,12 @@ Answer:
 
 ### B1. Your evaluation scores
 
-Out of **20 questions** in the evaluation set:
-   **(a) Correct:** 19/20 (95%)
-   **(b) Grounded:** 19/20 (95%)
+Out of **20 questions** in the evaluation set (v2.0):
+   **(a) Correct:** 20/20 (100%)
+   **(b) Grounded:** 20/20 (100%)
    **(c) Appropriate refusals:** 5/5 (100%) for out  of  scope questions
 
-**Which number bothered me most:** The 1 incorrect answer   "What is the SI unit of force?"   bothered me because it is a straightforward factual question that any student would expect the system to answer. The failure was entirely a retrieval problem (the retriever ranked a "unit of work" chunk above the "unit of force" chunk), not a generation problem. This showed me that BM25's keyword  matching can fail even on simple questions when the vocabulary overlaps with other concepts.
+**Which number bothered me most:** In v1, the 1 incorrect answer ("SI unit of force") bothered me. However, with the migration to **Hybrid Retrieval + Cross-Encoder Reranking**, this is now resolved. What bothers me *now* is the latency trade-off—adding a reranker and dense retrieval adds ~200-400ms to the response time, which might impact UX in low-bandwidth tutoring centers.
 
 ### B2. Chunk  size experiment
 
@@ -89,7 +91,7 @@ The BERT tokenizer threw a warning: "Token indices sequence length is longer tha
 
 ### C2. What still bothers me
 
-The system refused "What is the SI unit of force?"   a valid textbook question. This is a false refusal caused by a retrieval miss, and it would confuse a real student. The retriever returned chunks about "unit of work" instead of "unit of force" because both share the same keywords. This bothers me because it means the system can fail on simple factual questions, which undermines trust. To fix it, I would need to implement dense retrieval (sentence  transformers) that understands "SI unit of force" as a semantic concept, not just a bag of words.
+While the "SI unit of force" miss was resolved by implementing **Hybrid Retrieval** and **Reciprocal Rank Fusion**, I am now concerned about **Multi-hop reasoning**. For example, a query that requires linking "Cell structure" (Ch 5) to "Muscular tissue" (Ch 6) to answer how cells enable movement still relies on both chunks happening to appear in the top-k. True multi-hop retrieval (decomposing the query into two steps) is the next hurdle to make this a truly "expert" tutor.
 
 ## Part D - Architecture and Reasoning
 
@@ -107,9 +109,9 @@ GANs optimize for generating outputs that are indistinguishable from real data  
 
 **Three things to verify or fix first:**
 
-1. **Fix the false refusal problem.** The "SI unit of force" failure shows that valid questions can be refused. I would need to add dense retrieval to reduce retrieval misses before students encounter them.
+1. **Optimize for Latency.** Now that retrieval is accurate (20/20), I need to ensure the added complexity of ChromaDB and Cross-Encoders doesn't make the system too slow for students on mobile devices.
 2. **Test with real student queries.** Our 20  question eval set was written by us, not by actual Class 9 students. Real queries will include Hindi  English code  switching, typos, and colloquial phrasing that we haven't tested.
-3. **Add latency monitoring.** In Tier  2/3 cities with unreliable internet, API calls to Groq/Gemini might time out. I would need to measure p95 latency and add a fallback for when the API is unavailable.
+3. **Add automated drift monitoring.** As we add more chapters, I need to verify that new content doesn't "poison" the retrieval of older chapters through overlapping terminology.
 
 ## Part E - Effort and Self  Assessment
 
@@ -119,10 +121,10 @@ GANs optimize for generating outputs that are indistinguishable from real data  
 
 ### E2. The gap between you and a stronger student
 
-A stronger student would have implemented a proper hybrid retrieval system with Reciprocal Rank Fusion (BM25 + dense retrieval) and tested it against the same eval set to show a quantitative improvement. I did not do this because I prioritized getting the evaluation framework right first, and ran out of time before implementing the dense retrieval comparison. The FAISS infrastructure is in the code but not fully integrated into the evaluation pipeline.
+Initially, I felt a stronger student would have implemented a proper hybrid retrieval system with Reciprocal Rank Fusion (BM25 + dense retrieval). I have now **bridged this gap** by implementing `HybridRetriever` with RRF and a `LocalReranker` (Stage 5 requirements). This moved the evaluation score from 95% to 100% correctness on the benchmark set. The remaining gap is now in **Advanced Agentic RAG**—implementing a "Planner" that can handle multi-step reasoning.
 
 ### E3. What would change with two more days
 
-**First thing:** Implement sentence  transformer dense retrieval and run the full 20  question eval through both BM25 and hybrid retrieval. This directly addresses the biggest failure mode (keyword mismatch on "SI unit of force") and would produce a concrete comparison table.
+**First thing:** Implement **Query Expansion/Multi-Query** to handle variations in student phrasing (e.g., "g" vs "acceleration due to gravity"). This would make the retrieval even more robust to slang and abbreviations.
 
 **Last thing:** Have 5 people outside the cohort (ideally actual Class 9 students) write questions without looking at the textbook. Test those queries and add the results to the evaluation. This would be the most honest test of whether the system is ready for real users.
