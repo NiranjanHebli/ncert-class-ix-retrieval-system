@@ -1,21 +1,21 @@
 {
   "metrics": {
-    "total_questions": 20,
+    "total_questions": 22,
     "old_db": {
-      "correct": 15,
-      "grounded": 15,
+      "correct": 17,
+      "grounded": 17,
       "proper_refusal": 0,
-      "correct_pct": 75.0,
-      "grounded_pct": 75.0,
+      "correct_pct": 77.27272727272727,
+      "grounded_pct": 77.27272727272727,
       "proper_refusal_pct": 0.0
     },
     "new_db": {
-      "correct": 16,
-      "grounded": 16,
+      "correct": 18,
+      "grounded": 18,
       "proper_refusal": 1,
-      "correct_pct": 80.0,
-      "grounded_pct": 80.0,
-      "proper_refusal_pct": 5.0
+      "correct_pct": 81.81818181818183,
+      "grounded_pct": 81.81818181818183,
+      "proper_refusal_pct": 4.545454545454546
     },
     "by_type": {
       "direct": {
@@ -30,11 +30,11 @@
         "new_grounded_pct": 100.0
       },
       "paraphrased": {
-        "count": 3,
-        "old_correct": 3,
-        "new_correct": 3,
-        "old_grounded": 3,
-        "new_grounded": 3,
+        "count": 5,
+        "old_correct": 5,
+        "new_correct": 5,
+        "old_grounded": 5,
+        "new_grounded": 5,
         "old_correct_pct": 100.0,
         "new_correct_pct": 100.0,
         "old_grounded_pct": 100.0,
@@ -265,6 +265,34 @@
       "new_chunk_count": 3
     },
     {
+      "question": "Describe the visual evidence that suggests particles of matter are moving.",
+      "question_type": "paraphrased",
+      "old_answer": " Nature of Matter**- _**Fig. 1.1:** When we dissolve salt in water, the particles of salt get into the spaces between particles of water._## **1.1.1 M...",
+      "new_answer": "5), we can conclude the following: \n2 \n_SCIENCE_ \nReprint 2025-26 \nParticles of matter are continuously moving, that is, they possess what we call the...",
+      "correctness_old": "yes",
+      "correctness_new": "yes",
+      "grounded_old": "yes",
+      "grounded_new": "yes",
+      "refusal_old": "na",
+      "refusal_new": "na",
+      "old_chunk_count": 3,
+      "new_chunk_count": 3
+    },
+    {
+      "question": "Compare the structural features of a factory to those of a biological cell.",
+      "question_type": "paraphrased",
+      "old_answer": " of cell; for example, nerve cells have a typical shape.## uestions- uestions _1. Who discovered cells, and how? 2. Why is the cell called the structu...",
+      "new_answer": "## uestions\n\n- uestions _1. Who discovered cells, and how? 2. Why is the cell called the structural and functional unit of life?_\n\n- Q\n\n## **5.2 What ...",
+      "correctness_old": "yes",
+      "correctness_new": "yes",
+      "grounded_old": "yes",
+      "grounded_new": "yes",
+      "refusal_old": "na",
+      "refusal_new": "na",
+      "old_chunk_count": 3,
+      "new_chunk_count": 3
+    },
+    {
       "question": "Who is the current Prime Minister of India?",
       "question_type": "out_of_scope",
       "old_answer": " We obtain most of this food from agriculture and animal husbandry.We read in newspapers that efforts are always being made to improve production from...",
@@ -335,5 +363,5 @@
       "new_chunk_count": 3
     }
   ],
-  "timestamp": "2026-04-29 20:13:16"
+  "timestamp": "2026-04-30 19:09:10"
 }

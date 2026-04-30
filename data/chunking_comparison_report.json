@@ -37,32 +37,32 @@
     }
   },
   "overlap_analysis": {
-    "total_queries": 20,
+    "total_queries": 22,
     "exact_matches": 0,
-    "partial_overlap": 20,
+    "partial_overlap": 22,
     "no_overlap": 0,
     "content_type_matches": 1,
     "semantic_boundary_analysis": {
-      "paragraph": 54,
+      "paragraph": 60,
       "question": 5,
       "example": 1
     }
   },
   "speed_performance": {
-    "original_avg_time": 0.01199030876159668,
-    "improved_avg_time": 0.02201685905456543,
-    "speed_ratio": 1.8362211926587262
+    "original_avg_time": 0.012773275375366211,
+    "improved_avg_time": 0.026671409606933594,
+    "speed_ratio": 2.0880634624358376
   },
   "quality_metrics": {
-    "avg_relevance_score_old": 19.32915500199166,
-    "avg_relevance_score_new": 23.47205958504859,
+    "avg_relevance_score_old": 19.34293059008024,
+    "avg_relevance_score_new": 23.55843877333751,
     "content_type_relevance": {
-      "concept": 22.741427236207393,
+      "concept": 22.909507578209325,
       "exercise": 30.855259285770426,
       "worked_example": 26.01020791886362
     },
     "semantic_boundary_effectiveness": {
-      "paragraph": 22.741427236207393,
+      "paragraph": 22.909507578209325,
       "question": 30.855259285770426,
       "example": 26.01020791886362
     }

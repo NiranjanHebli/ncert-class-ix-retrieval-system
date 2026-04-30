@@ -421,12 +421,12 @@ class ImprovedVectorDatabase:
                 'semantic_boundary': chunk.semantic_boundary
             })
         
-        with open(os.path.join(db_path, 'improved_chunks.json'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(db_path, 'wk10_chunks.json'), 'w', encoding='utf-8') as f:
             json.dump(chunks_data, f, indent=2, ensure_ascii=False)
     
     def load_from_disk(self, db_path: str):
         """Load database from disk"""
-        chunks_file = os.path.join(db_path, 'improved_chunks.json')
+        chunks_file = os.path.join(db_path, 'wk10_chunks.json')
         
         if not os.path.exists(chunks_file):
             raise FileNotFoundError(f"No saved database found at {db_path}")
