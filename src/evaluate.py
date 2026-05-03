@@ -9,8 +9,11 @@ import json
 import csv
 from datetime import datetime
 
-# Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent
 
 from groq import Groq
 from dotenv import load_dotenv
@@ -20,7 +23,7 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 GROUNDING_PROMPT = """
-You are a study assistant for PariShiksha. 
+You are a study assistant for PariShiksha.
 Use ONLY the context provided below to answer the question.
 If the answer is not present in the context, respond with:
 "This question is outside the provided NCERT content."
@@ -33,22 +36,18 @@ Question: {question}
 Answer:
 """
 
-
 def run_evaluation():
     """Run full 3-axis evaluation and save results."""
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    # Load questions
     md_path = os.path.join(project_root, "docs", "evaluation_results.md")
     questions_file = os.path.join(project_root, "data", "eval_questions.json")
     with open(questions_file, "r") as f:
         categories = json.load(f)
 
-    # Initialize generator
     client = Groq(api_key=GROQ_API_KEY)
     db = VectorDatabase(use_embeddings=False)
 
-    # Load or build database
     db_path = os.path.join(project_root, "data", "vector_db")
     extracted_dir = os.path.join(project_root, "extracted")
 
@@ -65,7 +64,6 @@ def run_evaluation():
                     db.build_chunk_store_from_file(os.path.join(root, f))
         db.save_to_disk(db_path)
 
-    # Run evaluation
     results = []
     print("\n" + "=" * 80)
     print("EVALUATION RUN")
@@ -80,12 +78,11 @@ def run_evaluation():
         print(f"\n--- {category} ({q_type}) ---")
 
         for question in cat["questions"]:
-            # Retrieve context
+
             retrieved_chunks = db.retrieve_bm25(question, k=3)
             context = "\n\n---\n\n".join([chunk['text'] for chunk in retrieved_chunks])
             prompt = GROUNDING_PROMPT.format(context=context, question=question)
 
-            # Generate answer
             try:
                 completion = client.chat.completions.create(
                     model="llama-3.1-8b-instant",
@@ -96,10 +93,8 @@ def run_evaluation():
             except Exception as e:
                 answer = f"[ERROR]: {str(e)}"
 
-            # Determine if the model refused
             is_refusal = "outside" in answer.lower() or "not present" in answer.lower() or "not in the context" in answer.lower()
 
-            # Auto-score based on heuristics
             if q_type == "out_of_scope":
                 correctness = "yes" if is_refusal else "no"
                 grounded = "yes" if is_refusal else "no"
@@ -126,7 +121,6 @@ def run_evaluation():
             print(f"  {status} {question[:60]}...")
             print(f"     Answer: {answer[:100]}...")
 
-    # Save CSV
     csv_path = os.path.join(project_root, "data", "evaluation_results.csv")
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=[
@@ -142,14 +136,11 @@ def run_evaluation():
 
     print(f"\n CSV saved to: {csv_path}")
 
-    # Generate evaluation_results.md
     generate_evaluation_markdown(results, md_path)
 
-    # Print summary
     print_summary(results)
 
     return results
-
 
 def generate_evaluation_markdown(results, md_path):
     """Generate the evaluation_results.md file from results."""
@@ -191,7 +182,6 @@ def generate_evaluation_markdown(results, md_path):
             q_short = r["question"][:50] + ("..." if len(r["question"]) > 50 else "")
             f.write(f"| {i} | {q_short} | {r['type']} | {r['correctness']} | {r['grounded']} | {r['refusal_appropriate']} |\n")
 
-        # Task 4.3: Working and failing examples
         f.write("\n## Analysis: Working Examples\n\n")
         working = [r for r in results if r["correctness"] == "yes" and r["type"] != "out_of_scope"][:3]
         for i, r in enumerate(working, 1):
@@ -217,7 +207,6 @@ def generate_evaluation_markdown(results, md_path):
 
     print(f" Markdown saved to: {md_path}")
 
-
 def print_summary(results):
     """Print a summary of the evaluation."""
     total = len(results)
@@ -233,7 +222,6 @@ def print_summary(results):
     print(f"  Partial:         {partial}/{total}")
     print(f"  Grounded:        {grounded}/{total} ({grounded/total*100:.0f}%)")
 
-    # Per-type breakdown
     for q_type in ["direct", "paraphrased", "out_of_scope"]:
         type_results = [r for r in results if r["type"] == q_type]
         if not type_results:
@@ -243,6 +231,6 @@ def print_summary(results):
 
     print("=" * 80)
 
-
 if __name__ == "__main__":
     run_evaluation()
+

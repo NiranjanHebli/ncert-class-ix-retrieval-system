@@ -1,0 +1,45 @@
+model,query,latency_ms,recall_hit
+bge_small_en_v1.5,What are the three states of matter?,68.88766699921689,0.0
+bge_small_en_v1.5,Why is ice at 273 K more effective in cooling than water at the same temperature?,30.762833999688155,0.0
+bge_small_en_v1.5,"What produces more severe burns, boiling water or steam?",30.788542000664165,0.0
+bge_small_en_v1.5,Calculate the molecular mass of water (H2O).,28.708208999887574,0.0
+bge_small_en_v1.5,What is the powerhouse of the cell and why?,27.70783300002222,0.0
+bge_small_en_v1.5,What is the difference between a plant cell and an animal cell?,29.48349999860511,0.0
+bge_small_en_v1.5,Define displacement and how it differs from distance.,28.178791999380337,0.0
+bge_small_en_v1.5,Why do we fall in the forward direction when a moving bus brakes to a stop?,10.596666999845183,0.0
+bge_small_en_v1.5,State the universal law of gravitation.,11.35183299993514,0.0
+bge_small_en_v1.5,How do we define work done by a force?,9.936499998730142,0.0
+bge_small_en_v1.5,What is the kinetic energy of an object?,10.359333000451443,0.0
+bge_small_en_v1.5,What is the SI unit of force?,10.443208000651794,0.0
+bge_small_en_v1.5,How does mass affect the force of gravity between two objects?,9.915207998346887,0.0
+bge_small_en_v1.5,In what way does the speed of particles change when a solid is heated?,31.494582999584964,0.0
+bge_small_en_v1.5,What role does the nucleus play inside a cell?,13.541459000407485,0.0
+bge_small_en_v1.5,Describe the visual evidence that suggests particles of matter are moving.,12.024583000311395,0.0
+bge_small_en_v1.5,Compare the structural features of a factory to those of a biological cell.,30.729291000170633,0.0
+bge_small_en_v1.5,Who is the current Prime Minister of India?,16.172249999726773,0.0
+bge_small_en_v1.5,How do I bake a chocolate cake?,15.269875000740285,0.0
+bge_small_en_v1.5,What is the latest score in the IPL match?,16.356584001187002,0.0
+bge_small_en_v1.5,Explain quantum entanglement from Chapter 9,13.2086249996064,0.0
+bge_small_en_v1.5,What is the theory of relativity?,34.759833999487455,0.0
+all_mpnet_base_v2,What are the three states of matter?,61.87641699943924,0.0
+all_mpnet_base_v2,Why is ice at 273 K more effective in cooling than water at the same temperature?,98.77391699956206,0.0
+all_mpnet_base_v2,"What produces more severe burns, boiling water or steam?",44.330375001663924,0.0
+all_mpnet_base_v2,Calculate the molecular mass of water (H2O).,38.525250000020606,0.0
+all_mpnet_base_v2,What is the powerhouse of the cell and why?,41.815292001047055,0.0
+all_mpnet_base_v2,What is the difference between a plant cell and an animal cell?,60.31574999906297,0.0
+all_mpnet_base_v2,Define displacement and how it differs from distance.,45.80095799974515,0.0
+all_mpnet_base_v2,Why do we fall in the forward direction when a moving bus brakes to a stop?,23.07329200084496,0.0
+all_mpnet_base_v2,State the universal law of gravitation.,20.43558300101722,0.0
+all_mpnet_base_v2,How do we define work done by a force?,18.144540999855963,0.0
+all_mpnet_base_v2,What is the kinetic energy of an object?,29.320915999051067,0.0
+all_mpnet_base_v2,What is the SI unit of force?,26.202250001006178,0.0
+all_mpnet_base_v2,How does mass affect the force of gravity between two objects?,18.139207999411155,0.0
+all_mpnet_base_v2,In what way does the speed of particles change when a solid is heated?,43.30383299929963,0.0
+all_mpnet_base_v2,What role does the nucleus play inside a cell?,15.799749999132473,0.0
+all_mpnet_base_v2,Describe the visual evidence that suggests particles of matter are moving.,14.533125000525615,0.0
+all_mpnet_base_v2,Compare the structural features of a factory to those of a biological cell.,40.82216700044228,0.0
+all_mpnet_base_v2,Who is the current Prime Minister of India?,16.06812499994703,0.0
+all_mpnet_base_v2,How do I bake a chocolate cake?,18.499250001696055,0.0
+all_mpnet_base_v2,What is the latest score in the IPL match?,17.301249999945867,0.0
+all_mpnet_base_v2,Explain quantum entanglement from Chapter 9,28.360165999401943,0.0
+all_mpnet_base_v2,What is the theory of relativity?,43.14633300054993,0.0

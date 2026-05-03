@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What are the three states of matter?",
+    "top_1_chunk_id": "iesc101_paragraphs_concept_12",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "Why is ice at 273 K more effective in cooling than water at the same temperature?",
+    "top_1_chunk_id": "iesc109_concept_35",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "What produces more severe burns, boiling water or steam?",
+    "top_1_chunk_id": "iesc101_paragraphs_concept_44",
+    "contains_answer": "NO"
+  },
+  {
+    "question": "Calculate the molecular mass of water (H2O).",
+    "top_1_chunk_id": "iesc103_concept_42",
+    "contains_answer": "NO"
+  },
+  {
+    "question": "What is the powerhouse of the cell and why?",
+    "top_1_chunk_id": "iesc1ps_concept_19_1",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "What is the difference between a plant cell and an animal cell?",
+    "top_1_chunk_id": "iesc105_paragraphs_concept_53",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "Define displacement and how it differs from distance.",
+    "top_1_chunk_id": "iesc110_concept_7",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "Why do we fall in the forward direction when a moving bus brakes to a stop?",
+    "top_1_chunk_id": "iesc108_concept_29",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "State the universal law of gravitation.",
+    "top_1_chunk_id": "iesc109_concept_9",
+    "contains_answer": "YES"
+  },
+  {
+    "question": "How do we define work done by a force?",
+    "top_1_chunk_id": "iesc108_concept_2",
+    "contains_answer": "YES"
+  }
+]

@@ -5,15 +5,15 @@ from dotenv import load_dotenv
 def check_available_models():
     load_dotenv()
     api_key = os.getenv("API_KEY")
-    
+
     if not api_key:
         print("Error: API_KEY not found in .env file.")
         return
 
     print(f"Checking models with API Key: {api_key[:5]}...{api_key[-4:]}")
-    
+
     try:
-        # Try both v1 and v1beta
+
         versions = ['v1', 'v1beta']
         for version in versions:
             print(f"\n--- Testing API Version: {version} ---")
@@ -28,9 +28,10 @@ def check_available_models():
                         print(f" - {m.name} (Supported: {getattr(m, 'supported_methods', 'Unknown')})")
             except Exception as e:
                 print(f"Failed to list models for {version}: {e}")
-                
+
     except Exception as e:
         print(f"Critical Error: {e}")
 
 if __name__ == "__main__":
     check_available_models()
+

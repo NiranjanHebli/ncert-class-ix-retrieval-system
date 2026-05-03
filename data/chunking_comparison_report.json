@@ -1,0 +1,70 @@
+{
+  "database_statistics": {
+    "original": {
+      "total_chunks": 923,
+      "content_types": {
+        "content": 697,
+        "solution": 55,
+        "example": 152,
+        "exercise": 19
+      },
+      "avg_tokens": 152.73781148429035,
+      "max_tokens": 223,
+      "min_tokens": 5,
+      "chunks_over_limit": 34
+    },
+    "improved": {
+      "total_chunks": 2129,
+      "content_types": {
+        "concept": 1961,
+        "exercise": 151,
+        "worked_example": 17
+      },
+      "semantic_boundaries": {
+        "paragraph": 1961,
+        "question": 151,
+        "example": 17
+      },
+      "avg_tokens": 143.06904650070456,
+      "max_tokens": 1073,
+      "min_tokens": 2,
+      "chunks_over_limit": 72
+    },
+    "comparison": {
+      "chunk_count_diff": 1206,
+      "avg_tokens_diff": -9.668764983585788,
+      "over_limit_chunks": 72
+    }
+  },
+  "overlap_analysis": {
+    "total_queries": 22,
+    "exact_matches": 0,
+    "partial_overlap": 22,
+    "no_overlap": 0,
+    "content_type_matches": 1,
+    "semantic_boundary_analysis": {
+      "paragraph": 60,
+      "question": 5,
+      "example": 1
+    }
+  },
+  "speed_performance": {
+    "original_avg_time": 0.012773275375366211,
+    "improved_avg_time": 0.026671409606933594,
+    "speed_ratio": 2.0880634624358376
+  },
+  "quality_metrics": {
+    "avg_relevance_score_old": 19.34293059008024,
+    "avg_relevance_score_new": 23.55843877333751,
+    "content_type_relevance": {
+      "concept": 22.909507578209325,
+      "exercise": 30.855259285770426,
+      "worked_example": 26.01020791886362
+    },
+    "semantic_boundary_effectiveness": {
+      "paragraph": 22.909507578209325,
+      "question": 30.855259285770426,
+      "example": 26.01020791886362
+    }
+  }
+}

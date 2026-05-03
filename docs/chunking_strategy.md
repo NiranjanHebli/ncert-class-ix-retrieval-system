@@ -49,7 +49,7 @@ Our evaluation script used a composite score based on:
 
 ---
 
-*Summary based on evaluation results from `src/tokenizer_evaluation.py` run on 2026-04-23.*
+Summary based on evaluation results from `src/tokenizer_evaluation.py` run on 2026-04-23.
 
 ## References
 

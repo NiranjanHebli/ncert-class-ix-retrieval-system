@@ -7,6 +7,9 @@ import os
 import subprocess
 import sys
 
+# Prevent OpenMP runtime initialization error for FAISS
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 def run_command(command):
     print(f"\nExecuting: {' '.join(command)}")
     try:
@@ -37,12 +40,12 @@ def main():
     print("\n[STEP 3] Running Retrieval Demo...")
     run_command(["python3", "src/retrieval.py"])
 
-    # 4. Grounded Generation (Stage 3)
+    # 4. Grounded Generation
     print("\n[STEP 4] Running Grounded Generation Test (Groq)...")
     run_command(["python3", "src/groq_generation.py"])
 
-    # 5. Evaluation (Stage 4)
-    print("\n[STEP 5] Running Stage 4 Evaluation...")
+    # 5. Evaluation
+    print("\n[STEP 5] Running Evaluation...")
     run_command(["python3", "src/evaluate.py"])
 
     print("\n" + "=" * 60)

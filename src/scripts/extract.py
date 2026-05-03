@@ -7,10 +7,9 @@ FOLDER_NAME  = "iesc1dd"
 source_dir = os.path.join(BASE_DIR, FOLDER_NAME)
 output_dir = os.path.join(BASE_DIR, "extracted")
 
-# Ensure a fresh run by clearing the docs directory if it exists
 if os.path.exists(output_dir):
     print(f"Cleaning up {output_dir} for a fresh run...")
-    # We only remove the .txt files and subdirectories to avoid removing the docs folder itself if it's open
+
     for item in os.listdir(output_dir):
         item_path = os.path.join(output_dir, item)
         if os.path.isfile(item_path):
@@ -27,20 +26,20 @@ if not os.path.exists(source_dir):
 for filename in os.listdir(source_dir):
     if not filename.lower().endswith(".pdf"):
         continue
-        
+
     file_path = os.path.join(source_dir, filename)
     output_filename = os.path.splitext(filename)[0] + ".txt"
     output_path = os.path.join(output_dir, output_filename)
-    
+
     print(f"Processing {filename} with pymupdf4llm...")
-    
+
     try:
-        # Extract markdown preserving layout, equations, and tables
+
         md_text = pymupdf4llm.to_markdown(file_path)
-        
+
         with open(output_path, "w", encoding="utf-8") as out_f:
             out_f.write(md_text)
-            
+
         print(f"Saved formatted markdown text to {output_filename}")
     except Exception as e:
         print(f"Error extracting text from {filename}: {e}")
