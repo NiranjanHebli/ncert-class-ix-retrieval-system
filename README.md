@@ -18,9 +18,23 @@ PariShiksha is an ed-tech non-profit rolling out AI-powered tutoring centres in 
 - **Refuse gracefully** when asked questions outside the NCERT syllabus
 - **Handle messy real-world input** — PDF extraction artifacts, code-switched queries, paraphrased questions
 
-This project builds a Retrieval-Augmented Generation (RAG) pipeline that extracts, chunks, and indexes NCERT Science content, retrieves relevant passages using BM25/FAISS, and generates grounded answers using LLMs (Gemini 2.5 Flash / Llama 3.1 via Groq) with strict grounding prompts. The system is evaluated on 20 questions across 3 categories (direct, paraphrased, out-of-scope) using a 3-axis scoring framework (correctness, groundedness, refusal appropriateness).
+This project builds a Retrieval-Augmented Generation (RAG) pipeline that extracts, chunks, and indexes NCERT Science content, retrieves relevant passages using a **Hybrid Retrieval approach (BM25 + Dense FAISS/ChromaDB)**, and generates grounded answers using LLMs. Due to persistent rate-limiting and quota issues with the Gemini API (specifically `gemini-2.0-flash`), we have transitioned the evaluation and generation logic to use the **Groq API (Llama 3.1 8B)**. This ensures stable and fast generation during evaluation and interactive queries with strict grounding prompts. The system is evaluated on 20 questions across 3 categories (direct, paraphrased, out-of-scope) using a 3-axis scoring framework (correctness, groundedness, refusal appropriateness).
 
-[Requirement Doc](https://drive.google.com/file/d/1BIkDE5TjjngiTJky9iHsAwuT9W4HQ6qV/view?usp=sharing)
+
+## Demo Video
+
+Watch the end-to-end demonstration of the PariShiksha NCERT Science QA system:
+
+- [PariShiksha Demo Video (Loom)](https://www.loom.com/share/92827fee7ea24c75b39f69aad02e708b)
+
+
+## Requirements Doc (For V2)
+
+We made use of the following document to build the V2 of our RAG pipeline.
+
+You can check the URL below :-
+
+- [Requirement Doc V2](https://drive.google.com/file/d/1CNPMb2BSiHHLYUGMq3VfxeHymO7JIcqE/view?usp=sharing)
 
 ## Environment Setup
 
@@ -64,146 +78,99 @@ NCERT science textbook source:
 
 Download Chapter files as: `iesc1XX.pdf` (e.g., `iesc102.pdf` = Chapter 2: Motion) and place them in the `iesc1dd/` directory in the root.
 
-## How to Extract PDF Content
+## Running the Study Assistant v2.0 Pipeline
 
-### 1. Extraction using pymupdf4llm (Recommended)
+Execute the scripts in the following order to run the complete V2.0 pipeline:
 
-To extract text using `pymupdf4llm` (which preserves formulas and equations) and automatically split them:
-
-```bash
-python src/scripts/extract.py
-```
-
-### 2. OCR Extraction
-
-Extracting PDF using OCR Space API (image-based OCR):
+### 1. Data Extraction & Structure-Aware Chunking
+Extracts raw text from NCERT PDFs and applies structure-aware chunking (preserving tables and examples).
 
 ```bash
-python src/scripts/old_extract.py
+python src/improved_chunking.py
 ```
 
-### 3. Splitting the text files into sections (Optional)
-
-If you already have text files and only need to re-run the splitting logic:
+### 2. Database Initialization & Benchmarking
+Indexes the generated chunks into a persistent **ChromaDB** vector store using dense embeddings (`all-mpnet-base-v2` / `bge-small`).
 
 ```bash
-python src/scripts/split_sections.py
+python src/db_benchmark.py
 ```
 
-## Chunking Strategy
-
-Chunking is the process of splitting the text into smaller chunks that can be processed by the LLM.
-
-The system uses a hybrid chunking strategy based on semantic classification and token-length optimization. Detailed justification can be found in [chunking_strategy.md](docs/chunking_strategy.md).
-
-## Data Organization
-
-Extracted content is categorized into concepts, worked examples, exercises, and sanitized paragraphs.
-
-Detailed information on how this structure improves RAG performance can be found in [data_organization.md](docs/data_organization.md).
-
-## Running the Retrieval System
-
-### 1. Vector Database & Retrieval Demo
-
-To run the primary retrieval demo which tests semantic (FAISS) and keyword (BM25) search:
+### 3. Testing Hybrid Retrieval
+Initializes the BM25 (keyword) and ChromaDB (semantic) indices, combining scores via Reciprocal Rank Fusion (RRF).
 
 ```bash
-python src/retrieval.py
+python src/hybrid_retrieval.py
 ```
 
-### 2. Tokenizer & Chunking Evaluation
-
-To evaluate different tokenizers and chunking configurations:
+### 4. Interactive Q&A (Grounded Generation)
+Connects the Hybrid Retriever to the **Groq API** (`llama-3.1`), using strict grounding prompts to enforce citations and hard-refuse out-of-scope queries.
 
 ```bash
-cd src
-python tokenizer_evaluation.py
+python src/hardened_generation.py
 ```
 
-Results and comparison tables will be saved in the `data/` directory.
-
-### 3. End-to-End Pipeline
-
-To run the entire pipeline (extraction, evaluation, and retrieval) in one go:
+### 5. Running the V2.0 Evaluation
+Runs the 20-question evaluation set through the hardened pipeline, autoscoring responses on correctness, groundedness, and refusal appropriateness.
 
 ```bash
-python main_pipeline.py
+python src/evaluate_v2.py
 ```
+Outputs: `data/eval_scored.csv`
 
-## Grounded Generation
-
-The system supports two backends for grounded generation. Both use strict grounding prompts to ensure answers are based only on NCERT context.
-
-### 1. Gemini Implementation
-
-Standard implementation using the Gemini 2.5 Flash model.
+### 6. Generating the RAGAS Metrics Report (Stretch Goal)
+Takes the evaluation scores and queries the Groq API as an LLM-judge to calculate advanced RAGAS metrics (Faithfulness, Answer Relevancy, Context Precision, Context Recall).
 
 ```bash
-python src/grounded_generation.py         # Standard Test
-python src/grounded_generation.py --full  # Full Corpus Test
+python src/generate_ragas_report.py
+```
+Outputs: `data/ragas_report.csv`
+
+To save tokens (evaluates first 3 questions):
+```bash 
+python src/generate_ragas_report.py --sample 3
 ```
 
-### 2. Groq Implementation (Recommended)
+### Interpreting RAGAS Results
+When running the report, you may see a warning: `LLM returned 1 generations instead of requested 3`. This is **expected** behavior. Groq's API currently supports `n=1`, so the RAGAS judge performs single-shot evaluation instead of its default triple-check mode.
 
-High-speed implementation using Llama-3-8B via Groq.
+*   **Faithfulness (~1.0):** High score means the model is NOT hallucinating (it only uses the provided text).
+*   **Context Precision (~0.2-0.5):** This is often lower in v2.0 because we retrieve 5 chunks to ensure coverage, but the answer is usually contained in just 1. This "noise" is normal for a robust retriever.
+*   **Context Recall (~1.0):** High score means the retriever found all the facts needed to answer.
 
-```bash
-python src/groq_generation.py         # Standard Test
-python src/groq_generation.py --full  # Full Corpus Test
-```
 
-### 3. Interactive Q&A Mode
-
-To start a live interactive session with the assistant:
-
-```bash
-python src/groq_generation.py --interactive
-```
-
-## Evaluation
-
-Run the full 3-axis evaluation (correctness, groundedness, refusal) against 20 questions:
-
-```bash
-python src/evaluate.py
-```
-
-Or via the main pipeline:
-
-```bash
-python main_pipeline.py --evaluate
-```
-
-This generates:
-
-- `data/evaluation_results.csv` — Raw scores for each question
-- [evaluation_results.md](docs/evaluation_results.md) — Summary report with working/failing example analysis
 
 ## High-Level Design
 
 ![High-Level Design](./docs/diagrams/HLD.png)
 
-The system follows a 4-stage RAG pipeline. PDFs are extracted and chunked using BERT tokenization, indexed with BM25 and FAISS, and queried through a grounding prompt that forces the LLM to either answer from context or refuse.
+View Complete Diagram :- [HLD](./docs/diagrams/HLD.png)
+
+The system follows a production-grade RAG pipeline. PDFs are extracted into Markdown and chunked using structure-aware logic, indexed via **BM25 and ChromaDB**, and retrieved using **Hybrid RRF with Cross-Encoder reranking**. The response is generated through a hardened grounding prompt that forces the LLM to either answer with citations or refuse.
+
 
 | Layer      | Technology     | Purpose                                 |
 | ---------- | -------------- | --------------------------------------- |
 | Extraction | pymupdf4llm    | PDF → structured markdown              |
-| Chunking   | BERT WordPiece | 180-token chunks, 50-token overlap      |
-| Retrieval  | BM25 + FAISS   | Keyword + semantic search               |
-| Generation | Groq / Gemini  | Grounded answer with refusal capability |
-| Storage    | Pickle + FAISS | Persistent indexes on disk              |
+| Chunking   | Structure-Aware| Preserves tables and worked examples    |
+| Retrieval  | Hybrid (RRF)   | BM25 + ChromaDB (Dense)                 |
+| Generation | Groq: Llama-3.1| Grounded answer with hard refusal       |
+| Evaluation | RAGAS          | Automated metrics via LLM-as-Judge      |
 
 ## Project Documentation
 
 | Document                                         | Description                                        |
 | ------------------------------------------------ | -------------------------------------------------- |
-| [notebook.ipynb](notebook.ipynb)                    | End-to-end pipeline demonstration (Stages 1–4)    |
-| [evaluation_results.md](docs/evaluation_results.md) | 20-question evaluation with 3-axis scoring         |
-| [reflection.md](docs/reflection.md)                 | Project Reflection (Parts A–E, 13 questions)      |
-| [failure_modes.md](docs/failure_modes.md)           | Top 3 production failure modes analysis            |
+| [notebook.ipynb](notebook.ipynb)                    | End-to-end pipeline demonstration (v2.0)          |
+| [reflection.md](docs/reflection.md)                 | Project Reflection (Updated for v2.0)             |
+| [failure_memo.md](docs/failure_memo.md)             | Top 3 production failure modes analysis            |
+| [ragas_report_memo.md](docs/ragas_report_memo.md)   | Explanation of RAGAS metrics and scores            |
 | [chunking_strategy.md](docs/chunking_strategy.md)   | Chunking size, overlap, and strategy justification |
-| [data_organization.md](docs/data_organization.md)   | Content classification and data structure          |
+| [db_comparison.md](docs/db_comparison.md)           | Comparison of BGE-Small vs MPNet-Base embeddings   |
+| [retrieval_misses.md](docs/retrieval_misses.md)     | Diagnosis of wrong retrievals                      |
+| [prompt_diff.md](docs/prompt_diff.md)               | Verbatim permissive vs strict prompt responses     |
+| [fix_memo.md](docs/fix_memo.md)                     | Rationale and results of the Hybrid Retrieval fix  |
+| [chunking_compare.md](docs/chunking_compare.md)     | Comparison of Regex vs Heading-anchored chunking   |
 
 ## Diagnostic Tools
 

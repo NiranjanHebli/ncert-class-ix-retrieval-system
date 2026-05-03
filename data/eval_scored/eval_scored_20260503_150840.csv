@@ -1,0 +1,2 @@
+question,type,category,answer,correctness,grounded,refusal_appropriate,sources
+What are the three states of matter?,direct,Direct Textbook,"The three states of matter are solid, liquid, and gas. [iesc101_concepts | ID: iesc101_concepts_concept_0_12]",yes,yes,yes,"['iesc103_concept_0', 'iesc101_paragraphs_concept_12', 'iesc103_concept_1', 'iesc101_concept_12', 'iesc101_concepts_concept_0_12']"

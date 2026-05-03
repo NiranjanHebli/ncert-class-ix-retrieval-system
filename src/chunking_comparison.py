@@ -20,7 +20,6 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
-
 @dataclass
 class RetrievalResult:
     """Results from a retrieval query"""
@@ -28,7 +27,6 @@ class RetrievalResult:
     old_results: List[Dict[str, Any]]
     new_results: List[Dict[str, Any]]
     expected_category: str = None
-
 
 @dataclass
 class EvaluationResult:
@@ -46,7 +44,6 @@ class EvaluationResult:
     refusal_old: str
     refusal_new: str
 
-
 class ChunkingComparator:
     """
     Compare original vs improved chunking strategies.
@@ -55,7 +52,7 @@ class ChunkingComparator:
     def __init__(self):
         self.old_db = VectorDatabase(use_embeddings=False)
         self.new_db = ImprovedVectorDatabase()
-        self.tiktoken_enc = tiktoken.get_encoding('cl100k_base')  # GPT-3.5/4 encoding
+        self.tiktoken_enc = tiktoken.get_encoding('cl100k_base')
 
     def setup_databases(
         self,
@@ -187,7 +184,7 @@ class ChunkingComparator:
     def _is_refusal(self, answer: str) -> bool:
         """Check if an answer is a refusal (indicates content not found)"""
         refusal_phrases = [
-            'outside', 'not present', 'not in the context', 
+            'outside', 'not present', 'not in the context',
             'cannot answer', 'unable to answer', 'insufficient information'
         ]
         answer_lower = answer.lower()
@@ -196,7 +193,7 @@ class ChunkingComparator:
     def _evaluate_answer_quality(self, answer: str, question_type: str) -> Dict[str, str]:
         """Evaluate answer quality based on question type"""
         is_refusal = self._is_refusal(answer)
-        
+
         if question_type == 'out_of_scope':
             correctness = 'yes' if is_refusal else 'no'
             grounded = 'yes' if is_refusal else 'no'
@@ -205,7 +202,7 @@ class ChunkingComparator:
             correctness = 'yes' if not is_refusal and len(answer) > 20 else ('no' if is_refusal else 'partial')
             grounded = 'yes' if not is_refusal else 'no'
             refusal = 'na' if not is_refusal else 'no'
-        
+
         return {
             'correctness': correctness,
             'grounded': grounded,
@@ -216,17 +213,17 @@ class ChunkingComparator:
         """Generate a mock answer based on retrieved chunks (simulates LLM behavior)"""
         if not retrieved_chunks:
             return "This question is outside the provided NCERT content."
-        
+
         context = ' '.join([chunk['text'][:200] for chunk in retrieved_chunks])
         question_lower = question.lower()
-        
+
         question_words = set(re.findall(r'\b\w+\b', question_lower))
         context_words = set(re.findall(r'\b\w+\b', context.lower()))
         overlap = len(question_words.intersection(context_words))
-        
+
         if overlap < 2:
             return "This question is outside the provided NCERT content."
-        
+
         first_chunk = retrieved_chunks[0]['text']
         if len(first_chunk) > 100:
             return first_chunk[:150] + "..."
@@ -314,10 +311,10 @@ class ChunkingComparator:
             },
             'by_type': {}
         }
-        
+
         for result in eval_results:
             q_type = result.question_type
-            
+
             if q_type not in metrics['by_type']:
                 metrics['by_type'][q_type] = {
                     'count': 0,
@@ -326,9 +323,9 @@ class ChunkingComparator:
                     'old_grounded': 0,
                     'new_grounded': 0
                 }
-            
+
             metrics['by_type'][q_type]['count'] += 1
-            
+
             if result.correctness_old == 'yes':
                 metrics['old_db']['correct'] += 1
                 metrics['by_type'][q_type]['old_correct'] += 1
@@ -337,7 +334,7 @@ class ChunkingComparator:
                 metrics['by_type'][q_type]['old_grounded'] += 1
             if result.refusal_old == 'yes':
                 metrics['old_db']['proper_refusal'] += 1
-            
+
             if result.correctness_new == 'yes':
                 metrics['new_db']['correct'] += 1
                 metrics['by_type'][q_type]['new_correct'] += 1
@@ -346,36 +343,36 @@ class ChunkingComparator:
                 metrics['by_type'][q_type]['new_grounded'] += 1
             if result.refusal_new == 'yes':
                 metrics['new_db']['proper_refusal'] += 1
-        
+
         total = metrics['total_questions']
         if total > 0:
             for db in ['old_db', 'new_db']:
                 for metric in ['correct', 'grounded', 'proper_refusal']:
                     metrics[db][f'{metric}_pct'] = (metrics[db][metric] / total) * 100
-            
+
             for q_type, type_metrics in metrics['by_type'].items():
                 count = type_metrics['count']
                 if count > 0:
                     for metric in ['old_correct', 'new_correct', 'old_grounded', 'new_grounded']:
                         type_metrics[f'{metric}_pct'] = (type_metrics[metric] / count) * 100
-        
+
         return metrics
 
     def print_evaluation_results(self, eval_results: List[EvaluationResult]):
         """Print evaluation results in notebook-style format"""
         metrics = self.calculate_evaluation_metrics(eval_results)
-        
+
         print("\n" + "=" * 80)
         print("END-TO-END RETRIEVAL EVALUATION RESULTS")
         print("=" * 80)
-        
+
         print(f"\nOVERALL PERFORMANCE:")
         print(f"  Total Questions: {metrics['total_questions']}")
         print(f"  Old DB - Correct: {metrics['old_db']['correct']}/{metrics['total_questions']} ({metrics['old_db']['correct_pct']:.1f}%)")
         print(f"  New DB - Correct: {metrics['new_db']['correct']}/{metrics['total_questions']} ({metrics['new_db']['correct_pct']:.1f}%)")
         print(f"  Old DB - Grounded: {metrics['old_db']['grounded']}/{metrics['total_questions']} ({metrics['old_db']['grounded_pct']:.1f}%)")
         print(f"  New DB - Grounded: {metrics['new_db']['grounded']}/{metrics['total_questions']} ({metrics['new_db']['grounded_pct']:.1f}%)")
-        
+
         print(f"\nPERFORMANCE BY QUESTION TYPE:")
         for q_type, type_metrics in metrics['by_type'].items():
             print(f"  {q_type.upper()} ({type_metrics['count']} questions):")
@@ -383,13 +380,13 @@ class ChunkingComparator:
             print(f"    New Correct: {type_metrics['new_correct']}/{type_metrics['count']} ({type_metrics.get('new_correct_pct', 0):.1f}%)")
             print(f"    Old Grounded: {type_metrics['old_grounded']}/{type_metrics['count']} ({type_metrics.get('old_grounded_pct', 0):.1f}%)")
             print(f"    New Grounded: {type_metrics['new_grounded']}/{type_metrics['count']} ({type_metrics.get('new_grounded_pct', 0):.1f}%)")
-        
+
         print(f"\nDETAILED RESULTS:")
         print(f'{"#":<3} {"Type":<15} {"Old_Correct":<12} {"New_Correct":<12} {"Old_Grounded":<12} {"New_Grounded":<12} {"Question":<50}')
         print('-' * 120)
         for i, result in enumerate(eval_results, 1):
             print(f'{i:<3} {result.question_type:<15} {result.correctness_old:<12} {result.correctness_new:<12} {result.grounded_old:<12} {result.grounded_new:<12} {result.question[:47]}...')
-        
+
         print("\n" + "=" * 80)
 
     def save_evaluation_report(
@@ -400,9 +397,9 @@ class ChunkingComparator:
         if output_path is None: output_path = str(PROJECT_ROOT / "data/retrieval_evaluation_report.json")
         """Save evaluation report to file"""
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
+
         metrics = self.calculate_evaluation_metrics(eval_results)
-        
+
         serializable_results = []
         for result in eval_results:
             serializable_results.append({
@@ -419,13 +416,13 @@ class ChunkingComparator:
                 'old_chunk_count': len(result.old_retrieved_chunks),
                 'new_chunk_count': len(result.new_retrieved_chunks)
             })
-        
+
         report = {
             'metrics': metrics,
             'detailed_results': serializable_results,
             'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
         }
-        
+
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False, default=str)
 
@@ -555,7 +552,6 @@ class ChunkingComparator:
 
         print("\n" + "=" * 60)
 
-
 def run_comparison():
     """Run the complete comparison analysis"""
     comparator = ChunkingComparator()
@@ -580,18 +576,15 @@ def run_comparison():
 
     return report
 
-
 def run_retrieval_evaluation():
     """Run end-to-end retrieval evaluation similar to notebook approach"""
     comparator = ChunkingComparator()
-    
-    comparator.setup_databases()
-    
 
-    with open(str(PROJECT_ROOT / 'data/eval_questions.json'), 'r', encoding='utf-8') as f:
+    comparator.setup_databases()
+
+    with open('data/eval_questions.json', 'r', encoding='utf-8') as f:
         test_data = json.load(f)
-    
-    # Prepare test queries with type information
+
     test_queries = []
     for category in test_data:
         for question in category['questions']:
@@ -599,17 +592,15 @@ def run_retrieval_evaluation():
                 'question': question,
                 'type': category['type']
             })
-    
 
     eval_results = comparator.evaluate_end_to_end_retrieval(test_queries)
-    
-    # Display and save results
+
     comparator.print_evaluation_results(eval_results)
     comparator.save_evaluation_report(eval_results)
-    
-    return eval_results
 
+    return eval_results
 
 if __name__ == "__main__":
     run_comparison()
     run_retrieval_evaluation()
+

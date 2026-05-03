@@ -1,0 +1,94 @@
+question,type,category,answer,correctness,grounded,refusal_appropriate,sources
+What are the three states of matter?,direct,Direct Textbook,"The three states of matter are solid, liquid, and gas. These states of matter arise due to the variation in the characteristics of the particles of matter [iesc101_paragraphs_concept_12].",yes,yes,yes,"['iesc101_paragraphs_concept_12', 'iesc103_concept_0', 'iesc101_concept_12', 'iesc103_concept_1', 'iesc1ps_concept_19_0']"
+Why is ice at 273 K more effective in cooling than water at the same temperature?,direct,Direct Textbook,This question is outside the provided NCERT content.,no,yes,no,"['iesc101_exercises_exercise_6', 'iesc109_concept_35', 'iesc109_concept_41', 'iesc101_paragraphs_concept_44', 'iesc109_concept_39']"
+"What produces more severe burns, boiling water or steam?",direct,Direct Textbook,Steam produces more severe burns than boiling water. [iesc101_concept_44],yes,yes,yes,"['iesc101_paragraphs_concept_44', 'iesc103_concept_26', 'iesc103_concept_2', 'iesc101_concept_44', 'iesc103_concept_3']"
+Calculate the molecular mass of water (H2O).,direct,Direct Textbook,"The molecular mass of water (H2O) is calculated as follows: 
+Atomic mass of hydrogen = 1u [iesc103_concept_42]
+oxygen = 16 u [iesc103_concept_42]
+So the molecular mass of water, which contains two atoms of hydrogen and one atom of oxygen is = 2 ´ 1+ 1´16 = 18 u [iesc103_concept_42]
+
+This question is partially answerable. The rest of the information is unavailable.",yes,yes,yes,"['iesc103_concept_42', 'iesc103_concept_41', 'iesc103_paragraphs_concept_42', 'iesc103_examples_example_0', 'iesc103_concept_27']"
+What is the powerhouse of the cell and why?,direct,Direct Textbook,"The powerhouse of the cell is the mitochondria. It is known as the powerhouse because it generates most of the cell's supply of adenosine triphosphate (ATP), which is used as a source of chemical energy (iesc105_exercises_exercise_4).
+
+In other words, the mitochondria is the organelle responsible for producing energy for the cell through cellular respiration (iesc105_exercises_exercise_4).
+
+The rest of the information is unavailable as it is not provided in the context.",yes,yes,yes,"['iesc105_exercises_exercise_4', 'iesc1ps_concept_19_1', 'iesc105_concept_53', 'iesc108_concept_33', 'iesc105_paragraphs_concept_53']"
+What is the difference between a plant cell and an animal cell?,direct,Direct Textbook,"Plant cells have a cell wall, chloroplasts, and a large vacuole, whereas animal cells do not have a cell wall, chloroplasts, and have smaller vacuoles [iesc105_paragraphs_concept_53.1].
+
+The rest of the information regarding the differences between plant and animal cells is unavailable in the provided context.",yes,yes,yes,"['iesc105_paragraphs_concept_53', 'iesc1ps_concept_14', 'iesc105_concept_53', 'iesc1ps_concept_0', 'iesc1ps_concept_15_1']"
+Define displacement and how it differs from distance.,direct,Direct Textbook,"Displacement is defined as the change in position of an object from its initial position to its final position. It is a vector quantity, which means it has both magnitude and direction [iesc110_concept_7].
+
+Displacement differs from distance in that distance is a scalar quantity that only measures the total length of the path traveled by an object, without considering the direction [iesc110_concept_7]. In other words, distance is the total amount of ground covered by an object, whereas displacement is the shortest distance between the initial and final positions of the object.
+
+For example, if a person walks 10 km north and then walks 10 km south, the distance traveled is 20 km, but the displacement is 0 km because they ended up back at the starting point [iesc110_concept_7].",yes,yes,yes,"['iesc1an_concept_4', 'iesc110_concept_7', 'iesc108_concept_1', 'iesc110_paragraphs_concept_7', 'iesc110_concepts_concept_0_6']"
+Why do we fall in the forward direction when a moving bus brakes to a stop?,direct,Direct Textbook,"When a moving bus brakes to a stop, we tend to fall in the forward direction because the sudden application of brakes causes the bus to slow down, but our body tends to continue in the same state of motion because of its inertia [iesc108_concept_16]. This is why we tend to fall forward, as our body tries to maintain its original state of motion [iesc108_concept_21].",yes,yes,yes,"['iesc108_concept_29', 'iesc108_concept_21', 'iesc108_concept_16', 'iesc108_concept_9_0', 'iesc108_paragraphs_concept_29']"
+State the universal law of gravitation.,direct,Direct Textbook,The universal law of gravitation states that the force of attraction between any two objects is proportional to the product of their masses and inversely proportional to the square of the distance between them [iesc109_concept_47]. The law applies to objects anywhere in the universe [iesc109_concept_47]. Such a law is said to be universal [iesc109_concept_47].,yes,yes,yes,"['iesc109_concept_9', 'iesc109_concept_1', 'iesc109_concept_47', 'iesc109_concept_6', 'iesc109_concept_50']"
+How do we define work done by a force?,direct,Direct Textbook,Work done by a force is defined as the product of the force and displacement in the direction of the force [iesc110_concepts_concept_0_6].,yes,yes,yes,"['iesc108_concept_2', 'iesc110_concepts_concept_0_13', 'iesc110_concepts_concept_0_6', 'iesc108_concept_3', 'iesc108_concept_36']"
+What is the kinetic energy of an object?,direct,Direct Textbook,"The kinetic energy of an object is the energy due to its motion. [iesc110_concepts_concept_0_32]
+
+However, the exact expression for kinetic energy is not provided in the given context.",yes,yes,yes,"['iesc110_paragraphs_concept_29', 'iesc108_concept_30_1', 'iesc110_concept_29', 'iesc108_concept_30_0', 'iesc110_concepts_concept_0_32']"
+What is the SI unit of force?,direct,Direct Textbook,"The SI unit of force is kg m s[–2] or newton, which has the symbol N [iesc108_concept_35, iesc108_concept_36].",yes,yes,yes,"['iesc108_concept_56', 'iesc109_concept_23', 'iesc108_concept_35', 'iesc109_concept_33', 'iesc108_concept_36']"
+How does mass affect the force of gravity between two objects?,paraphrased,Paraphrased,"The force of gravity between two objects is directly proportional to the product of their masses [iesc109_concept_6]. This means that if the mass of one object is doubled, the force of gravity between the two objects will also double [iesc109_concept_50]. Similarly, if the masses of both objects are doubled, the force of gravity between them will increase by a factor of 4 [iesc109_concept_50].
+
+The weight of a body is the force with which the earth attracts it, and it is equal to the product of mass and acceleration due to gravity [iesc109_concept_48]. This means that the weight of an object is directly proportional to its mass.",yes,yes,yes,"['iesc109_concept_49', 'iesc109_concept_6', 'iesc109_concept_50', 'iesc109_concept_48', 'iesc109_concept_5']"
+In what way does the speed of particles change when a solid is heated?,paraphrased,Paraphrased,The speed of particles increases when a solid is heated. [iesc101_paragraphs | ID: iesc101_paragraphs_concept_24] [iesc101 | ID: iesc101_concept_24],yes,yes,yes,"['iesc108_concept_11', 'iesc101_paragraphs_concept_24', 'iesc101_concept_24', 'iesc108_concept_0', 'iesc108_concept_30_0']"
+What role does the nucleus play inside a cell?,paraphrased,Paraphrased,This question is outside the provided NCERT content.,no,yes,no,"['iesc105_paragraphs_concept_15', 'iesc1ps_concept_19_1', 'iesc1an_concept_2_1', 'iesc105_concept_15', 'iesc103_concept_21']"
+Describe the visual evidence that suggests particles of matter are moving.,paraphrased,Paraphrased,"The visual evidence that suggests particles of matter are moving is not explicitly mentioned in the provided context. However, we can infer from the activities mentioned that particles of matter are continuously moving, that is, they possess what we call the kinetic energy [iesc101_concepts | ID: iesc101_concepts_concept_0_8].
+
+The activities mentioned, such as particles intermixing on their own with each other and getting into the spaces between the particles, suggest that particles of matter are in motion [iesc101_concepts | ID: iesc101_concepts_concept_0_8]. Additionally, it is mentioned that on heating, diffusion becomes faster, which implies that particles are moving faster with an increase in temperature [iesc101_concepts | ID: iesc101_concepts_concept_0_8].
+
+However, the specific visual evidence is not described in the provided context.",yes,yes,yes,"['iesc108_concept_11', 'iesc101_concepts_concept_0_8', 'iesc108_concept_1', 'iesc101_paragraphs_concept_8', 'iesc101_concept_8']"
+Compare the structural features of a factory to those of a biological cell.,paraphrased,Paraphrased,This question is outside the provided NCERT content.,no,yes,no,"['iesc1ps_concept_19_1', 'iesc105_paragraphs_concept_13', 'iesc1ps_concept_15_1', 'iesc105_concept_13', 'iesc105_concepts_concept_0_9']"
+"If I double the distance between two objects, how does the gravitational pull change?",paraphrased,Paraphrased,"According to the universal law of gravitation, the force between two objects is inversely proportional to the square of the distance between them [iesc109_concept_6]. Therefore, if the distance between two objects is doubled, the gravitational pull will decrease to one-fourth of its original value [iesc109_concept_6].",yes,yes,yes,"['iesc109_concept_49', 'iesc109_concept_6', 'iesc109_concept_50', 'iesc109_concept_5', 'iesc109_concept_12']"
+Explain how a drop of ink spreads in water in terms of particle movement.,paraphrased,Paraphrased,This question is outside the provided NCERT content.,no,yes,no,"['iesc101_paragraphs_concept_7', 'iesc109_concept_54', 'iesc109_concept_41', 'iesc101_concept_7', 'iesc109_concept_39']"
+What happens to the kinetic energy of a ball if its velocity is halved?,paraphrased,Paraphrased,"Since the context does not provide information about the relationship between velocity and kinetic energy, I can only provide a general statement based on the given information.
+
+If the velocity of the ball is halved, its kinetic energy would decrease. This is because kinetic energy is directly proportional to the square of the velocity [iesc110_concept_40_0].
+
+However, the exact relationship between velocity and kinetic energy is not explicitly stated in the context.",yes,yes,yes,"['iesc108_concept_37_0', 'iesc108_concept_11', 'iesc110_paragraphs_concept_40_0', 'iesc110_concept_40_0', 'iesc108_concept_48']"
+Why do we need a seatbelt in a car based on the laws of motion?,paraphrased,Paraphrased,"We need a seatbelt in a car because it exerts a force on our body to make the forward motion slower, thus preventing injuries caused by impact [iesc108_concept_21]. This is based on the law of inertia, which states that all objects resist a change in their state of motion [iesc108_concept_16, iesc108_concepts_concept_0_11].",yes,yes,yes,"['iesc108_concept_16', 'iesc108_concept_0', 'iesc108_concept_29', 'iesc108_concepts_concept_0_11', 'iesc108_concept_21']"
+Contrast the functions of the cell wall and the cell membrane.,paraphrased,Paraphrased,"The cell wall is located outside the cell membrane in plant cells and is composed mainly of cellulose [iesc105_paragraphs_concept_51]. It enables the cells of plants, fungi, and bacteria to exist in hypotonic media without bursting [iesc105_paragraphs_concept_51].
+
+The cell membrane, on the other hand, is an active part of the cell that regulates the movement of materials between the ordered interior of the cell and the outer environment [iesc105_paragraphs_concept_51].
+
+The ER functions both as a passageway for intracellular transport and as a manufacturing surface, but this information does not directly contrast the functions of the cell wall and the cell membrane. The Golgi apparatus also functions in the storage, modification, and packaging of substances manufactured in the cell, but this information is also not directly relevant to contrasting the functions of the cell wall and the cell membrane.
+
+Therefore, the functions of the cell wall and the cell membrane can be contrasted as follows:
+
+- The cell wall is located outside the cell membrane and provides structural support to the cell, while the cell membrane regulates the movement of materials between the cell and the outer environment.
+ 
+The rest of the information is unavailable.",yes,yes,yes,"['iesc1ps_concept_19_1', 'iesc105_paragraphs_concept_51', 'iesc1ps_concept_0', 'iesc105_concept_51', 'iesc1ps_concept_15_1']"
+Who is the current Prime Minister of India?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc1ps_concept_22_0', 'iesc1ps_concept_21', 'iesc112_concepts_concept_0_0', 'iesc112_paragraphs_concept_1', 'iesc1ps_concept_3']"
+How do I bake a chocolate cake?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc109_concept_26', 'iesc103_concept_41', 'iesc103_paragraphs_concept_41', 'iesc103_concept_34_1', 'iesc110_concept_23']"
+What is the latest score in the IPL match?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc107_concepts_concept_0_20', 'iesc1an_concept_2_0', 'iesc1ps_concept_3', 'iesc103_concepts_concept_0_14', 'iesc1ps_concept_18']"
+Explain quantum entanglement from Chapter 9,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc1ps_concept_19_1', 'iesc108_concept_26', 'iesc1ps_paragraphs_concept_19_1', 'iesc1ps_concept_19_0', 'iesc104_exercises_exercise_8']"
+What is the theory of relativity?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc103_concept_5', 'iesc108_concept_19', 'iesc103_concept_6', 'iesc103_concept_14', 'iesc103_paragraphs_concept_8']"
+How do I solve a Rubik's cube?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc109_concept_21', 'iesc108_concept_8', 'iesc109_paragraphs_concept_21', 'iesc108_concept_7', 'iesc112_concepts_concept_0_2']"
+What is the capital of France?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc1ps_concept_22_1', 'iesc103_concepts_concept_0_12', 'iesc103_paragraphs_concept_12', 'iesc108_concept_17_0', 'iesc1an_concept_2_0']"
+Calculate the value of g on the surface of the Moon.,out_of_scope,Out of Scope,"To calculate the value of _g_ on the surface of the Moon, we need to use the universal law of gravitation. According to [iesc109_concept_25], the weight of an object on the moon is given by:
+
+_Wm_ = ( _G_ × _M_ ) / _Rm_2
+
+where _G_ is the universal gravitational constant, _M_ is the mass of the moon, and _Rm_ is the radius of the moon.
+
+We are given that the mass of the moon is 7.4 × 10[22] kg and its radius is not explicitly given in the provided context. However, we can use the ratio of the weight on the moon to the weight on the earth to find the value of _g_ on the moon.
+
+According to [iesc109_concept_51], the gravitational force on the surface of the moon is only 1/6 as strong as the gravitational force on the earth. This means that the weight of an object on the moon is 1/6 of its weight on the earth.
+
+Let the weight of the object on the earth be _W_ = _m_ × _g_ , where _m_ is the mass of the object and _g_ is the acceleration due to gravity on the earth.
+
+Then, the weight of the object on the moon is _Wm_ = (1/6) × _W_ = (1/6) × _m_ × _g_ .
+
+We are given that the weight of the object on the moon is 1.67 N when its weight on the earth is 10 N. Therefore, we can write:
+
+_Wm_ = 1.67 N = (1/6) × 10 N = (1/6) × _m_ × _g_
+
+Now, we can solve for _g_ on the moon:
+
+_g_ = 6 × 1.67 N / _m_
+
+However, we do not have the value of _m_ in the provided context. Therefore, we cannot calculate the exact value of _g_ on the moon.
+
+The rest of the answer is unavailable.",no,yes,no,"['iesc109_concept_15', 'iesc109_concept_28', 'iesc109_concept_10', 'iesc109_concept_51', 'iesc109_concept_25']"
+What is the chemical formula for photosynthesis in desert plants?,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc103_concept_40', 'iesc103_concept_37', 'iesc103_concept_32', 'iesc106_concepts_concept_0_17', 'iesc1an_concept_0']"
+Explain the working of a internal combustion engine.,out_of_scope,Out of Scope,This question is outside the provided NCERT content.,yes,yes,yes,"['iesc108_concept_59', 'iesc108_concept_22', 'iesc108_exercises_exercise_6', 'iesc108_paragraphs_concept_59', 'iesc108_concept_33']"

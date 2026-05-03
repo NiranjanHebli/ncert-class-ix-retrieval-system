@@ -33,8 +33,8 @@ class GeminiEmbeddingFunction(chromadb.EmbeddingFunction):
         for text in input:
             try:
                 if not text.strip():
-                    # Handle empty text
-                    embeddings.append([0.0] * 3072) 
+
+                    embeddings.append([0.0] * 3072)
                     continue
                 res = self.client.models.embed_content(
                     model=self.model_name,
@@ -56,22 +56,18 @@ class LocalEmbeddingFunction(chromadb.EmbeddingFunction):
 class DBBenchmark:
     def __init__(self, chunks: List[Chunk]):
         self.chunks = chunks
-        self.chroma_client = chromadb.PersistentClient(
-            path=str(PROJECT_ROOT / "data/chroma_db"),
-            settings=Settings(anonymized_telemetry=False)
-        )
-        
-        # Models
+        self.chroma_client = chromadb.PersistentClient(path="data/chroma_db")
+
         self.local_ef_1 = LocalEmbeddingFunction("BAAI/bge-small-en-v1.5")
         self.local_ef_2 = LocalEmbeddingFunction("sentence-transformers/all-mpnet-base-v2")
-        
+
         self.models = {
             "bge_small_en_v1.5": self.local_ef_1,
             "all_mpnet_base_v2": self.local_ef_2
         }
-        
+
         self.collections = {}
-        
+
     def setup_collections(self):
         """Create collections for each model"""
         for name, ef in self.models.items():
@@ -79,14 +75,13 @@ class DBBenchmark:
                 self.chroma_client.delete_collection(name)
             except:
                 pass
-            
+
             collection = self.chroma_client.create_collection(
                 name=name,
                 embedding_function=ef
             )
             self.collections[name] = collection
-            
-            # Index chunks
+
             ids = [c.chunk_id for c in self.chunks]
             documents = [c.text for c in self.chunks]
             metadatas = [{
@@ -95,9 +90,9 @@ class DBBenchmark:
                 "token_count": c.token_count,
                 "semantic_boundary": c.semantic_boundary
             } for c in self.chunks]
-            
+
             print(f"Indexing {len(ids)} chunks for {name}...")
-            # Batch indexing to avoid API limits/timeouts
+
             batch_size = 50
             for i in range(0, len(ids), batch_size):
                 print(f"  Batch {i//batch_size + 1}/{(len(ids)-1)//batch_size + 1}")
@@ -109,12 +104,12 @@ class DBBenchmark:
 
     def run_benchmark(self, queries: List[str]):
         results = []
-        
+
         for model_name, collection in self.collections.items():
             print(f"\nBenchmarking {model_name}...")
-            
+
             latencies = []
-            
+
             for idx, q in enumerate(queries):
                 start_time = time.perf_counter()
                 res = collection.query(
@@ -122,36 +117,58 @@ class DBBenchmark:
                     n_results=5
                 )
                 end_time = time.perf_counter()
-                latency = (end_time - start_time) * 1000 # ms
+                latency = (end_time - start_time) * 1000
                 latencies.append(latency)
-                
-                # Judging recall@5
+
                 retrieved_context = "\n---\n".join(res["documents"][0])
                 
-                # Recall@5 (Placeholder for manual judgement per PDF)
-                recall_hit = 0.0 # To be verified manually
+                # Keyword-based pseudo-ground truth for recall
+                keywords = {
+                    "What are the three states of matter?": ["solid", "liquid", "gas"],
+                    "Why is ice at 273 K more effective in cooling than water at the same temperature?": ["latent heat", "absorb", "energy"],
+                    "What produces more severe burns, boiling water or steam?": ["latent heat", "vaporization", "steam"],
+                    "Calculate the molecular mass of water (H2O).": ["18", "atomic mass", "hydrogen", "oxygen"],
+                    "What is the powerhouse of the cell and why?": ["mitochondria", "atp"],
+                    "What is the difference between a plant cell and an animal cell?": ["cell wall", "chloroplast", "plastid"],
+                    "Define displacement and how it differs from distance.": ["shortest", "initial", "final", "position"],
+                    "Why do we fall in the forward direction when a moving bus brakes to a stop?": ["inertia", "motion"],
+                    "State the universal law of gravitation.": ["proportional", "product", "masses", "square", "distance"],
+                    "How do we define work done by a force?": ["product", "force", "displacement"],
+                    "What is the kinetic energy of an object?": ["motion", "velocity", "1/2 mv"],
+                    "What is the SI unit of force?": ["newton", "kg m/s"],
+                    "How does mass affect the force of gravity between two objects?": ["proportional", "product", "masses"],
+                    "In what way does the speed of particles change when a solid is heated?": ["kinetic energy", "faster", "speed"],
+                    "What role does the nucleus play inside a cell?": ["chromosomes", "dna", "control", "division"],
+                    "Describe the visual evidence that suggests particles of matter are moving.": ["brownian", "diffusion", "crystals", "pollen"],
+                    "Compare the structural features of a factory to those of a biological cell.": ["nucleus", "mitochondria", "organelle"]
+                }
                 
-                # Log snippet for manual review
-                if idx == 0: # Only for first query to see if it works
+                recall_hit = 0.0
+                if q in keywords:
+                    # Check if at least one keyword is present in the retrieved context
+                    context_lower = retrieved_context.lower()
+                    if any(kw.lower() in context_lower for kw in keywords[q]):
+                        recall_hit = 1.0
+
+                if idx == 0:
                     print(f"  [Sample Query]: {q}")
                     print(f"  [Top Result]: {res['documents'][0][0][:100]}...")
-                
+
                 results.append({
                     "model": model_name,
                     "query": q,
                     "latency_ms": latency,
                     "recall_hit": recall_hit
                 })
-                
 
             model_latencies = [r["latency_ms"] for r in results if r["model"] == model_name]
             model_recall = [r["recall_hit"] for r in results if r["model"] == model_name]
-            
+
             print(f"  Avg Latency: {np.mean(model_latencies):.2f}ms")
             print(f"  p50 Latency: {np.percentile(model_latencies, 50):.2f}ms")
             print(f"  p95 Latency: {np.percentile(model_latencies, 95):.2f}ms")
             print(f"  Recall@5: {np.mean(model_recall)*100:.1f}%")
-            
+
         return results
 
     def save_results(self, results: List[Dict[str, Any]]):
@@ -169,19 +186,14 @@ def main():
     print(f"Loading and chunking files from {extracted_dir}...")
     chunks = chunker.chunk_directory(extracted_dir)
     print(f"Total chunks created: {len(chunks)}")
-    
-    # Sample for faster benchmark (Stage 2 proof of concept)
-    chunks = chunks[:200]
-    print(f"Sampled to {len(chunks)} chunks for benchmark.")
-    
+    print("Embedding full database for accurate recall calculations...")
 
-    with open(str(PROJECT_ROOT / "data/eval_questions.json"), "r") as f:
+    with open("data/eval_questions.json", "r") as f:
         categories = json.load(f)
-    
+
     queries = []
     for cat in categories:
         queries.extend(cat["questions"])
-    
 
     benchmark = DBBenchmark(chunks)
     benchmark.setup_collections()
@@ -190,3 +202,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

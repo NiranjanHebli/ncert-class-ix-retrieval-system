@@ -1,4 +1,4 @@
-# Vector DB & Embedding Comparison Report (Stage 2)
+# Vector DB & Embedding Comparison Report
 
 ## 1. Overview
 This report compares two embedding models and their performance within ChromaDB as part of the **Study Assistant v2.0** development. 
@@ -15,7 +15,7 @@ This report compares two embedding models and their performance within ChromaDB 
 - **Queries:** 20 questions (Direct, Paraphrased, Out-of-Scope).
 - **Metrics:** 
   - **Latency (ms):** End-to-end retrieval time.
-  - **Recall@5:** Automated judgment (Gemini-2.0-Flash) of whether the relevant answer is in the top-5 retrieved chunks.
+  - **Recall@5:** Automated keyword-overlap judgment of whether the relevant answer terms are in the top-5 retrieved chunks.
 
 ## 3. Comparison Results (Proof of Concept - 200 Chunks)
 *Benchmarked on a sampled corpus of 200 chunks to demonstrate latency and scalability tradeoffs.*

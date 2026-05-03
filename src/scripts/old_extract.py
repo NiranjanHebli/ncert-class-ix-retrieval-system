@@ -21,24 +21,24 @@ if not os.path.exists(source_dir):
 for filename in os.listdir(source_dir):
     if not filename.lower().endswith(".pdf"):
         continue
-        
+
     file_path = os.path.join(source_dir, filename)
     output_filename = os.path.splitext(filename)[0] + ".txt"
     output_path = os.path.join(output_dir, output_filename)
-    
+
     if os.path.exists(output_path):
         print(f"Skipping {filename}, already processed.")
         continue
 
     print(f"Processing {filename} with OCR Space API...")
-    
+
     with open(file_path, "rb") as f:
         try:
             response = requests.post(
                 url,
                 files={"file": f},
                 data={
-                    "apikey": API_KEY,  
+                    "apikey": API_KEY,
                     "language": "eng"
                 }
             )
@@ -60,8 +60,7 @@ for filename in os.listdir(source_dir):
         error_msgs = result.get("ErrorMessage", [""])
         error_msg = error_msgs[0] if isinstance(error_msgs, list) and len(error_msgs) > 0 else str(error_msgs)
         print(f"API Error processing {filename}:", error_msgs)
-        
-        # Fallback for file size limit error
+
         if "size exceeds" in error_msg.lower() or "1024 kb" in error_msg.lower():
             print(f"Falling back to local PyPDF2 extraction for {filename} due to size limit...")
             try:
@@ -69,13 +68,13 @@ for filename in os.listdir(source_dir):
                 text = ""
                 for page in reader.pages:
                     text += page.extract_text() + "\n"
-                
+
                 with open(output_path, "w", encoding="utf-8") as out_f:
                     out_f.write(text)
                 print(f"Saved text to {output_filename} using PyPDF2 fallback")
             except Exception as e:
                 print(f"Fallback extraction failed for {filename}: {e}")
-        
+
         continue
 
     try:
@@ -83,18 +82,19 @@ for filename in os.listdir(source_dir):
         if not parsed_results:
             print(f"No text found in {filename}.")
             continue
-            
+
         text = parsed_results[0].get("ParsedText", "")
-        
+
         with open(output_path, "w", encoding="utf-8") as out_f:
             out_f.write(text)
-            
+
         print(f"Saved text to {output_filename}")
     except Exception as e:
         print(f"Error extracting text from {filename}: {e}")
-        
+
     import time
-    time.sleep(2)  # Avoid rate limiting
+    time.sleep(2)
 
 print("\nStarting section and exercise extraction...")
 os.system(f"python3 {os.path.join(BASE_DIR, 'src', 'scripts', 'split_sections.py')}")
+

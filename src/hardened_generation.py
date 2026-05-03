@@ -31,53 +31,41 @@ Answer (with [chunk_id] citations):
 """
 
 class HardenedGenerator:
-    def __init__(self, collection_name: str = "bge_small_en_v1.5", model_name: str = "llama-3.1-8b-instant"):
-        if not GROQ_API_KEY:
-            raise ValueError("GROQ_API_KEY not found in .env file.")
-            
+    def __init__(self, collection_name: str = "all_mpnet_base_v2"):
         self.client = Groq(api_key=GROQ_API_KEY)
-        self.model_name = model_name
         self.retriever = HybridRetriever(collection_name)
         self.chunker = ImprovedChunker()
-        
-        # Pre-build BM25 for the retriever
+
         print("Initializing Hybrid Retriever with BM25...")
         chunks = self.chunker.chunk_directory(str(PROJECT_ROOT / "extracted"))
         self.retriever.build_bm25(chunks)
-        
+
     def ask(self, question: str, k: int = 5) -> Dict[str, Any]:
         """
         Retrieves context using Hybrid search and generates a hardened, cited answer.
         """
-        # 1. Retrieve hybrid context
+
         retrieved_chunks = self.retriever.retrieve_hybrid(question, k=k)
-        
-        # 2. Format context for prompt
+
         context_blocks = []
         for c in retrieved_chunks:
             block = f"Source: {c['chapter']} | ID: {c['chunk_id']}\nContent: {c['text']}"
             context_blocks.append(block)
-        
+
         full_context = "\n\n---\n\n".join(context_blocks)
-        
-        # 3. Generate content
+
         prompt = HARDENED_PROMPT.format(context=full_context, question=question)
-        
+
         try:
-            chat_completion = self.client.chat.completions.create(
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt,
-                    }
-                ],
-                model=self.model_name,
+            completion = self.client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
                 temperature=0.0,
-                max_tokens=1024,
+                max_tokens=1024
             )
-            
+
             return {
-                "answer": chat_completion.choices[0].message.content,
+                "answer": completion.choices[0].message.content,
                 "sources": retrieved_chunks,
                 "prompt_used": prompt
             }
@@ -85,9 +73,10 @@ class HardenedGenerator:
             return {"error": str(e)}
 
 if __name__ == "__main__":
-    # Test session
+
     gen = HardenedGenerator()
     q = "What is the universal law of gravitation?"
     print(f"\n[USER]: {q}")
     res = gen.ask(q)
     print(f"[ASSISTANT]: {res['answer']}")
+
